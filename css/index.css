@@ -322,18 +322,19 @@ img{
     margin:19px auto;
     border-radius: 10px;
     background-color: #fff;
-    text-align: center;
 }
 .index-third-banner-img{
     float: left;
 }
 .index-third-banner img{
+    display: inline-block;
     float: left;
+    text-align: left;
     width: 50%;
     height: 447px;
 }
 .index-third-content{
-    width: 50%;
+    width: 37.5%;
     float: right;
     padding: 24px 40px 16px 40px;
 }
@@ -345,7 +346,11 @@ img{
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
     margin:30px auto;
-    padding-top: 15px;
+
+}
+.index-third-dome samp{
+    top: 11px;
+    position:relative;
     font-family: PingFangSC;
     font-size: 16px;
     font-weight: 500;
@@ -356,7 +361,6 @@ img{
     text-align: center;
     color: #fff;
 }
-
 
 
 
