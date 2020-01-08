@@ -118,11 +118,38 @@ img{
 }
 
 .index-first-banner-title{
+    position:absolute;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     display: -webkit-box;
     -webkit-box-pack:center;
     -webkit-box-align:center;
     -webkit-box-orient: vertical;
-    text-align: center
+    text-align: center;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+.index-first-banner-title_top{
+    height: 70px;
+    font-family: ArialRoundedMTPro;
+    font-size: 60px;
+    font-weight: 800;
+    color: #3dcd58;
+}
+.index-first-banner-title_bottom{
+    width: 360px;
+    height: 56px;
+    margin-top: 30px;
+    font-family: PingFangSC;
+    font-size: 40px;
+    color: #3dcd58;
 }
 .index-first-banner-title p{
     font-family: ArialRoundedMTPro;
@@ -197,7 +224,15 @@ img{
     z-index: 5;
     position: absolute;
 }
-
+.index-first-bg{
+    width: 100%;
+    height: 421px;
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+}
 
 
 
@@ -348,6 +383,23 @@ img{
     border-radius: 10px;
     background-color: #fff;
 }
+.index-third-banner-title{
+    margin-top: 12px;
+    font-family: PingFangSC;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.index-third-banner-title-text{
+    display: inline-block;
+    margin: 0 60px 0 60px;
+}
+
 .index-third-banner-img{
     float: left;
 }
@@ -355,13 +407,15 @@ img{
     display: inline-block;
     float: left;
     text-align: left;
-    width: 50%;
+    width: 512px;
     height: 447px;
+    border-radius: 10px 0 0 10px;
 }
+
 .index-third-content{
-    width: 37.5%;
+    width: 505px;
     float: right;
-    padding: 24px 40px 16px 40px;
+
 }
 .index-third-dome{
     width: 301px;
@@ -372,6 +426,20 @@ img{
     text-align: center;
     margin:30px auto;
 
+}
+.index-third-dome-text{
+    display: inline-block;
+    margin-top: 11px;
+    height: 22px;
+    font-family: PingFangSC;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
 }
 .index-third-dome samp{
     display: inline-block;
@@ -387,6 +455,20 @@ img{
     text-align: center;
     color: #fff;
 }
+.index-third-dome-left{
+    display: inline-block;
+    width: 94px;
+    height: 160px;
+    z-index: 5;
+    position: absolute;
+}
+.index-third-dome-right{
+    display: inline-block;
+    width: 202px;
+    height: 76px;
+    z-index: 5;
+    position: absolute;
+}
 
 
 
@@ -403,8 +485,50 @@ img{
 
 
 
-
-
+.about-first{
+    width: 100%;
+    height: 503px;
+    background-color: #333333;
+}
+.about-first-title-top{
+    top: 135px;
+    left:  246px;
+    font-family: PingFangSC;
+    font-size: 54px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3dcd58;
+    z-index: 5;
+    position: absolute;
+}
+.about-first-title-center{
+    width: 47px;
+    height: 5px;
+    top: 219px;
+    left: 246px;
+    background-color: #3dcd58;
+    z-index: 5;
+    position: absolute;
+}
+.about-first-title-bottom{
+    height: 42px;
+    top: 243px;
+    left:246px;
+    font-family: ArialRoundedMTPro;
+    font-size: 37px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3dcd58;
+    z-index: 5;
+    position: absolute;
+}
 
 
 .about-second{
@@ -444,7 +568,7 @@ img{
     color: #333333;
 }
 .about-second-banner{
-    width: 90%;
+    width: 1024px;
     height: 175px;
     padding-top: 92px;
     -webkit-box-orient:horizontal;
@@ -484,6 +608,8 @@ img{
 
 .about-third{
     height: 746px;
+    text-align: center;
+    margin: auto;
     background-color: #f8f9f9;
 }
 .about-third-title-top{
@@ -517,22 +643,25 @@ img{
     color: #333333;
 }
 .about-third-banner{
-    width: 1041px;
+    width: 1024px;
     margin:46px auto;
     border-radius: 10px;
 
 }
 .about-third-banner-left{
     float: left;
-    width: 55%;
+    width: 576px;
 }
 .about-third-banner-right{
     float: right;
-    width: 45%;
+    width: 448px;
     height: 460px;
     background-color: #ffffff;
 }
 .about-third-banner-map{
+    width: 576px;
+    height: 460px;
+    border-radius: 10px 0 0 10px;
     float: right;
 }
 .about-third-banner-content{
@@ -579,6 +708,7 @@ img{
 .foot{
     width: 100%;
     height: 132px;
+    position: relative;
     background-color: #333333;
 }
 .foot-left-img{
