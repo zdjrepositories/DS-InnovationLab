@@ -13,34 +13,32 @@
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-<script type="text/javascript" src="js/map.js"></script>
-<link href="css/Innovation%20Lab.css" rel="stylesheet">
+
 <body>
+<header class="head">
+    <div class="head-logo">
+        <span class="head-logo-left">DS</span>
+        <samp class="head-logo-right">Innovation Lab</samp>
+    </div>
+    <div class="head-nav">
+        <ul class="head-list clearfix">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <div class="head-nav-up">Demo中心</div>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    关于我们
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
 <div class="about-first">
-    <header id="head">
-        <div class="logo">
-            <span class="logo_left">DS</span>
-            <samp class="logo_right">Innovation Lab</samp>
-        </div>
-        <div class="nav">
-            <ul class="list clearfix">
-                <li>
-                    <a href="index.html">首页</a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <div class="nav_up">Demo中心</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        关于我们
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
     <div class="about-first-banner">
         <div class="about-first-title">
             <div class="about-first-title-top">
@@ -143,18 +141,27 @@
 </div>
 
 
-<div class="foot">
-    <div class="foot_logo">
-        <span class="foot_logo_left">DS</span>
-        <samp class="foot_logo_right">Innovation Lab</samp>
+<footer class="foot">
+    <img class="foot-left-img" src="images/foot_bg_l@2x.png"/>
+    <img class="foot-right-img" src="images/foot_bg_r@2x.png"/>
+    <div class="foot-content">
+        <div class="foot-logo">
+            <span class="foot-logo-left">DS</span>
+            <samp class="foot-logo-right">Innovation Lab</samp>
+        </div>
+        <div class="foot-text">
+            <p>网站更新时间：2019年11月</p>
+            <p>访问人次：178289人次</p>
+            <p>©版权所有 施耐德电气（中国）有限公司 京ICP备05053940号-5</p>
+        </div>
     </div>
-    <div class="foot_title">
-        <p>网站更新时间：2019年11月</p>
-        <p>访问人次：178289人次</p>
-        <p>©版权所有 施耐德电气（中国）有限公司     京ICP备05053940号-5</p>
-    </div>
-</div>
+</footer>
 </body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<link href="css/Innovation%20Lab.css" rel="stylesheet">
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <script type="text/javascript">
     initMap();//创建和初始化地图
 </script>
