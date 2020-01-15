@@ -73,7 +73,7 @@ img{
     padding-top: 24px;
 }
 .head-nav ul li a{
-    font-family: Arial Rounded MT Pro;
+    height: 70px;
     font-size: 16px;
     font-weight: 500;
     font-weight: normal;
@@ -92,47 +92,102 @@ img{
     float: left;
     margin-right: 30px;
 }
-.index-first{
-    width: 100%;
-    height: 100%;
-    background-color: #333333;
-}
-.index-first-banner{
-    height: 100%;
-}
+.head-nav-demo-list{
+    width: 174px;
+    height: 0px;
+    top:70px;
+    right: 135px;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    z-index: 999;
+    position: absolute;
+    display: none;
 
-.index-first-banner-title{
-    left:0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    position:absolute;
-    margin: 70px auto;
-    display: -webkit-box;
-    -webkit-box-pack:center;
-    -webkit-box-align:center;
-    -webkit-box-orient: vertical;
+}
+.head-nav-demo-list li{
+    height: 37.5px;
+    width: 174px;
     text-align: center;
+
+    background-color: #ffffff;
+}
+.head-nav-demo-list li:hover{
+    background-color: #e6f7ff;
+}
+.head-nav-demo-list a{
+    padding-top: 8px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+    color: #666666;
 }
-.index-first-banner-title_top{
+.head-nav-demo-list ul{
+    margin-top: 4px;
+
+}
+
+@keyframes show {
+    100%{
+        animation-timing-function:cubic-bezier(0,0,0.25,1);
+        -webkit-animation-timing-function:cubic-bezier(0,0,0.25,1);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+
+
+
+
+.index-first{
+    width: 100%;
+    height: 100%;
+
+    background-color: #333333;
+}
+.index-first-banner{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.index-first-banner-title{
+    display: block;
+    text-align: center;
+    margin:auto;
+    margin: 0 auto; /*水平居中*/
+    position: relative;
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+
+}
+.index-first-banner-title-top{
+    display: block;
     height: 70px;
     font-family: Arial Rounded MT Pro;
     font-size: 60px;
     font-weight: 800;
     color: #3dcd58;
+    /*transition: all 2s cubic-bezier(0,0,.25,1);*/
 }
-.index-first-banner-title_bottom{
+.index-first-banner-title-bottom{
+    display: inline-block;
     width: 360px;
     height: 56px;
     margin-top: 30px;
-    font-family: Ping Fang SC;
     font-size: 40px;
     color: #3dcd58;
+
 }
 .index-first-banner-title p{
     font-family: Arial Rounded MT Pro;
@@ -216,18 +271,16 @@ img{
     left: 0px;
     bottom: -10px;
 }
-.index-first-down{
-    width: 100%;
-    height: 33px;
-    bottom: 20px;
-
-    text-align: center;
+.index-first-down-img-href{
+    top:90%;
+    left: 48.5%;
+    z-index: 100;
     position: absolute;
 }
 .index-first-down-img{
-    width: 64px;
+    width: 44px;
     height: 44px;
-    display: inline-block;
+
 }
 
 
@@ -306,6 +359,55 @@ img{
     display: table-cell;
 
 }
+.index-second-banner-content-img-left-float{
+    display: inline-block;
+    width: 186px;
+    height: 198px;
+    top:260px;
+    left: 135px;
+    z-index: 3;
+    position: absolute;
+    animation-name: img-right;
+    animation:img-left 1s infinite;
+    animation-direction:alternate;
+    -webkit-animation:img-left 1s infinite;
+    -webkit-animation-direction:alternate;
+    animation-delay: 0.5s;
+}
+@keyframes img-left{
+    0% {
+        top: 260px;
+    }
+    100%{
+        top: 280px;
+    }
+}
+.index-second-banner-content-img-right-float{
+    display: inline-block;
+    width: 186px;
+    height: 190px;
+    left: 640px;
+    top:280px;
+    z-index: 3;
+    position: absolute;
+    animation-name: img-right;
+    animation:img-right 1s infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+    -webkit-animation:img-right 1s infinite;
+    -webkit-animation-direction:alternate;
+    animation-delay: 0.5s;
+}
+@keyframes img-right{
+    0% {
+        left: 640px;
+        top: 280px;
+    }
+    100%{
+        left: 660px;;
+        top: 290px;
+    }
+}
 .index-second-banner-content-text{
     display: inline-block;
     margin-top: 20px;
@@ -314,7 +416,6 @@ img{
 
  }
 .index-second-banner samp{
-    font-family: PingFangSC;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -376,7 +477,6 @@ img{
 }
 .index-third-banner-title{
     margin-top: 12px;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -388,11 +488,22 @@ img{
 }
 .index-third-banner-title-text{
     display: inline-block;
+    height: 22px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
     text-align: center;
-    margin: 0 60px 0 86px;
+    color: #ffffff;
+    text-align: center;
+
 }
 
-
+.index-third--title2{
+    margin: 0 60px 0 86px;
+}
 .index-third-content-img{
     float: left;
     display: inline-block;
@@ -403,11 +514,32 @@ img{
     border-radius: 10px 0 0 10px;
     z-index: 3;
 }
-
-.index-third-content{
-    width: 1024px;
+.index-third-content3{
+    width: 0px;
     height: 447px;
+    top:0px;
+    overflow:hidden;
+    z-index: 1;
+    position: absolute;
 }
+.index-third-content2{
+    width: 0px;
+    height: 447px;
+    top:0px;
+    overflow:hidden;
+    z-index: 2;
+    position: absolute;
+}
+.index-third-content1{
+     width: 1024px;
+     height: 447px;
+     top:0px;
+     overflow:hidden;
+    z-index: 3;
+     position: absolute;
+ }
+
+
 .index-third-content-text{
     float: right;
     width: 406px;
@@ -417,30 +549,30 @@ img{
 }
 .index-third-banner-arrows{
     width: 1024px;
-    text-align: center;
-    margin:  auto;
+    margin-top: 0px;
+
     height: 20px;
+    text-align: center;
+    position: relative;
+    margin: auto;
 }
 .index-third-banner-arrows-icon{
-    margin: auto;
     width: 0px;
     height: 0px;
+    margin-left: 310px;
     border: 10px solid #ffffff;
     border-color:transparent transparent  #ffffff transparent;
-    /*border-bottom-color: yellow;*/
 
-    /*border-color:transparent transparent  #ffffff transparent;*/
 }
 .index-third-content-text-line{
-    margin-top: 24px;
+    margin-top: 20px;
     width: 70px;
     height: 2px;
     background-color: #3dcd58;
 }
 .index-third-content-text-title{
-    margin-top: 39px;
-    width: 406px;
-    font-family: Ping Fang SC;
+    margin-top: 29px;
+    width: 370px;
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -452,7 +584,6 @@ img{
 }
 .index-third-content-text-explain{
     width: 406px;
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -465,7 +596,6 @@ img{
     width: 49px;
     height: 67px;
     opacity: 0.25;
-    font-family: Ping Fang SC;
     font-size: 48px;
     font-weight: normal;
     font-stretch: normal;
@@ -482,7 +612,6 @@ img{
     margin-top: 16px;
     width: 28px;
     height: 20px;
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -492,7 +621,6 @@ img{
     color: #333333;
 }
 .index-third-content-text li{
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -504,22 +632,21 @@ img{
 .index-third-content-function-ul li:before{
     display: inline-block;
     content: url("../images/F@2x.png");
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     margin-right: 6px;
 }
 .index-third-content-value-ul li:before{
     display: inline-block;
     content: url("../images/V@2x.png");
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     margin-right: 6px;
 }
 .index-third-content-link-text{
     float: left;
     height: 20px;
     margin-top: 12px;
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -544,7 +671,6 @@ img{
 }
 .index-third-content-like-sum{
     height: 20px;
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -572,7 +698,6 @@ img{
     padding-top: 11px;
     padding-bottom: 6px;
     height: 22px;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -592,7 +717,6 @@ img{
 .index-third-dome samp{
     display: inline-block;
     position:relative;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -609,6 +733,7 @@ img{
     height: 1px;
     opacity: 0.6;
     background-color: #ffffff;
+    position: relative;
 }
 
 .index-third-dome-left{
@@ -678,7 +803,6 @@ img{
 }
 .demo-first-title-top{
     top: 205px;
-    font-family: Ping Fang SC;
     font-size: 54px;
     font-weight: 500;
     font-stretch: normal;
@@ -763,6 +887,8 @@ img{
     margin: auto;
     display: flex;
     align-items:center; /*实现垂直居中*/
+
+
 
 }
 
@@ -849,6 +975,28 @@ img{
     color: #333333;
     margin-top:8px;
 }
+.demo-banner-tags{
+    width: 450px;
+    margin-top:12px;
+    text-align: left;
+    position: relative;
+}
+.demo-banner-tag{
+    display: inline-block;
+    padding: 1px 8px 1px 8px;
+    margin-right: 12px;
+    border-radius: 2px;
+    border: solid 1px #91d5ff;
+    background-color: #e6f7ff;
+    font-family: PingFangSC;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #219bfd;
+}
 .demo-banner-value{
     height: 22px;
     font-family: PingFangSC;
@@ -875,21 +1023,20 @@ img{
 .demo-banner-function-ul li:before{
     display: inline-block;
     content: url("../images/F@2x.png");
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-right: 4px;
 }
 .demo-banner-value-ul li:before{
     display: inline-block;
     content: url("../images/V@2x.png");
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-right: 4px;
 }
 .demo-banner-function{
     width: 450px;
     height: 22px;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -959,7 +1106,7 @@ img{
 }
 .demo-like-sum{
     height: 20px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -976,21 +1123,92 @@ img{
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #e6e6e6;
     overflow: hidden;
-    z-index: 100;
+    z-index: 9;
     position: fixed;
-    padding:5px;
     text-align:center;
     right: 40px;
     bottom: 40px;
     background-color: #ffffff;
 }
-.demo-side-nav-list{
+
+.demo-side-nav-img{
     display: inline-block;
-    width: 40px;
-    height: 50px;
-    margin: auto;
+    width: 35px;
+    height: 35px;
+    left: 8px;
+    top: 8px;
+    position: absolute;
     text-align: center;
+    z-index: 973;
  }
+.demo-side-nav-close{
+    display: none;
+    width: 35px;
+    height: 35px;
+    left: 8px;
+    top: 8px;
+    text-align: center;
+    z-index: 972;
+    position: absolute;
+}
+.demo-side-nav-line{
+    margin: 25px 0 23px 28px ;
+    float: left;
+    width: 2px;
+    height: 252px;
+    border-radius: 1.5px;
+    background-color: #e9e9e9;
+    text-align: center;
+}
+
+
+.demo-side-nav-list{
+    display:none;
+    right: 40px;
+    bottom: 110px;
+    width: 204px;
+    height: 308px;
+    overflow: hidden;
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+
+}
+.demo-side-nav-list a{
+    width: 150px;
+    height: 32px;
+    text-align: left;
+    margin: 3px 0px 3px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #666666;
+}
+.demo-side-nav-list ul{
+    float: right;
+    margin: 14px 0px 10px 0px;
+}
+.demo-side-nav-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-left: -1.5px;
+}
+.demo-side-nav-circle1{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d9d9d9;
+    margin: 29px 0 29px -1.5px;
+}
 
 
 

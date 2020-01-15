@@ -24,10 +24,15 @@
             <li>
                 <a href="index.html">首页</a>
             </li>
-            <li>
-                <a href="demo.html">
-                    <div class="head-nav-up">Demo中心</div>
+            <li class="head-nav-demo">
+                <a  href="demo.html">
+                    <div >Demo中心</div>
                 </a>
+                <div class="head-nav-demo">
+                    <ul>
+
+                    </ul>
+                </div>
             </li>
             <li>
                 <a href="about.html">
@@ -56,9 +61,32 @@
         <img class="demo-first-bg3" src="images/banner_circle_l2@2x.png"/>
     </div>
 </div>
-<a href="#" class="demo-side-nav"><img class="demo-side-nav-list" src="images/unordered%20list.png"/></a>
+<a  href="javascript:;" class="demo-side-nav"><img class="demo-side-nav-img" src="images/unordered%20list.png"/><img class="demo-side-nav-close" src="images/close.png"/></a>
+<div class="demo-side-nav-list">
+    <div class="demo-side-nav-line">
+        <div class="demo-side-nav-circle"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle1"></div>
+        <div class="demo-side-nav-circle"></div>
+
+    </div>
+    <ul>
+        <li><a href="#demo1">EA预诊断</a> </li>
+        <li><a href="#demo2">OCR产品铭牌识别</a> </li>
+        <li><a href="#demo3">数据异常诊断</a> </li>
+        <li><a href="#demo4">小样本故障诊断</a></li>
+        <li><a href="#demo5">能耗模型校正</a> </li>
+        <li><a href="#demo6">开关点自动识别模型</a> </li>
+        <li><a href="#demo7">节能潜力预诊断模型</a> </li>
+        <li><a href="#demo8">智能排产模型</a> </li>
+    </ul>
+</div>
 <div class="demo-second">
-    <div class="demo-uneven">
+    <div class="demo-uneven" id="demo1">
         <div class="demo-content">
             <div class="demo-uneven-content">
                 <div class="demo-content-text demo-uneven-content-text">
@@ -67,6 +95,11 @@
                         <div class="demo-banner-num">01</div>
                     </div>
                     <div class="demo-banner-explain">基于能效诊断知识图谱和数据标签信息为客户提供关联性分析报告</div>
+                    <div class="demo-banner-tags">
+                        <div class="demo-banner-tag">知识图谱</div>
+                        <div class="demo-banner-tag">EA</div>
+                        <div class="demo-banner-tag">关联型报告</div>
+                    </div>
                     <div class="demo-banner-value">价值</div>
                     <div class="demo-banner-value-content">
                         <ul class="demo-banner-value-ul">
@@ -97,7 +130,7 @@
         </div>
 
     </div>
-    <div class="demo-even">
+    <div class="demo-even" id="demo2">
         <div class="demo-content">
             <div class="demo-content-banner demo-even-content-banner">
                 <img class="demo-img" src="images/demo2@2x.png"/>
@@ -108,6 +141,11 @@
                     <div class="demo-banner-num">02</div>
                 </div>
                 <div class="demo-banner-explain">通过在百度AI平台训练iOCR模型和分类模型，一键完成铭牌照片的图像分类和文字符号信息提取，精准识别不同样式的铭牌信息</div>
+                <div class="demo-banner-tags">
+                    <div class="demo-banner-tag">图像处理</div>
+                    <div class="demo-banner-tag">OCR</div>
+                    <div class="demo-banner-tag">铭牌识别</div>
+                </div>
                 <div class="demo-banner-value">价值</div>
                 <div class="demo-banner-value-content">
                     <ul class="demo-banner-value-ul">
@@ -132,7 +170,7 @@
             </div>
         </div>
     </div>
-    <div class="demo-uneven">
+    <div class="demo-uneven" id="demo3">
         <div class="demo-content">
             <div class="demo-uneven-content">
                 <div class="demo-content-text demo-uneven-content-text">
@@ -142,6 +180,11 @@
                     </div>
                     <div class="demo-banner-explain">
                         根据系统/设备的已有运行数据分析历史异常状况，并建立用于数据预测的模型，算法投入使用状态下，根据实际采集值与模型预测值之间的差异判断异常并报警
+                    </div>
+                    <div class="demo-banner-tags">
+                        <div class="demo-banner-tag">历史异常甄别</div>
+                        <div class="demo-banner-tag">异常特征分析</div>
+                        <div class="demo-banner-tag">预测性异常建模</div>
                     </div>
                     <div class="demo-banner-value">价值</div>
                     <div class="demo-banner-value-content">
@@ -172,7 +215,7 @@
         </div>
 
     </div>
-    <div class="demo-even">
+    <div class="demo-even" id="demo4">
         <div class="demo-content">
             <div class="demo-content-banner demo-even-content-banner">
                 <img class="demo-img" src="images/demo4@2x.png"/>
@@ -183,6 +226,13 @@
                     <div class="demo-banner-num">04</div>
                 </div>
                 <div class="demo-banner-explain">针对工业场景下数据及标签不足的问题，对相似场景下的知识进行迁移，为客户提供少量数据下的高效的故障诊断</div>
+                <div class="demo-banner-tags">
+                    <div class="demo-banner-tag">故障诊断</div>
+                    <div class="demo-banner-tag">深度学习</div>
+                    <div class="demo-banner-tag">小样本学习</div>
+                    <div class="demo-banner-tag">工业</div>
+                    <div class="demo-banner-tag">MA</div>
+                </div>
                 <div class="demo-banner-value">价值</div>
                 <div class="demo-banner-value-content">
                     <ul class="demo-banner-value-ul">
@@ -206,7 +256,7 @@
             </div>
         </div>
     </div>
-    <div class="demo-uneven">
+    <div class="demo-uneven" id="demo5">
         <div class="demo-content">
             <div class="demo-uneven-content">
                 <div class="demo-content-text demo-uneven-content-text">
@@ -215,6 +265,11 @@
                         <div class="demo-banner-num">05</div>
                     </div>
                     <div class="demo-banner-explain">建立建筑历史能耗与人流量、天气因素、节假日等相关因素的回归校正模型，用于对未来能耗进行校正并对节能效果进行评估</div>
+                    <div class="demo-banner-tags">
+                        <div class="demo-banner-tag">能耗模型</div>
+                        <div class="demo-banner-tag">EA</div>
+                        <div class="demo-banner-tag">节能</div>
+                    </div>
                     <div class="demo-banner-value">价值</div>
                     <div class="demo-banner-value-content">
                         <ul class="demo-banner-value-ul">
@@ -243,7 +298,7 @@
         </div>
 
     </div>
-    <div class="demo-even">
+    <div class="demo-even" id="demo6">
         <div class="demo-content">
             <div class="demo-content-banner demo-even-content-banner">
                 <img class="demo-img" src="images/demo6@2x.png"/>
@@ -255,6 +310,11 @@
                 </div>
                 <div class="demo-banner-explain">
                     使用机器学习算法自动根据数据规律检测该数据点所代表设备的开启时间与关闭时间，并应用到诊断模型中，诊断设备运行是否正常；并且可以不断追踪运行规律的变化，并给出提醒
+                </div>
+                <div class="demo-banner-tags">
+                    <div class="demo-banner-tag">开关点识别</div>
+                    <div class="demo-banner-tag">异常阈值推荐</div>
+                    <div class="demo-banner-tag">历史开关规律性统计</div>
                 </div>
                 <div class="demo-banner-value">价值</div>
                 <div class="demo-banner-value-content">
@@ -280,7 +340,7 @@
 
         </div>
     </div>
-    <div class="demo-uneven">
+    <div class="demo-uneven" id="demo7">
         <div class="demo-content">
             <div class="demo-uneven-content">
                 <div class="demo-content-text demo-uneven-content-text">
@@ -290,6 +350,11 @@
                     </div>
                     <div class="demo-banner-explain">
                         使用机器学习方式评估一段时间内应当规律运行的数据是否存在问题，并准确的标记出现问题的时刻点及X-feature值，通过为X-feature值增加行业属性可以使算法适用于不同的数据内容评估；若评估的数据内容为能耗数据，该算法还可同时计算问题优化后的节能潜力
+                    </div>
+                    <div class="demo-banner-tags">
+                        <div class="demo-banner-tag">规律性评估</div>
+                        <div class="demo-banner-tag">批量预诊断</div>
+                        <div class="demo-banner-tag">潜在节能量计算</div>
                     </div>
                     <div class="demo-banner-value">价值</div>
                     <div class="demo-banner-value-content">
@@ -319,7 +384,7 @@
         </div>
 
     </div>
-    <div class="demo-even">
+    <div class="demo-even" id="demo8">
         <div class="demo-content">
             <div class="demo-content-banner demo-even-content-banner">
                 <img class="demo-img" src="images/demo8@2x.png"/>
@@ -331,6 +396,10 @@
                 </div>
                 <div class="demo-banner-explain">系统从ERP接收到多个品项多个订单，在满足交货期的前提下，在多条件约束下，按产线品项的优先级将订单分配给产线；
                     按生产的经济批量、换牌次数最少、清洗次数最少为目标，同时考虑工厂日历、设备生产能力，排除各个生产 线以及前处理设备的生产工单，并计算出计划开始时间、计划结束时间、班次、班组等
+                </div>
+                <div class="demo-banner-tags">
+                    <div class="demo-banner-tag">运筹优化</div>
+                    <div class="demo-banner-tag">成本计算</div>
                 </div>
                 <div class="demo-banner-value">价值</div>
                 <div class="demo-banner-value-content">
@@ -377,6 +446,8 @@
 </footer>
 </body>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/nav.js"></script>
 
 </html>
