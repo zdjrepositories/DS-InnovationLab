@@ -23,7 +23,7 @@ $(function () {
         }
 
         window.addEventListener('scroll', function () {
-            let t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
+            var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
             if (t > 10) {
                 $('.head').addClass('head-active')
             } else {

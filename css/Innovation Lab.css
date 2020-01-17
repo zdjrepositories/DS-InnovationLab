@@ -1621,27 +1621,49 @@ padding-right: 10px;
 }
 .about-fourth-banner-left{
     float: left;
-    width: 576px;
-}
-.about-fourth-banner-right{
-    border-radius:  0px 10px 10px 0px;
-    float: right;
-    width: 448px;
-    height: 460px;
-    background-color: #ffffff;
-}
-.about-fourth-banner-map{
-    width: 576px;
-    height: 460px;
-    border-radius: 10px 0 0 10px;
-    float: right;
 }
 #dituContent{
     width:576px;
     height:460px;
     border:#ccc solid 1px;
-    border-radius:  10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
 }
+.about-fourth-banner-right{
+    width: 448px;
+    height: 460px;
+    padding: 100px 80px 100px 80px;
+    float: right;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px 0 0 10px;
+}
+.about-fourth-banner-right-content{
+    width:126px;
+    float: right;
+    text-align: left;
+}
+.about-fourth-banner-addr{
+    width: 270px;
+}
+
+.about-fourth-banner-contacts{
+    width: 270px;
+}
+.about-fourth-banner-img{
+    width: 12px;
+    height: 16px;
+    left: 100px;
+    float: left;
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+}
+.environment{
+}
+.contacts{
+}
+
+
 .about-fourth-banner-content{
     text-align: left;
 }

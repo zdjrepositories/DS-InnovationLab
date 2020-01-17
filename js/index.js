@@ -47,7 +47,7 @@ $(function () {
 
 
         window.addEventListener('scroll', function () {
-             let t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
+             var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
             if (t > 10) {
                 $('.head').addClass('head-active')
             } else {
@@ -68,11 +68,7 @@ $(function () {
                 $('.index-second-banner').animate({opacity: 1}, 500);
             }
         })
-        if (t > 10) {
-            $('.head').addClass('head-active')
-        } else {
-            $('.head').removeClass('head-active')
-        }
+
 
 
         function demomenu() {//导航栏动画
