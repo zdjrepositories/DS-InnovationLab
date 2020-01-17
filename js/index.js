@@ -1,100 +1,138 @@
-{
-    $(function () {
-            demomenu()
-            changebanner1()
-            changebanner2()
-            changebanner3()
-        // changebanner()
-            titlehover1()
-            titlehover2()
-            titlehover3()
-        demosidenav()
+$(function () {
+        //myscroll()
+        demomenu()
+        changebanner1();
+        changebanner2();
+        changebanner3();
+        indexfirst();
+    indexthird();
+    // thirdtitle();
 
 
-            function demomenu() {//导航栏动画
-                $(".head-nav-demo").hover(function () {
-                    $(".head-nav-demo-list").show()
-                }, function () {
-                    $(".head-nav-demo-list").hide();
-                })
-                $(".head-nav-demo-list").hover(function () {
-                    $(".head-nav-demo-list").show()
-                }, function () {
-                    $(".head-nav-demo-list").hide();
-                })
+        function indexfirst() {
+            $('.index-first-banner-bg').delay(100).animate({opacity: 1}, 500);
+            $('.index-first-banner-title-bottom').delay(1200).animate({opacity: 1}, 1000);
+            $('.index-first-down-img').delay(1800).animate({opacity: 1}, 350);
+            $('.index-first-banner-title-top').delay(500).animate({opacity: 1}, 1000);
+            $('.index-first-banner-title-bottom').delay(1200).animate({opacity: 1}, 1000);
+            $('.index-first-down-img').delay(1800).animate({opacity: 1}, 350);
+
+        }
+
+        function indexsecond() {
+
+
+        }
+
+        function indexthird() {
+            $('.index-third-title').animate({opacity: 1}, 500);
+            // $('.index-third-banner-title').delay(500).animate({height: '22px'}, 350);
+            // $('index-third-banner-arrows').slideDown(350);
+            // $('index-third-content-text-line').delay(350).animate({height: '2px'}, 350);
+            // $('index-third-dome').delay(350).animate({opacity: '1'}, 500);
+
+
+        }
+    // function thirdtitle() {
+    //     $(".index-third--title1").hover(function () {
+    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "334px"}, 100);
+    //     })
+    //     $(".index-third--title2").hover(function () {
+    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "501px"}, 100);
+    //     })
+    //     $(".index-third--title3").hover(function () {
+    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "687px"}, 100);
+    //     })
+    // }
+
+
+        window.addEventListener('scroll', function () {
+             let t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
+            if (t > 10) {
+                $('.head').addClass('head-active')
+            } else {
+                $('.head').removeClass('head-active')
             }
 
-        function changebanner() {
+            var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
+            var wTop = $(window).height();//浏览器可视高度
+
+            var eTop = $('.index-second-title').offset().top;//容器距离整个页面顶部的距离
+            console.log(eTop);
+            if (dTop + wTop - ($('.index-second-title').height() * 0.25)-380 > eTop) {
+                $('.index-second-title').animate({opacity: 1}, 500);
+            }
+
+            eTop = $('.index-second-banner').offset().top;
+            if (dTop + wTop - ($('.index-second-banner').height() * 0.25)-380 > eTop) {
+                $('.index-second-banner').animate({opacity: 1}, 500);
+            }
+        })
+        if (t > 10) {
+            $('.head').addClass('head-active')
+        } else {
+            $('.head').removeClass('head-active')
+        }
+
+
+        function demomenu() {//导航栏动画
+            $(".head-nav-demo").hover(function () {
+                $(".head-nav-demo-list").show()
+            }, function () {
+                $(".head-nav-demo-list").hide();
+            })
+            $(".head-nav-demo-list").hover(function () {
+                $(".head-nav-demo-list").show()
+            }, function () {
+                $(".head-nav-demo-list").hide();
+            })
+        }
+        function changebanner1() {
             $(".index-third--title1").click(function () {
-                $('.index-third-content1').toggle( "slide" );
-                $('.index-third-content2').animate({width: 1024}, 1000);
-                $('.index-third-content3').animate({width: 0}, 1000);
+                $('.index-third-banner-arrows-icon').animate({marginLeft: "334px"}, 100);
+                $('.index-third-content1').animate({width: 1024}, 500);
+                $('.index-third-content2').animate({width: 0}, 500);
+                $('.index-third-content3').animate({width: 0}, 500);
 
             });
         }
-            function changebanner1() {
-                $(".index-third--title1").click(function () {
-                    $('.index-third-content1').animate({width: 1024}, 1000);
-                    $('.index-third-content2').animate({width: 0}, 1000);
-                    $('.index-third-content3').animate({width: 0}, 1000);
+        function changebanner2() {
+            $(".index-third--title2").click(function () {
+                $('.index-third-banner-arrows-icon').animate({marginLeft: "501px"}, 100);
+                $('.index-third-content1').animate({width: 0}, 500);
+                $('.index-third-content2').animate({width: 1024}, 500);
+                $('.index-third-content3').animate({width: 0}, 500);
 
-                });
-            }
-
-            function changebanner2() {
-                $(".index-third--title2").click(function () {
-                    $('.index-third-content1').animate({width: 0}, 1000);
-                    $('.index-third-content2').animate({width: 1024}, 1000);
-                    $('.index-third-content3').animate({width: 0}, 1000);
-
-                });
-            }
-
-            function changebanner3() {
-                $(".index-third--title3").click(function () {
-                    $('.index-third-content1').animate({width: 0}, 1000);
-                    $('.index-third-content2').animate({width: 0}, 1000);
-                    $('.index-third-content3').animate({width: 1024}, 1000);
-
-                });
-            }
-
-            function titlehover1() {
-                $(".index-third--title1").hover(function () {
-                    $('.index-third-banner-arrows-icon').animate({marginLeft: 310}, 300);
-
-                });
-            }
-
-            function titlehover2() {
-
-                $(".index-third--title2").hover(function () {
-                    $('.index-third-banner-arrows-icon').animate({marginLeft: 500}, 300);
-
-                });
-            }
-
-            function titlehover3() {
-                $(".index-third--title3").hover(function () {
-                    $('.index-third-banner-arrows-icon').animate({marginLeft: 680}, 300);
-
-                });
-            }
-
-
-            function demosidenav() {
-                $(".demo-side-nav").click(function () {
-
-                }, function () {
-                    $('.demo-side-nav-img').toggle();
-                    $('.demo-side-nav-close').toggle();
-                    $('.demo-side-nav-list').toggle(300)
-                },true)
-            }
-
+            });
         }
-    )
-}
+        function changebanner3() {
+            $(".index-third--title3").click(function () {
+                $('.index-third-banner-arrows-icon').animate({marginLeft: "687px"}, 100);
+                $('.index-third-content1').animate({width: 0}, 500);
+                $('.index-third-content2').animate({width: 0}, 500);
+                $('.index-third-content3').animate({width: 1024}, 500);
+
+            });
+        }
+
+
+
+
+    }
+)
+
+
+// function changebanner() {
+//     $(".index-third--title1").click(function () {
+//         $('.index-third-content1').toggle("left");
+//         $('.index-third-content2').animate({width: 1024}, 1000);
+//         $('.index-third-content3').animate({width: 0}, 1000);
+//
+//     });
+// }
+//
+
+
 // $(function () {
 // //     var p = $("body");
 // //     var offset = p.offset();

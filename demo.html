@@ -16,29 +16,39 @@
 <body>
 <header class="head">
     <div class="head-logo">
-        <span class="head-logo-left">DS</span>
-        <samp class="head-logo-right">Innovation Lab</samp>
+        <a href="index.html">
+            <span class="head-logo-left">DS</span>
+            <samp class="head-logo-right">Innovation Lab</samp>
+        </a>
     </div>
     <div class="head-nav">
         <ul class="head-list clearfix">
             <li>
-                <a href="index.html">首页</a>
+                <a id="head-this" href="index.html">首页</a>
             </li>
             <li class="head-nav-demo">
-                <a  href="demo.html">
-                    <div >Demo中心</div>
+                <a href="demo.html">
+                    Demo中心
                 </a>
-                <div class="head-nav-demo">
-                    <ul>
 
-                    </ul>
-                </div>
             </li>
             <li>
                 <a href="about.html">
                     关于我们
                 </a>
             </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="head-nav-demo-list">
+            <li><a href="demo.html#demo1">EA预诊断</a></li>
+            <li><a href="demo.html#demo2">OCR产品铭牌识别</a></li>
+            <li><a href="demo.html#demo3">数据异常诊断</a></li>
+            <li><a href="demo.html#demo4">小样本故障诊断</a></li>
+            <li><a href="demo.html#demo5">能耗模型校正</a></li>
+            <li><a href="demo.html#demo6">开关点自动识别模型</a></li>
+            <li><a href="demo.html#demo7">节能潜力预诊断模型</a></li>
+            <li><a href="demo.html#demo8">智能排产模型</a></li>
         </ul>
     </div>
 </header>
@@ -61,9 +71,10 @@
         <img class="demo-first-bg3" src="images/banner_circle_l2@2x.png"/>
     </div>
 </div>
-<a  href="javascript:;" class="demo-side-nav"><img class="demo-side-nav-img" src="images/unordered%20list.png"/><img class="demo-side-nav-close" src="images/close.png"/></a>
+<a href="javascript:;" class="demo-side-nav"><img class="demo-side-nav-img" src="images/unordered%20list.png"/><img
+        class="demo-side-nav-close" src="images/close.png"/></a>
 <div class="demo-side-nav-list">
-    <div class="demo-side-nav-line">
+    <div class="demo-side-nav-line" id="demo-circle">
         <div class="demo-side-nav-circle"></div>
         <div class="demo-side-nav-circle1"></div>
         <div class="demo-side-nav-circle1"></div>
@@ -75,21 +86,21 @@
 
     </div>
     <ul>
-        <li><a href="#demo1">EA预诊断</a> </li>
-        <li><a href="#demo2">OCR产品铭牌识别</a> </li>
-        <li><a href="#demo3">数据异常诊断</a> </li>
+        <li><a href="#demo1">EA预诊断</a></li>
+        <li><a href="#demo2">OCR产品铭牌识别</a></li>
+        <li><a href="#demo3">数据异常诊断</a></li>
         <li><a href="#demo4">小样本故障诊断</a></li>
-        <li><a href="#demo5">能耗模型校正</a> </li>
-        <li><a href="#demo6">开关点自动识别模型</a> </li>
-        <li><a href="#demo7">节能潜力预诊断模型</a> </li>
-        <li><a href="#demo8">智能排产模型</a> </li>
+        <li><a href="#demo5">能耗模型校正</a></li>
+        <li><a href="#demo6">开关点自动识别模型</a></li>
+        <li><a href="#demo7">节能潜力预诊断模型</a></li>
+        <li><a href="#demo8">智能排产模型</a></li>
     </ul>
 </div>
 <div class="demo-second">
     <div class="demo-uneven" id="demo1">
         <div class="demo-content">
             <div class="demo-uneven-content">
-                <div class="demo-content-text demo-uneven-content-text">
+                <div class="demo-content-text demo-uneven-content-text  demo-content-text-demo1">
                     <div class="demo-banner-line"></div>
                     <div class="demo-banner-title">基于知识图谱的EA预诊断
                         <div class="demo-banner-num">01</div>
@@ -119,11 +130,11 @@
                         <span class="demo-banner-link-text">了解Demo详情</span>
                     </div>
                     <div class="demo-like">
-                        <img class="demo-like-icon" src="images/F@2x.png"/>
+                        <img class="demo-like-icon" src="images/like.png"/>
                         <span class="demo-like-sum">1112</span>
                     </div>
                 </div>
-                <div class="demo-content-banner demo-uneven-content-banner">
+                <div class="demo-content-banner demo-uneven-content-banner demo-content-banner-demo1">
                     <img class="demo-img" src="images/demo1@2x.png"/>
                 </div>
             </div>
@@ -132,10 +143,10 @@
     </div>
     <div class="demo-even" id="demo2">
         <div class="demo-content">
-            <div class="demo-content-banner demo-even-content-banner">
+            <div class="demo-content-banner demo-even-content-banner demo-content-banner-demo2">
                 <img class="demo-img" src="images/demo2@2x.png"/>
             </div>
-            <div class="demo-content-text demo-even-content-text">
+            <div class="demo-content-text demo-even-content-text  demo-content-text-demo2">
                 <div class="demo-banner-line"></div>
                 <div class="demo-banner-title">利用OCR进行产品铭牌快速识别
                     <div class="demo-banner-num">02</div>
@@ -164,7 +175,7 @@
                     <span class="demo-banner-link-text">了解Demo详情</span>
                 </div>
                 <div class="demo-like">
-                    <img class="demo-like-icon" src="images/F@2x.png"/>
+                    <img class="demo-like-icon" src="images/like.png"/>
                     <span class="demo-like-sum">1112</span>
                 </div>
             </div>
@@ -173,10 +184,53 @@
     <div class="demo-uneven" id="demo3">
         <div class="demo-content">
             <div class="demo-uneven-content">
-                <div class="demo-content-text demo-uneven-content-text">
+                <div class="demo-content-text demo-uneven-content-text  demo-content-text-demo3">
+                    <div class="demo-banner-line"></div>
+                    <div class="demo-banner-title">基于深度视觉的小样本故障诊断
+                        <div class="demo-banner-num">03</div>
+                    </div>
+                    <div class="demo-banner-explain">针对工业场景下数据及标签不足的问题，对相似场景下的知识进行迁移，为客户提供少量数据下的高效的故障诊断
+                    </div>
+                    <div class="demo-banner-tags">
+                        <div class="demo-banner-tag">知识图谱</div>
+                        <div class="demo-banner-tag">EA</div>
+                        <div class="demo-banner-tag">关联型报告</div>
+                    </div>
+                    <div class="demo-banner-value">价值</div>
+                    <div class="demo-banner-value-content">
+                        <ul class="demo-banner-value-ul">
+                            <li>解决工业故障诊断中数据不足、标签数据不足的问题</li>
+                            <li>提高算法的可迁移性和鲁棒性 </li>
+                            <li>提高相似场景下的算法开发效率</li>
+                        </ul>
+                    </div>
+                    <div class="demo-banner-function">功能</div>
+                    <ul class="demo-banner-function-ul">
+                        <li>实现机械设备的故障诊断</li>
+                        <li>根据实际场景进行自适应调节模型参数</li>
+                    </ul>
+                    <div class="demo-banner-link">
+                        <span class="demo-banner-link-text">了解Demo详情</span>
+                    </div>
+                    <div class="demo-like">
+                        <img class="demo-like-icon" src="images/like.png"/>
+                        <span class="demo-like-sum">1112</span>
+                    </div>
+                </div>
+                <div class="demo-content-banner demo-uneven-content-banner demo-content-banner-demo3">
+                    <img class="demo-img" src="images/demo1@2x.png"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="demo-even" id="demo4">
+        <div class="demo-content">
+            <div class="demo-even-content">
+                <div class="demo-content-text demo-even-content-text  demo-content-text-demo4">
                     <div class="demo-banner-line"></div>
                     <div class="demo-banner-title">基于设备多维传感器数据的异常诊断和预警模型
-                        <div class="demo-banner-num">03</div>
+                        <div class="demo-banner-num">04</div>
                     </div>
                     <div class="demo-banner-explain">
                         根据系统/设备的已有运行数据分析历史异常状况，并建立用于数据预测的模型，算法投入使用状态下，根据实际采集值与模型预测值之间的差异判断异常并报警
@@ -204,62 +258,21 @@
                         <span class="demo-banner-link-text">了解Demo详情</span>
                     </div>
                     <div class="demo-like">
-                        <img class="demo-like-icon" src="images/F@2x.png"/>
+                        <img class="demo-like-icon" src="images/like.png"/>
                         <span class="demo-like-sum">1112</span>
                     </div>
                 </div>
-                <div class="demo-content-banner demo-uneven-content-banner">
+                <div class="demo-content-banner demo-even-content-banner demo-content-banner-demo4">
                     <img class="demo-img" src="images/demo3@2x.png"/>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class="demo-even" id="demo4">
-        <div class="demo-content">
-            <div class="demo-content-banner demo-even-content-banner">
-                <img class="demo-img" src="images/demo4@2x.png"/>
-            </div>
-            <div class="demo-content-text demo-even-content-text">
-                <div class="demo-banner-line"></div>
-                <div class="demo-banner-title">基于深度视觉的小样本故障诊断
-                    <div class="demo-banner-num">04</div>
-                </div>
-                <div class="demo-banner-explain">针对工业场景下数据及标签不足的问题，对相似场景下的知识进行迁移，为客户提供少量数据下的高效的故障诊断</div>
-                <div class="demo-banner-tags">
-                    <div class="demo-banner-tag">故障诊断</div>
-                    <div class="demo-banner-tag">深度学习</div>
-                    <div class="demo-banner-tag">小样本学习</div>
-                    <div class="demo-banner-tag">工业</div>
-                    <div class="demo-banner-tag">MA</div>
-                </div>
-                <div class="demo-banner-value">价值</div>
-                <div class="demo-banner-value-content">
-                    <ul class="demo-banner-value-ul">
-                        <li>解决工业故障诊断中数据不足、标签数据不足的问题</li>
-                        <li>提高算法的可迁移性和鲁棒性</li>
-                        <li>提高相似场景下的算法开发效率</li>
-                    </ul>
-                </div>
-                <div class="demo-banner-function">功能</div>
-                <ul class="demo-banner-function-ul">
-                    <li>实现机械设备的故障诊断</li>
-                    <li>根据实际场景进行自适应调节模型参数</li>
-                </ul>
-                <div class="demo-banner-link">
-                    <span class="demo-banner-link-text">了解Demo详情</span>
-                </div>
-                <div class="demo-like">
-                    <img class="demo-like-icon" src="images/F@2x.png"/>
-                    <span class="demo-like-sum">1112</span>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="demo-uneven" id="demo5">
         <div class="demo-content">
             <div class="demo-uneven-content">
-                <div class="demo-content-text demo-uneven-content-text">
+                <div class="demo-content-text demo-uneven-content-text  demo-content-text-demo5">
                     <div class="demo-banner-line"></div>
                     <div class="demo-banner-title">能耗模型校正
                         <div class="demo-banner-num">05</div>
@@ -287,11 +300,11 @@
                         <span class="demo-banner-link-text">了解Demo详情</span>
                     </div>
                     <div class="demo-like">
-                        <img class="demo-like-icon" src="images/F@2x.png"/>
+                        <img class="demo-like-icon" src="images/like.png"/>
                         <span class="demo-like-sum">1112</span>
                     </div>
                 </div>
-                <div class="demo-content-banner demo-uneven-content-banner">
+                <div class="demo-content-banner demo-uneven-content-banner demo-content-banner-demo5">
                     <img class="demo-img" src="images/demo5@2x.png"/>
                 </div>
             </div>
@@ -300,10 +313,10 @@
     </div>
     <div class="demo-even" id="demo6">
         <div class="demo-content">
-            <div class="demo-content-banner demo-even-content-banner">
+            <div class="demo-content-banner demo-even-content-banner demo-content-banner-demo6">
                 <img class="demo-img" src="images/demo6@2x.png"/>
             </div>
-            <div class="demo-content-text demo-even-content-text">
+            <div class="demo-content-text demo-even-content-text  demo-content-text-demo6">
                 <div class="demo-banner-line"></div>
                 <div class="demo-banner-title">规律运行设备开关点自动识别模型
                     <div class="demo-banner-num">06</div>
@@ -333,7 +346,7 @@
                     <span class="demo-banner-link-text-no">即将开放体验</span>
                 </div>
                 <div class="demo-like">
-                    <img class="demo-like-icon" src="images/F@2x.png"/>
+                    <img class="demo-like-icon" src="images/like.png"/>
                     <span class="demo-like-sum">1112</span>
                 </div>
             </div>
@@ -343,7 +356,7 @@
     <div class="demo-uneven" id="demo7">
         <div class="demo-content">
             <div class="demo-uneven-content">
-                <div class="demo-content-text demo-uneven-content-text">
+                <div class="demo-content-text demo-uneven-content-text  demo-content-text-demo7">
                     <div class="demo-banner-line"></div>
                     <div class="demo-banner-title">规律运行设备节能潜力预诊断模型
                         <div class="demo-banner-num">07</div>
@@ -373,11 +386,11 @@
                         <span class="demo-banner-link-text">了解Demo详情</span>
                     </div>
                     <div class="demo-like">
-                        <img class="demo-like-icon" src="images/F@2x.png"/>
+                        <img class="demo-like-icon" src="images/like.png"/>
                         <span class="demo-like-sum">1112</span>
                     </div>
                 </div>
-                <div class="demo-content-banner demo-uneven-content-banner">
+                <div class="demo-content-banner demo-uneven-content-banner demo-content-banner-demo7">
                     <img class="demo-img" src="images/demo7@2x.png"/>
                 </div>
             </div>
@@ -386,10 +399,10 @@
     </div>
     <div class="demo-even" id="demo8">
         <div class="demo-content">
-            <div class="demo-content-banner demo-even-content-banner">
+            <div class="demo-content-banner demo-even-content-banner demo-content-banner-demo8">
                 <img class="demo-img" src="images/demo8@2x.png"/>
             </div>
-            <div class="demo-content-text demo-even-content-text">
+            <div class="demo-content-text demo-even-content-text demo-content-text-demo8">
                 <div class="demo-banner-line"></div>
                 <div class="demo-banner-title">基于运筹优化的智能排产模型
                     <div class="demo-banner-num">08</div>
@@ -447,7 +460,7 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
 <script type="text/javascript" src="js/nav.js"></script>
 
 </html>

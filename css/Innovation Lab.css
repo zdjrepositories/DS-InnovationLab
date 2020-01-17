@@ -42,9 +42,16 @@ img{
 .head-active{
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
     background-color: #3dcd58;
-     position: fixed;
-     top: 0;
+    position: fixed;
+    color: white;
+    top: 0;
  }
+#head-this{
+    color: #fff;
+}
+#head-this-active{
+    color: #3dcd58;
+}
 .head-logo{
     height: 43px;
     text-align: center;
@@ -66,6 +73,7 @@ img{
     letter-spacing: normal;
     color: #ffffff;
 }
+
 .head-nav{
     height: 22px;
     float: right;
@@ -130,10 +138,16 @@ img{
 
 }
 
-@keyframes show {
-    100%{
-        animation-timing-function:cubic-bezier(0,0,0.25,1);
-        -webkit-animation-timing-function:cubic-bezier(0,0,0.25,1);
+index-first-banner-title-top-active{
+    animation-timing-function:cubic-bezier(0,0,0.25,1);
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.25,1);
+    animation-name: index-first-banner-title-top-a;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes index-first-banner-title-top-a {
+    0%{
         opacity:0;
     }
     100%{
@@ -178,7 +192,7 @@ img{
     font-size: 60px;
     font-weight: 800;
     color: #3dcd58;
-    /*transition: all 2s cubic-bezier(0,0,.25,1);*/
+    opacity:0;
 }
 .index-first-banner-title-bottom{
     display: inline-block;
@@ -187,6 +201,7 @@ img{
     margin-top: 30px;
     font-size: 40px;
     color: #3dcd58;
+    opacity:0;
 
 }
 .index-first-banner-title p{
@@ -245,8 +260,8 @@ img{
     position: absolute;
 }
 .index-first-banner-bg1{
-    width: 410px;
-    height: 84px;
+    width: 210px;
+    height: 42px;
     display: inline-block;
     top: 70%;
     left: 132px;
@@ -270,17 +285,22 @@ img{
     position: absolute;
     left: 0px;
     bottom: -10px;
+    opacity:0;
 }
 .index-first-down-img-href{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     top:90%;
-    left: 48.5%;
+    left: 48%;
     z-index: 100;
     position: absolute;
+    display: flex;
 }
 .index-first-down-img{
     width: 44px;
     height: 44px;
-
+    opacity:0;
 }
 
 
@@ -297,7 +317,7 @@ img{
     padding-top: 80px;
     height: 55px;
     margin:0 auto;
-    font-family: Arial Rounded MT;
+    font-family: Arial Rounded MT Pro Bold;
     font-size: 48px;
     font-weight: bold;
     font-stretch: normal;
@@ -306,6 +326,11 @@ img{
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    opacity: 0;
+
+}
+.index-second-title-top{
+    font-family:  Arial Rounded MT Pro ExtraBold;
 }
 .index-second-title-center{
     width: 47px;
@@ -328,6 +353,7 @@ img{
 }
 .index-second-banner{
     text-align: center;
+    opacity: 0;
 }
 .index-second-banner-left{
     width: 50%;
@@ -372,7 +398,6 @@ img{
     animation-direction:alternate;
     -webkit-animation:img-left 1s infinite;
     -webkit-animation-direction:alternate;
-    animation-delay: 0.5s;
 }
 @keyframes img-left{
     0% {
@@ -477,6 +502,7 @@ img{
 }
 .index-third-banner-title{
     margin-top: 12px;
+    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -489,6 +515,7 @@ img{
 .index-third-banner-title-text{
     display: inline-block;
     height: 22px;
+    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -500,9 +527,12 @@ img{
     text-align: center;
 
 }
-
+.index-third--title1{
+    margin: 0 0px 0 38px;
+}
 .index-third--title2{
-    margin: 0 60px 0 86px;
+    padding: 0 0px 0 59px;
+    margin: 0 60px 0 3px;
 }
 .index-third-content-img{
     float: left;
@@ -531,13 +561,13 @@ img{
     position: absolute;
 }
 .index-third-content1{
-     width: 1024px;
-     height: 447px;
-     top:0px;
-     overflow:hidden;
+    width: 1024px;
+    height: 447px;
+    top:0px;
+    overflow:hidden;
     z-index: 3;
-     position: absolute;
- }
+    position: absolute;
+}
 
 
 .index-third-content-text{
@@ -559,20 +589,21 @@ img{
 .index-third-banner-arrows-icon{
     width: 0px;
     height: 0px;
-    margin-left: 310px;
+    margin-left: 334px;
     border: 10px solid #ffffff;
     border-color:transparent transparent  #ffffff transparent;
 
 }
 .index-third-content-text-line{
-    margin-top: 20px;
+    margin-top: 24px;
     width: 70px;
     height: 2px;
     background-color: #3dcd58;
 }
 .index-third-content-text-title{
-    margin-top: 29px;
+    margin-top: 39px;
     width: 370px;
+    font-family: Ping Fang SC;
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -584,6 +615,7 @@ img{
 }
 .index-third-content-text-explain{
     width: 406px;
+    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -596,6 +628,7 @@ img{
     width: 49px;
     height: 67px;
     opacity: 0.25;
+    font-family: Ping Fang SC;
     font-size: 48px;
     font-weight: normal;
     font-stretch: normal;
@@ -612,6 +645,7 @@ img{
     margin-top: 16px;
     width: 28px;
     height: 20px;
+    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -621,6 +655,7 @@ img{
     color: #333333;
 }
 .index-third-content-text li{
+    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -632,21 +667,22 @@ img{
 .index-third-content-function-ul li:before{
     display: inline-block;
     content: url("../images/F@2x.png");
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-right: 6px;
 }
 .index-third-content-value-ul li:before{
     display: inline-block;
     content: url("../images/V@2x.png");
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-right: 6px;
 }
 .index-third-content-link-text{
     float: left;
     height: 20px;
     margin-top: 12px;
+    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -671,6 +707,7 @@ img{
 }
 .index-third-content-like-sum{
     height: 20px;
+    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -698,6 +735,7 @@ img{
     padding-top: 11px;
     padding-bottom: 6px;
     height: 22px;
+    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -717,6 +755,7 @@ img{
 .index-third-dome samp{
     display: inline-block;
     position:relative;
+    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -765,6 +804,7 @@ img{
 }
 
 
+
 .demo-first{
     width: 100%;
     height: 503px;
@@ -800,6 +840,7 @@ img{
 }
 .demo-first-title{
     float: left;
+    opacity: 0;
 }
 .demo-first-title-top{
     top: 205px;
@@ -888,8 +929,6 @@ img{
     display: flex;
     align-items:center; /*实现垂直居中*/
 
-
-
 }
 
 .demo-content-text{
@@ -902,16 +941,17 @@ img{
     float: left;
 }
 .demo-uneven-content-banner{
-    margin-left: 512px;
+    margin-left: 1500px;
     z-index: 5;
 }
 .demo-even-content-text{
     margin-left: 552px;
+
 }
 .demo-even-content-banner{
-    margin-right: 512px;
-    float: right;
+    left: -1250px;
     right: 0;
+    position: absolute;
     z-index: 5;
 }
 .demo-content-banner{
@@ -1106,7 +1146,6 @@ img{
 }
 .demo-like-sum{
     height: 20px;
-    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -1151,15 +1190,7 @@ img{
     z-index: 972;
     position: absolute;
 }
-.demo-side-nav-line{
-    margin: 25px 0 23px 28px ;
-    float: left;
-    width: 2px;
-    height: 252px;
-    border-radius: 1.5px;
-    background-color: #e9e9e9;
-    text-align: center;
-}
+
 
 
 .demo-side-nav-list{
@@ -1174,11 +1205,38 @@ img{
     background-color: white;
 
 }
+.demo-side-nav-line{
+    margin: 17px 10px 10px 28px ;
+    float: left;
+    width: 2px;
+    height: 279px;
+    border-radius: 1.5px;
+    background-color: #e9e9e9;
+    text-align: center;
+}
+.demo-side-nav-circle-arrive{
+    background-color: #3dcd58;
+}
+.demo-side-nav-circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-left: -2px;
+}
+.demo-side-nav-circle1{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d9d9d9;
+    margin: 32px 0 32px -2px;
+}
 .demo-side-nav-list a{
-    width: 150px;
-    height: 32px;
-    text-align: left;
-    margin: 3px 0px 3px 0px;
+    display: inline-block;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -1187,27 +1245,17 @@ img{
     letter-spacing: normal;
     color: #666666;
 }
+
 .demo-side-nav-list ul{
     float: right;
-    margin: 14px 0px 10px 0px;
+    margin: 1px 5px 1px 5px;
+ }
+.demo-side-nav-list ul li{
+    padding: 9.5px 10px 9.5px 10px;
+    text-align: left;
 }
-.demo-side-nav-circle{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    background-color: #d9d9d9;
-    margin-left: -1.5px;
-}
-.demo-side-nav-circle1{
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    background-color: #d9d9d9;
-    margin: 29px 0 29px -1.5px;
+.demo-side-nav-list ul li:hover{
+    background-color: #e6f7ff;
 }
 
 
@@ -1250,6 +1298,7 @@ img{
     margin-top: 72px;
     float: right;
     margin-right: 140px;
+    opacity: 0;
 }
 
 .about-first-banner-left-img{
@@ -1267,6 +1316,9 @@ img{
     right: 51px;
     top:273px;
     position: absolute;
+}
+.about-first-title{
+    opacity: 0;
 }
 .about-first-title-top{
     top: 135px;
@@ -1325,7 +1377,7 @@ img{
     border-radius: 12px;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
-
+    opacity: 0;
 }
 .about-second-content{
     width: 626px;
@@ -1352,6 +1404,7 @@ img{
     border-radius: 12px;
     float: left;
     margin-bottom: 40px;
+    opacity: 0;
 }
 .about-second-banner-bg{
     display: inline-block;
@@ -1373,17 +1426,24 @@ img{
     width: 70px;
     height: 2px;
     background-color: #3dcd58;
+    opacity: 0;
+}
+.about-second-content-right ul{
+
 }
 .about-second-content-right li{
-
+    left: 530px;
+    opacity: 0;
+    position: absolute;
 }
 .about-second-content-right li:before{
     display: inline-block;
     content: "●";//'\25CF'
-    padding-right: 10px;
+padding-right: 10px;
     color: #3dcd58;
     font-size:4px;
     margin: 0px 8px 20px 0;
+
 }
 .about-second-content-right-title{
     margin-top: 36px;
@@ -1396,6 +1456,7 @@ img{
     letter-spacing: normal;
     text-align: left;
     color: #3dcd58;
+    opacity: 0;
 }
 .about-second-content-right-title2{
     margin-top: 8px;
@@ -1410,6 +1471,7 @@ img{
     text-align: left;
     margin-bottom: 47px;
     color: #333333;
+    opacity: 0;
 }
 
 
@@ -1418,6 +1480,9 @@ img{
 .about-third{
     height: 560px;
     background-color: #ffffff;
+}
+.about-third-title{
+    opacity: 0;
 }
 .about-third-title-top{
     padding-top: 80px;
@@ -1463,6 +1528,7 @@ img{
     text-align: center;
     vertical-align: middle;
     text-align: center;
+    opacity: 0;
 }
 .about-third-banner img{
     width: 112px;
@@ -1500,6 +1566,9 @@ img{
     text-align: center;
     margin: auto;
     background-color: #f8f9f9;
+}
+.about-fourth-title{
+    opacity: 0;
 }
 .about-fourth-title-top{
     padding-top: 70px;
@@ -1594,6 +1663,7 @@ img{
     color: #666666;
 }
 
+
 .foot{
     width: 100%;
     height: 132px;
@@ -1618,6 +1688,7 @@ img{
 .foot-content{
     width: 1024px;
     height: 132px;
+    font-family: Arial Rounded MT Pro;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1630,10 +1701,16 @@ img{
     height: 59px;
     padding-top: 37px;
     float: left;
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 27px;
     text-align: center;
     color: #ffffff;
+}
+.foot-logo-left{
+    font-family: Arial Rounded MT Pro;
+}
+.foot-logo-right{
+    font-family: Arial Rounded MT Pro;
 }
 .foot-logo-left{
     font-family: TRENDS;
