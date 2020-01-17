@@ -2,6 +2,7 @@
 .index-second{}
 .index-third{}
 html,body{
+    min-width:1024px;
     height: 100%;
     text-align: center;
 }
@@ -33,6 +34,7 @@ img{
 
 
 .head{
+    min-width:1024px;
     width: 100%;
     height: 70px;
     z-index: 999;
@@ -423,6 +425,7 @@ index-first-banner-title-top-active{
     -webkit-animation-direction:alternate;
     animation-delay: 0.5s;
 }
+
 @keyframes img-right{
     0% {
         left: 640px;
@@ -1604,6 +1607,7 @@ padding-right: 10px;
     width: 1024px;
     margin:46px auto;
     border-radius: 10px;
+    opacity: 0;
 
 }
 .about-fourth-banner-left{
@@ -1611,6 +1615,7 @@ padding-right: 10px;
     width: 576px;
 }
 .about-fourth-banner-right{
+    border-radius:  0px 10px 10px 0px;
     float: right;
     width: 448px;
     height: 460px;
@@ -1622,12 +1627,18 @@ padding-right: 10px;
     border-radius: 10px 0 0 10px;
     float: right;
 }
+#dituContent{
+    width:576px;
+    height:460px;
+    border:#ccc solid 1px;
+    border-radius:  10px 0px 0px 10px;
+}
 .about-fourth-banner-content{
     text-align: left;
 }
 .about-fourth-banner-content-addr{
     height: 25px;
-    margin: 72px 0 0 125px;
+    margin: 72px 0 0 109px;
     font-family: PingFangSC;
     font-size: 18px;
     font-weight: normal;
@@ -1638,7 +1649,7 @@ padding-right: 10px;
     color: #333333;
 }
 .about-fourth-banner-content-title{
-    margin-left: 125px;
+    margin-left: 109px;
     margin-top: 60px;
     height: 25px;
     font-family: PingFangSC;
@@ -1651,7 +1662,7 @@ padding-right: 10px;
     color: #333333;
 }
 .about-fourth-banner-content-text{
-    margin-left: 125px;
+    margin-left: 109px;
     height: 44px;
     font-family: PingFangSC;
     font-size: 14px;
