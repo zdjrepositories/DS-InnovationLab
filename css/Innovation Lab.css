@@ -102,7 +102,12 @@ img{
     float: left;
     margin-right: 30px;
 }
+.head-nav-demo-list-div{
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
 .head-nav-demo-list{
+
+    display: inline-block;
     width: 174px;
     height: 0px;
     top:70px;
@@ -116,6 +121,7 @@ img{
 
 }
 .head-nav-demo-list li{
+
     height: 37.5px;
     width: 174px;
     text-align: center;
@@ -128,6 +134,9 @@ img{
 .head-nav-demo-list a{
     padding-top: 8px;
     font-size: 14px;
+    float: left;
+    margin-left: 12px;
+    padding-left: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
