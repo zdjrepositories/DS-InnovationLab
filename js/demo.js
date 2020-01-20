@@ -1,8 +1,28 @@
 $(function () {
+    getLike();
         demomenu()
         demosidenav()
         demofirst()
+    function getLike(){
+     $.ajax({
+         url:'/showLike',
+         type:'get',
+         async:false,
+         data:{},
+         success:function (data) {
+            $(".demo-like-sum1").text(data.demo1);
+            $(".demo-like-sum2").text(data.demo2);
+                       $(".demo-like-sum3").text(data.demo3);
+                       $(".demo-like-sum4").text(data.demo4);
+                       $(".demo-like-sum5").text(data.demo5);
+                       $(".demo-like-sum6").text(data.demo6);
+                       $(".demo-like-sum7").text(data.demo7);
+                       $(".demo-like-sum8").text(data.demo8);
+            }
+     })
 
+
+    }
         function demofirst() {
             $('.demo-first-title').delay(100).animate({opacity: 1}, 500);
             $('.index-first-banner-title-bottom').delay(1200).animate({opacity: 1}, 1000);
@@ -38,53 +58,49 @@ $(function () {
             //     $('.demo-side-nav-line:nth-child(1)').addClass("demo-side-nav-circle-arrive")
             // }
             var eTop = $('.demo-content-banner-demo1').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('#demo-circle:nth-child(1):nth-child(2)').addClass("demo-side-nav-circle-arrive")
                 $('.demo-content-banner-demo1').delay(100).animate({marginLeft: '512px'}, 650);
               //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo3').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo3').delay(100).animate({marginLeft: '512px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo5').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo5').delay(100).animate({marginLeft: '512px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo7').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo7').delay(100).animate({marginLeft: '512px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo2').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo2').delay(100).animate({left: '-261px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo4').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo4').delay(100).animate({left: '-261px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo6').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo6').delay(100).animate({left: '-261px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
             var eTop = $('.demo-content-banner-demo8').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 200> eTop) {
+            if (dTop + wTop - 100> eTop) {
                 $('.demo-content-banner-demo8').delay(100).animate({left: '-261px'}, 650);
                 //.  $('#demo1').animate({opacity: 1}, 500);
             }
 
         })
-        if (t > 10) {
-            $('.head').addClass('head-active')
-        } else {
-            $('.head').removeClass('head-active')
-        }
+
 
         //侧边栏
         function demosidenav() {

@@ -1,13 +1,39 @@
 $(function () {
+        load();
         //myscroll()
         demomenu()
         changebanner1();
         changebanner2();
         changebanner3();
         indexfirst();
-    indexthird();
-    // thirdtitle();
+        indexthird();
 
+        // thirdtitle();
+        function load() {
+            var h=$('.index-first').height()+$('.index-first-banner-title').height();
+            $('.index-first-banner-title').animate({top:h});
+
+            var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
+            if (t > 10) {
+                // $('.head').addClass('head-active');
+                $('.head').animate({backgroundColor: "red"}, 500);
+            } else {
+                $('.head').removeClass('head-active')
+            }
+
+            var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
+            var wTop = $(window).height();//浏览器可视高度
+
+            var eTop = $('.index-second-title').offset().top;//容器距离整个页面顶部的距离
+            if (dTop + wTop - ($('.index-second-title').height() * 0.25) - 380 > eTop) {
+                $('.index-second-title').animate({opacity: 1}, 500);
+            }
+
+            eTop = $('.index-second-banner').offset().top;
+            if (dTop + wTop - ($('.index-second-banner').height() * 0.25) - 380 > eTop) {
+                $('.index-second-banner').animate({opacity: 1}, 500);
+            }
+        }
 
         function indexfirst() {
             $('.index-first-banner-bg').delay(100).animate({opacity: 1}, 500);
@@ -31,25 +57,14 @@ $(function () {
             // $('index-third-content-text-line').delay(350).animate({height: '2px'}, 350);
             // $('index-third-dome').delay(350).animate({opacity: '1'}, 500);
 
-
         }
-    // function thirdtitle() {
-    //     $(".index-third--title1").hover(function () {
-    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "334px"}, 100);
-    //     })
-    //     $(".index-third--title2").hover(function () {
-    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "501px"}, 100);
-    //     })
-    //     $(".index-third--title3").hover(function () {
-    //         $('.index-third-banner-arrows-icon').animate({marginLeft: "687px"}, 100);
-    //     })
-    // }
 
 
         window.addEventListener('scroll', function () {
-             var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
+            var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
             if (t > 10) {
-                $('.head').addClass('head-active')
+                // $('.head').addClass('head-active');
+                $('.head').animate({backgroundColor: "red"}, 500);
             } else {
                 $('.head').removeClass('head-active')
             }
@@ -58,17 +73,15 @@ $(function () {
             var wTop = $(window).height();//浏览器可视高度
 
             var eTop = $('.index-second-title').offset().top;//容器距离整个页面顶部的距离
-            console.log(eTop);
-            if (dTop + wTop - ($('.index-second-title').height() * 0.25)-380 > eTop) {
+            if (dTop + wTop - ($('.index-second-title').height() * 0.25) - 380 > eTop) {
                 $('.index-second-title').animate({opacity: 1}, 500);
             }
 
             eTop = $('.index-second-banner').offset().top;
-            if (dTop + wTop - ($('.index-second-banner').height() * 0.25)-380 > eTop) {
+            if (dTop + wTop - ($('.index-second-banner').height() * 0.25) - 380 > eTop) {
                 $('.index-second-banner').animate({opacity: 1}, 500);
             }
         })
-
 
 
         function demomenu() {//导航栏动画
@@ -83,6 +96,7 @@ $(function () {
                 $(".head-nav-demo-list").hide();
             })
         }
+
         function changebanner1() {
             $(".index-third--title1").click(function () {
                 $('.index-third-banner-arrows-icon').animate({marginLeft: "334px"}, 100);
@@ -92,6 +106,7 @@ $(function () {
 
             });
         }
+
         function changebanner2() {
             $(".index-third--title2").click(function () {
                 $('.index-third-banner-arrows-icon').animate({marginLeft: "501px"}, 100);
@@ -101,6 +116,7 @@ $(function () {
 
             });
         }
+
         function changebanner3() {
             $(".index-third--title3").click(function () {
                 $('.index-third-banner-arrows-icon').animate({marginLeft: "687px"}, 100);
@@ -110,8 +126,6 @@ $(function () {
 
             });
         }
-
-
 
 
     }
