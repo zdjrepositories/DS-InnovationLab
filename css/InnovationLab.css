@@ -7,7 +7,6 @@ html,body{
     text-align: center;
 }
 html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
-
     margin: 0px;
     padding: 0px;
     font-size: 14px;
@@ -32,22 +31,19 @@ img{
 }
 
 
-
 .head{
     min-width:1024px;
     width: 100%;
     height: 70px;
     z-index: 999;
-    background-color: #333333;
-    position: absolute;
-}
-.head-active{
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
-    background-color: #3dcd58;
     position: fixed;
     color: white;
     top: 0;
- }
+    transition:all 1s cubic-bezier(0, 0, 0.25, 1);
+}
+.head-active{
+    background-color: #3dcd58;
+}
 #head-this{
     color: #fff;
 }
@@ -102,8 +98,8 @@ img{
     float: left;
     margin-right: 30px;
 }
-.head-nav-demo-list-div{
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+.head-nav-demo-list{
+
 }
 .head-nav-demo-list{
 
@@ -113,7 +109,7 @@ img{
     top:70px;
     right: 135px;
     border-radius: 2px;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
     z-index: 999;
     position: absolute;
@@ -129,7 +125,8 @@ img{
     background-color: #ffffff;
 }
 .head-nav-demo-list li:hover{
-    background-color: #e6f7ff;
+    color: #3dcd58;
+    background-color: #f0fff0;
 }
 .head-nav-demo-list a{
     padding-top: 8px;
@@ -910,8 +907,6 @@ index-first-banner-title-top-active{
     bottom: 0px;
 }
 
-
-
 .demo-uneven{
     overflow:hidden;
     width: 100%;
@@ -946,8 +941,9 @@ index-first-banner-title-top-active{
     float: left;
 }
 .demo-uneven-content-banner{
-    margin-left: 1500px;
+    margin-left: 1000px;
     z-index: 5;
+    opacity: 0;
 }
 .demo-even-content-text{
     margin-left: 552px;
@@ -958,6 +954,7 @@ index-first-banner-title-top-active{
     right: 0;
     position: absolute;
     z-index: 5;
+    opacity: 0;
 }
 .demo-content-banner{
     position: absolute;
@@ -978,11 +975,18 @@ index-first-banner-title-top-active{
     height: 3px;
     background-color: #3dcd58;
 }
+.demo-uneven .demo-banner-line{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-line{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-banner-num{
     width: 61px;
     height: 84px;
     opacity: 0.25;
-    font-family: PingFangSC;
     font-size: 60px;
     font-weight: normal;
     font-stretch: normal;
@@ -997,7 +1001,6 @@ index-first-banner-title-top-active{
 }
 .demo-banner-title{
     width: 360px;
-    font-family: PingFangSC;
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
@@ -1008,9 +1011,16 @@ index-first-banner-title-top-active{
     margin-top:40px;
     position: relative;
 }
+.demo-uneven .demo-banner-title{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-title{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-banner-explain{
     width: 472px;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -1020,11 +1030,27 @@ index-first-banner-title-top-active{
     color: #333333;
     margin-top:8px;
 }
+.demo-uneven .demo-banner-explain{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-explain{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-banner-tags{
     width: 450px;
     margin-top:12px;
     text-align: left;
     position: relative;
+}
+.demo-uneven .demo-banner-tags{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-tags{
+    margin-left: 200px;
+    opacity: 0;
 }
 .demo-banner-tag{
     display: inline-block;
@@ -1033,7 +1059,6 @@ index-first-banner-title-top-active{
     border-radius: 2px;
     border: solid 1px #91d5ff;
     background-color: #e6f7ff;
-    font-family: PingFangSC;
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
@@ -1044,7 +1069,6 @@ index-first-banner-title-top-active{
 }
 .demo-banner-value{
     height: 22px;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -1054,10 +1078,19 @@ index-first-banner-title-top-active{
     color: #333333;
     margin-top:25px;
 }
+.demo-uneven .demo-banner-value{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-value{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-content-text li{
     width: 464px;
-    font-family: PingFangSC;
     font-size: 14px;
+    margin-left: -200px;
+    opacity: 0;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1065,12 +1098,21 @@ index-first-banner-title-top-active{
     letter-spacing: normal;
     color: #666666;
 }
+.demo-uneven .demo-content-text li{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-content-text li{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-banner-function-ul li:before{
     display: inline-block;
     content: url("../images/F@2x.png");
     margin-top: 6px;
     margin-bottom: 6px;
     margin-right: 4px;
+
 }
 .demo-banner-value-ul li:before{
     display: inline-block;
@@ -1092,7 +1134,14 @@ index-first-banner-title-top-active{
     margin-top:24px;
     text-align: left;
 }
-
+.demo-uneven .demo-banner-function{
+    margin-left: -200px;
+    opacity: 0;
+}
+.demo-even .demo-banner-function{
+    margin-left: 200px;
+    opacity: 0;
+}
 .demo-banner-link{
     width: 146px;
     height: 36px;
@@ -1101,6 +1150,7 @@ index-first-banner-title-top-active{
     text-align: center;
     float:left;
     margin-top: 24px;
+    opacity: 0;
 }
 .demo-banner-link-no{
     width: 116px;
@@ -1127,7 +1177,6 @@ index-first-banner-title-top-active{
 }
 .demo-banner-link-text-no{
     display: inline-block;
-    font-family: PingFangSC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -1141,6 +1190,7 @@ index-first-banner-title-top-active{
     margin:35px 0 0 25px;
     float:left;
     width: 100px;
+    opacity: 0;
 }
 .demo-like-icon{
     display: inline-block;
@@ -1151,6 +1201,7 @@ index-first-banner-title-top-active{
 }
 .demo-like-sum{
     height: 20px;
+    margin-left:5px;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -1204,6 +1255,7 @@ index-first-banner-title-top-active{
     bottom: 110px;
     width: 204px;
     height: 308px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
     z-index: 999;
     position: fixed;
@@ -1220,7 +1272,8 @@ index-first-banner-title-top-active{
     text-align: center;
 }
 .demo-side-nav-circle-arrive{
-    background-color: #3dcd58;
+
+    background-color: #f0fff0;
 }
 .demo-side-nav-circle{
     width: 7px;
@@ -1250,6 +1303,9 @@ index-first-banner-title-top-active{
     letter-spacing: normal;
     color: #666666;
 }
+.demo-side-nav-list a:hover{
+    color: #3dcd58;
+}
 
 .demo-side-nav-list ul{
     float: right;
@@ -1260,7 +1316,7 @@ index-first-banner-title-top-active{
     text-align: left;
 }
 .demo-side-nav-list ul li:hover{
-    background-color: #e6f7ff;
+    background-color: #f0fff0;
 }
 
 
@@ -1352,7 +1408,7 @@ index-first-banner-title-top-active{
     height: 42px;
     top: 253px;
     left:75px;
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 37px;
     font-weight: 300;
     font-stretch: normal;

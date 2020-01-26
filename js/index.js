@@ -10,16 +10,8 @@ $(function () {
 
         // thirdtitle();
         function load() {
-            var h=$('.index-first').height()+$('.index-first-banner-title').height();
-            $('.index-first-banner-title').animate({top:h});
-
-            var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
-            if (t > 10) {
-                // $('.head').addClass('head-active');
-                $('.head').animate({backgroundColor: "red"}, 500);
-            } else {
-                $('.head').removeClass('head-active')
-            }
+            var h = $('.index-first').height() + $('.index-first-banner-title').height();
+            $('.index-first-banner-title').animate({top: h});
 
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
             var wTop = $(window).height();//浏览器可视高度
@@ -59,14 +51,13 @@ $(function () {
 
         }
 
-
+        var x=0;
         window.addEventListener('scroll', function () {
             var t = $(document.documentElement).scrollTop() + $(document.body).scrollTop();   // 目前监听的是整个body的滚动条距离
-            if (t > 10) {
-                // $('.head').addClass('head-active');
-                $('.head').animate({backgroundColor: "red"}, 500);
-            } else {
-                $('.head').removeClass('head-active')
+            if (t > 20 ) {
+                $('.head').addClass("head-active");
+            } else if(t<20 ) {
+                $('.head').removeClass("head-active");
             }
 
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
@@ -130,74 +121,3 @@ $(function () {
 
     }
 )
-
-
-// function changebanner() {
-//     $(".index-third--title1").click(function () {
-//         $('.index-third-content1').toggle("left");
-//         $('.index-third-content2').animate({width: 1024}, 1000);
-//         $('.index-third-content3').animate({width: 0}, 1000);
-//
-//     });
-// }
-//
-
-
-// $(function () {
-// //     var p = $("body");
-// //     var offset = p.offset();
-// //     $(".index-first").css({
-// //         top: offset.top,
-// //         left: offset.left,
-// //         width: $(".index-first").width(),
-// //         height: $("body").height(),
-// //         backgroundColor: "white",
-// //         opacity: 1,
-// //         position: "absolute"
-// //     });
-// //     if (jQuery.isReady) {
-// //         $(".index-first").fadeIn(1000);
-// //     }
-// // })
-// $(document).ready(function () {
-//     $(".index-first-banner-title-top").fadeIn(500, function () {
-//         $(".index-first-banner-title-bottom").fadeIn(1200, function () {
-//             $(".index-first-down-img").fadeIn(1800);
-//         });
-//     });
-// });
-
-// $(function() {
-//     // 运行当前选中的特效
-//     function runEffect() {
-//         // 从中获取特效类型
-//         var selectedEffect = $( "#effectTypes" ).val();
-//
-//         // 大多数的特效类型默认不需要传递选项
-//         var options = {};
-//         // 一些特效带有必需的参数
-//         if ( selectedEffect === "scale" ) {
-//             options = { percent: 100 };
-//         } else if ( selectedEffect === "size" ) {
-//             options = { to: { width: 280, height: 185 } };
-//         }
-//
-//         // 运行特效
-//         $( "#effect" ).show( selectedEffect, options, 500, callback );
-//     };
-//
-//     // 回调函数
-//     function callback() {
-//         setTimeout(function() {
-//             $( "#effect:visible" ).removeAttr( "style" ).fadeOut();
-//         }, 1000 );
-//     };
-//
-//     // 根据选择菜单值设置特效
-//     $( "#button" ).click(function() {
-//         runEffect();
-//         return false;
-//     });
-//
-//     $( "#effect" ).hide();
-// });
