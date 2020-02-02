@@ -39,9 +39,10 @@ img{
     position: fixed;
     color: white;
     top: 0;
-    transition:all 1s cubic-bezier(0, 0, 0.25, 1);
+    transition:all 1s;
 }
 .head-active{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
     background-color: #3dcd58;
 }
 #head-this{
@@ -56,9 +57,10 @@ img{
     float: left;
     margin: 14px 0 0 60px;
 }
+
 .head-logo-left{
     font-size: 36px;
-    font-family: Arial Rounded MT Pro;
+    font-family: Arial Rounded MT Pro ExtraBold;
     color: #ffffff;
 }
 .head-logo-right{
@@ -78,8 +80,11 @@ img{
     padding-right: 60px;
     padding-top: 24px;
 }
-.head-nav ul li a{
+.head-nav>ul>li{
     height: 70px;
+}
+.head-nav>ul>li>a{
+    height: 35px;
     font-size: 16px;
     font-weight: 500;
     font-weight: normal;
@@ -89,8 +94,13 @@ img{
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+    transition:color 1s;
 }
-.head-nav.list li{
+.head-nav>ul>li>a:hover{
+    border-bottom-style:solid;
+}
+.head-nav.list>li{
+    height: 70px;
     margin-left: 40px;
     position: relative;
 }
@@ -99,34 +109,26 @@ img{
     margin-right: 30px;
 }
 .head-nav-demo-list{
-
-}
-.head-nav-demo-list{
-
     display: inline-block;
     width: 174px;
-    height: 0px;
+    height: 300px;
     top:70px;
     right: 135px;
     border-radius: 2px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
-    background-color: #ffffff;
+    background-color: #fff;
     z-index: 999;
     position: absolute;
     display: none;
-
 }
 .head-nav-demo-list li{
-
     height: 37.5px;
     width: 174px;
     text-align: center;
-
     background-color: #ffffff;
 }
 .head-nav-demo-list li:hover{
-    color: #3dcd58;
-    background-color: #f0fff0;
+
 }
 .head-nav-demo-list a{
     padding-top: 8px;
@@ -146,6 +148,10 @@ img{
 
 }
 
+
+
+
+
 index-first-banner-title-top-active{
     animation-timing-function:cubic-bezier(0,0,0.25,1);
     -webkit-animation-timing-function:cubic-bezier(0,0,0.25,1);
@@ -163,6 +169,8 @@ index-first-banner-title-top-active{
     }
 
 }
+
+
 
 .index-first{
     width: 100%;
@@ -203,7 +211,6 @@ index-first-banner-title-top-active{
     font-size: 40px;
     color: #3dcd58;
     opacity:0;
-
 }
 .index-first-banner-title p{
     font-family: Arial Rounded MT Pro;
@@ -299,12 +306,13 @@ index-first-banner-title-top-active{
     display: flex;
 }
 .index-first-down-img{
+    display: inline-block;
     width: 44px;
     height: 44px;
-    opacity:0;
+    opacity:1;
+    position: absolute;
+    display: flex;
 }
-
-
 
 .index-second{
     width: 1024px;
@@ -318,7 +326,7 @@ index-first-banner-title-top-active{
     padding-top: 80px;
     height: 55px;
     margin:0 auto;
-    font-family: Arial Rounded MT Pro Bold;
+    font-family: Arial Rounded MT Pro;
     font-size: 48px;
     font-weight: bold;
     font-stretch: normal;
@@ -331,7 +339,7 @@ index-first-banner-title-top-active{
 
 }
 .index-second-title-top{
-    font-family:  Arial Rounded MT Pro ExtraBold;
+    font-family:  Arial Rounded MT Pro;
 }
 .index-second-title-center{
     width: 47px;
@@ -458,6 +466,7 @@ index-first-banner-title-top-active{
     background-color: #3dcd58;
     text-align: center;
     margin: auto;
+    overflow:hidden;
 }
 .index-third-title{
     text-align: center;
@@ -497,14 +506,30 @@ index-first-banner-title-top-active{
     width: 1024px;
     height: 447px;
     text-align: center;
-    margin:19px auto ;
+    margin:19px auto 90px auto;
     padding-top: 0;
     border-radius: 10px;
-    background-color: #fff;
+}
+.index-third-banner-content{
+    width: 1024px;
+    height: 447px;
+}
+.index-third-banner>ul{
+    width: 3672px;
+    height: 447px;
+    transition:all 1s;
+    z-index: 5;
+    position: relative;
+}
+.index-third-banner>ul>li{
+    float: left;
+    width: 1024px;
+    height: 447px;
+    margin-right: 100px;
+
 }
 .index-third-banner-title{
     margin-top: 12px;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -517,7 +542,6 @@ index-first-banner-title-top-active{
 .index-third-banner-title-text{
     display: inline-block;
     height: 22px;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -527,62 +551,38 @@ index-first-banner-title-top-active{
     text-align: center;
     color: #ffffff;
     text-align: center;
-
 }
-.index-third--title1{
+.index-third-title1{
     margin: 0 0px 0 38px;
 }
-.index-third--title2{
+.index-third-title2{
     padding: 0 0px 0 59px;
     margin: 0 60px 0 3px;
 }
 .index-third-content-img{
     float: left;
     display: inline-block;
-    float: left;
-    text-align: left;
     width: 512px;
     height: 447px;
     border-radius: 10px 0 0 10px;
     z-index: 3;
 }
-.index-third-content3{
-    width: 0px;
-    height: 447px;
-    top:0px;
-    overflow:hidden;
-    z-index: 1;
-    position: absolute;
-}
-.index-third-content2{
-    width: 0px;
-    height: 447px;
-    top:0px;
-    overflow:hidden;
-    z-index: 2;
-    position: absolute;
-}
-.index-third-content1{
-    width: 1024px;
-    height: 447px;
-    top:0px;
-    overflow:hidden;
-    z-index: 3;
-    position: absolute;
-}
-
-
-.index-third-content-text{
+.index-third-content-right{
     float: right;
-    width: 406px;
-    margin-right: 66px;
+    width: 472px;
+    height: 447px;
     text-align: left;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    padding-left: 40px;
 
+}
+.index-third-content-text{
+    position: absolute;
 }
 .index-third-banner-arrows{
     width: 1024px;
     margin-top: 0px;
-
     height: 20px;
     text-align: center;
     position: relative;
@@ -602,35 +602,21 @@ index-first-banner-title-top-active{
     height: 2px;
     background-color: #3dcd58;
 }
-.index-third-content-text-title{
-    margin-top: 39px;
-    width: 370px;
-    font-family: Ping Fang SC;
-    font-size: 20px;
+.index-demo-banner-title{
+    width: 360px;
+    font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #333333;
-    position: relative;
+    color: #3dcd58;
+    margin-top:20px;
 }
-.index-third-content-text-explain{
-    width: 406px;
-    font-family: Ping Fang SC;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #333333;
-}
-.index-third-content-text-num{
+.index-demo-banner-num{
     width: 49px;
     height: 67px;
     opacity: 0.25;
-    font-family: Ping Fang SC;
     font-size: 48px;
     font-weight: normal;
     font-stretch: normal;
@@ -638,26 +624,59 @@ index-first-banner-title-top-active{
     line-height: normal;
     letter-spacing: normal;
     color: #999999;
-    left:382px;
-    bottom: -10px;
-    z-index:900;
+    margin-left:383px;
+    top:24px;
+    z-index:10;
     position:absolute;
 }
-.index-third-content-text-title2{
-    margin-top: 16px;
-    width: 28px;
-    height: 20px;
-    font-family: Ping Fang SC;
+.index-demo-banner-explain{
+    width: 406px;
+    font-family: PingFangSC;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-top: 8px;
+}
+
+.index-demo-banner-tags{
+    width: 450px;
+    margin-top:12px;
+    text-align: left;
+}
+
+.index-demo-banner-tag{
+    display: inline-block;
+    padding: 1px 8px 1px 8px;
+    margin-right: 12px;
+    border-radius: 2px;
+    border: solid 1px #91d5ff;
+    background-color: #e6f7ff;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #219bfd;
+}
+.index-demo-banner-value{
+    height: 22px;
+    font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: #333333;
+    margin-top:16px;
 }
-.index-third-content-text li{
-    font-family: Ping Fang SC;
+
+.index-demo-content-text li{
+    width: 464px;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -666,25 +685,40 @@ index-first-banner-title-top-active{
     letter-spacing: normal;
     color: #666666;
 }
-.index-third-content-function-ul li:before{
+
+.index-demo-banner-function-ul li:before{
     display: inline-block;
     content: url("../images/F@2x.png");
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+
 }
-.index-third-content-value-ul li:before{
+.index-demo-banner-value-ul li:before{
     display: inline-block;
     content: url("../images/V@2x.png");
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 4px;
 }
+.index-demo-banner-function{
+    width: 450px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-top:16px;
+    text-align: left;
+}
+
+
 .index-third-content-link-text{
     float: left;
     height: 20px;
-    margin-top: 12px;
-    font-family: Ping Fang SC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -692,31 +726,62 @@ index-first-banner-title-top-active{
     line-height: normal;
     letter-spacing: normal;
     color: #3dcd58;
+    z-index: 5;
+    margin-top:385px;
 }
 .index-third-content-like{
-    margin:14px 0 0 25px;
+    margin:auto 0 16px 25px;
     border-left:1px solid #d9d9d9;
     padding-left: 17px;
     float:left;
     width: 100px;
+    z-index:999;
+    position: relative;
+    top:385px
+}
+.index-third-content-like-img{
+    width: 17px;
+    height: 17px;
+    z-index: 3;
+    position: absolute;
+    transition:all 100ms;
+}
+.index-third-content-like-img-on{
+    width: 17px;
+    height: 17px;
+    z-index: 3;
+    position: absolute;
+    transition:all 100ms;
+    opacity: 0;
 }
 .index-third-content-like-icon{
     display: inline-block;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+
+}
+.index-third-content-like-icon-on{
+    margin-top: 2px;
     width: 16px;
     height: 16px;
     margin-right: 3px;
     float: left;
 }
+
 .index-third-content-like-sum{
     height: 20px;
-    font-family: Ping Fang SC;
+    margin-left: 20px;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #3dcd58;
+    color: #bfbfbf;
+    transition:all 100ms;
 }
 
 
@@ -737,7 +802,6 @@ index-first-banner-title-top-active{
     padding-top: 11px;
     padding-bottom: 6px;
     height: 22px;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -754,10 +818,9 @@ index-first-banner-title-top-active{
     height: 22px;
     text-align: center;
 }
-.index-third-dome samp{
+.index-third-dome>samp{
     display: inline-block;
     position:relative;
-    font-family: Ping Fang SC;
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -928,13 +991,11 @@ index-first-banner-title-top-active{
     margin: auto;
     display: flex;
     align-items:center; /*实现垂直居中*/
-
 }
 
 .demo-content-text{
     text-align: left;
     margin: auto;
-
 }
 
 .demo-uneven-content-text{
@@ -1192,6 +1253,25 @@ index-first-banner-title-top-active{
     width: 100px;
     opacity: 0;
 }
+.demo-like-img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+    z-index: 3;
+    position: absolute;
+}
+.demo-like-img-on{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+}
 .demo-like-icon{
     display: inline-block;
     width: 16px;
@@ -1201,14 +1281,14 @@ index-first-banner-title-top-active{
 }
 .demo-like-sum{
     height: 20px;
-    margin-left:5px;
+    margin-left:25px;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #3dcd58;
+    color: #bfbfbf;;
 }
 .demo-side-nav{
     display: inline-block;
@@ -1248,7 +1328,6 @@ index-first-banner-title-top-active{
 }
 
 
-
 .demo-side-nav-list{
     display:none;
     right: 40px;
@@ -1257,7 +1336,7 @@ index-first-banner-title-top-active{
     height: 308px;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    z-index: 999;
+    z-index: 100;
     position: fixed;
     background-color: white;
 
@@ -1266,14 +1345,28 @@ index-first-banner-title-top-active{
     margin: 17px 10px 10px 28px ;
     float: left;
     width: 2px;
-    height: 279px;
+    height: 265px;
     border-radius: 1.5px;
     background-color: #e9e9e9;
     text-align: center;
 }
 .demo-side-nav-circle-arrive{
-
     background-color: #f0fff0;
+}
+.demo-side-nav-anchor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #3dcd58;
+    position: absolute;
+    z-index: 99;
+    margin-left: -3px;
+    opacity: 0;
+
+
+    /*transition:all 500ms cubic-bezier(0, 0, 0.25, 1);*/
 }
 .demo-side-nav-circle{
     width: 7px;
@@ -1282,7 +1375,7 @@ index-first-banner-title-top-active{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     background-color: #d9d9d9;
-    margin-left: -2px;
+    margin-left: -2.5px;
 }
 .demo-side-nav-circle1{
     width: 7px;
@@ -1291,7 +1384,7 @@ index-first-banner-title-top-active{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     background-color: #d9d9d9;
-    margin: 32px 0 32px -2px;
+    margin: 31px 0 30px -2.5px;
 }
 .demo-side-nav-list a{
     display: inline-block;
@@ -1302,9 +1395,6 @@ index-first-banner-title-top-active{
     line-height: normal;
     letter-spacing: normal;
     color: #666666;
-}
-.demo-side-nav-list a:hover{
-    color: #3dcd58;
 }
 
 .demo-side-nav-list ul{
@@ -1360,6 +1450,7 @@ index-first-banner-title-top-active{
     float: right;
     margin-right: 140px;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 
 .about-first-banner-left-img{
@@ -1380,6 +1471,7 @@ index-first-banner-title-top-active{
 }
 .about-first-title{
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-first-title-top{
     top: 135px;
@@ -1439,6 +1531,7 @@ index-first-banner-title-top-active{
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content{
     width: 626px;
@@ -1466,6 +1559,7 @@ index-first-banner-title-top-active{
     float: left;
     margin-bottom: 40px;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-banner-bg{
     display: inline-block;
@@ -1488,6 +1582,7 @@ index-first-banner-title-top-active{
     height: 2px;
     background-color: #3dcd58;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content-right ul{
 
@@ -1518,6 +1613,7 @@ padding-right: 10px;
     text-align: left;
     color: #3dcd58;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content-right-title2{
     margin-top: 8px;
@@ -1533,6 +1629,7 @@ padding-right: 10px;
     margin-bottom: 47px;
     color: #333333;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 
 
@@ -1544,6 +1641,7 @@ padding-right: 10px;
 }
 .about-third-title{
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-third-title-top{
     padding-top: 80px;
@@ -1590,6 +1688,7 @@ padding-right: 10px;
     vertical-align: middle;
     text-align: center;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-third-banner img{
     width: 112px;
@@ -1632,6 +1731,7 @@ padding-right: 10px;
 }
 .about-fourth-title{
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-fourth-title-top{
     padding-top: 70px;
@@ -1667,6 +1767,7 @@ padding-right: 10px;
     margin:46px auto;
     border-radius: 10px;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     background-color: #ffffff;
 
 }
@@ -1719,9 +1820,6 @@ padding-right: 10px;
     margin-right: 12px;
     display: inline-block;
 }
-.about-fourth-banner-addr-content{
-
-}
 .about-fourth-banner-content{
     text-align: left;
 }
@@ -1749,7 +1847,6 @@ padding-right: 10px;
 
 
 
-
 .foot{
     width: 100%;
     height: 132px;
@@ -1774,7 +1871,6 @@ padding-right: 10px;
 .foot-content{
     width: 1024px;
     height: 132px;
-    font-family: Arial Rounded MT Pro;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1787,19 +1883,17 @@ padding-right: 10px;
     height: 59px;
     padding-top: 37px;
     float: left;
-    font-family: Arial Rounded MT Pro;
     font-size: 27px;
     text-align: center;
     color: #ffffff;
 }
 .foot-logo-left{
-    font-family: Arial Rounded MT Pro;
+    font-family: Arial Rounded MT Pro ExtraBold;
 }
 .foot-logo-right{
     font-family: Arial Rounded MT Pro;
 }
 .foot-logo-left{
-    font-family: TRENDS;
     font-size: 48.7px;
 }
 .foot-text {
@@ -1807,7 +1901,6 @@ padding-right: 10px;
     height: 72px;
     margin-top: 30px;
     opacity: 0.8;
-    font-family: PingFangSC;
     font-size: 14px;
     line-height: 1.71;
     text-align: right;

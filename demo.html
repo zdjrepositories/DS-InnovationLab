@@ -16,10 +16,8 @@
 <body>
 <header class="head">
     <div class="head-logo">
-        <a href="index.html">
-            <span class="head-logo-left">DS</span>
-            <samp class="head-logo-right">Innovation Lab</samp>
-        </a>
+        <a href="index.html"><span class="head-logo-left">DS</span>
+            <samp class="head-logo-right">Innovation Lab</samp></a>
     </div>
     <div class="head-nav">
         <ul class="head-list clearfix">
@@ -30,25 +28,22 @@
                 <a href="demo.html">
                     Demo中心
                 </a>
-
+                <ul class="head-nav-demo-list">
+                    <li><a href="demo.html#demo1">EA预诊断</a></li>
+                    <li><a href="demo.html#demo2">OCR产品铭牌识别</a></li>
+                    <li><a href="demo.html#demo3">数据异常诊断</a></li>
+                    <li><a href="demo.html#demo4">小样本故障诊断</a></li>
+                    <li><a href="demo.html#demo5">能耗模型校正</a></li>
+                    <li><a href="demo.html#demo6">开关点自动识别模型</a></li>
+                    <li><a href="demo.html#demo7">节能潜力预诊断模型</a></li>
+                    <li><a href="demo.html#demo8">智能排产模型</a></li>
+                </ul>
             </li>
             <li>
                 <a href="about.html">
                     关于我们
                 </a>
             </li>
-        </ul>
-    </div>
-    <div>
-        <ul class="head-nav-demo-list">
-            <li><a href="demo.html#demo1">EA预诊断</a></li>
-            <li><a href="demo.html#demo2">OCR产品铭牌识别</a></li>
-            <li><a href="demo.html#demo3">数据异常诊断</a></li>
-            <li><a href="demo.html#demo4">小样本故障诊断</a></li>
-            <li><a href="demo.html#demo5">能耗模型校正</a></li>
-            <li><a href="demo.html#demo6">开关点自动识别模型</a></li>
-            <li><a href="demo.html#demo7">节能潜力预诊断模型</a></li>
-            <li><a href="demo.html#demo8">智能排产模型</a></li>
         </ul>
     </div>
 </header>
@@ -75,6 +70,7 @@
         class="demo-side-nav-close" src="images/close.png"/></a>
 <div class="demo-side-nav-list">
     <div class="demo-side-nav-line" id="demo-circle">
+        <div class="demo-side-nav-anchor"></div>
         <div class="demo-side-nav-circle"></div>
         <div class="demo-side-nav-circle1"></div>
         <div class="demo-side-nav-circle1"></div>
@@ -133,7 +129,10 @@
                                 class="demo-banner-link-text">了解Demo详情</span></a>
                     </div>
                     <div class="demo-like">
-                        <a class="demo-like-icon1"><img class="demo-like-icon" src="images/like.png"/></a>
+                        <a href="javascript:;" class="demo-like-img-on demo-like-img1-on"><img class="demo-like-icon"
+                                                                                               src="images/like-on.png"/></a>
+                        <a href="javascript:;" onclick="like(1)" title="赞" class="demo-like-img demo-like-img1"><img
+                                class="demo-like-icon" src="images/like.png"/></a>
                         <span class="demo-like-sum1 demo-like-sum"></span>
                     </div>
                 </div>
@@ -182,7 +181,10 @@
                     <a href="demo2" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                 </div>
                 <div class="demo-like">
-                    <a class="demo-like-icon2"><img class="demo-like-icon" src="images/like.png"/></a>
+                    <a href="javascript:;" class="demo-like-img-on demo-like-img2-on"><img class="demo-like-icon"
+                                                                                           src="images/like-on.png"/></a>
+                    <a href="javascript:;" onclick="like(2)" title="赞" class="demo-like-img demo-like-img2"><img
+                            class="demo-like-icon" src="images/like.png"/></a>
                     <span class="demo-like-sum2 demo-like-sum"></span>
                 </div>
             </div>
@@ -199,9 +201,11 @@
                     <div class="demo-banner-explain">针对工业场景下数据及标签不足的问题，对相似场景下的知识进行迁移，为客户提供少量数据下的高效的故障诊断
                     </div>
                     <div class="demo-banner-tags">
-                        <div class="demo-banner-tag">知识图谱</div>
-                        <div class="demo-banner-tag">EA</div>
-                        <div class="demo-banner-tag">关联型报告</div>
+                        <div class="index-demo-banner-tag">故障诊断</div>
+                        <div class="index-demo-banner-tag">深度学习</div>
+                        <div class="index-demo-banner-tag">小样本学习</div>
+                        <div class="index-demo-banner-tag">工业</div>
+                        <div class="index-demo-banner-tag">MA</div>
                     </div>
                     <div class="demo-banner-value">价值</div>
                     <div class="demo-banner-value-content">
@@ -222,7 +226,10 @@
                         <a href="demo3" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                     </div>
                     <div class="demo-like">
-                        <a class="demo-like-icon3"><img class="demo-like-icon" src="images/like.png"/></a>
+                        <a href="javascript:;" class="demo-like-img-on demo-like-img3-on"><img class="demo-like-icon"
+                                                                                               src="images/like-on.png"/></a>
+                        <a href="javascript:;" onclick="like(3)" title="赞" class="demo-like-img demo-like-img3"><img
+                                class="demo-like-icon" src="images/like.png"/></a>
                         <span class="demo-like-sum3 demo-like-sum"></span>
                     </div>
                 </div>
@@ -270,7 +277,10 @@
                         <a href="demo4" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                     </div>
                     <div class="demo-like">
-                        <a class="demo-like-icon4"><img class="demo-like-icon" src="images/like.png"/></a>
+                        <a href="javascript:;" class="demo-like-img-on demo-like-img4-on"><img class="demo-like-icon"
+                                                                                               src="images/like-on.png"/></a>
+                        <a href="javascript:;" onclick="like(4)" title="赞" class="demo-like-img demo-like-img4"><img
+                                class="demo-like-icon" src="images/like.png"/></a>
                         <span class="demo-like-sum4 demo-like-sum"></span>
                     </div>
                 </div>
@@ -315,7 +325,10 @@
                         <a href="demo5" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                     </div>
                     <div class="demo-like">
-                        <a class="demo-like-icon5"><img class="demo-like-icon" src="images/like.png"/></a>
+                        <a href="javascript:;" class="demo-like-img-on demo-like-img5-on"><img class="demo-like-icon"
+                                                                                               src="images/like-on.png"/></a>
+                        <a href="javascript:;" onclick="like(5)" title="赞" class="demo-like-img demo-like-img5"><img
+                                class="demo-like-icon" src="images/like.png"/></a>
                         <span class="demo-like-sum5 demo-like-sum"></span>
                     </div>
                 </div>
@@ -365,7 +378,10 @@
                     <span class="demo-banner-link-text-no">即将开放体验</span>
                 </div>
                 <div class="demo-like">
-                    <a class="demo-like-icon6"><img class="demo-like-icon" src="images/like.png"/></a>
+                    <a href="javascript:;" class="demo-like-img-on demo-like-img6-on"><img class="demo-like-icon"
+                                                                                           src="images/like-on.png"/></a>
+                    <a href="javascript:;" onclick="like(6)" title="赞" class="demo-like-img demo-like-img6"><img
+                            class="demo-like-icon" src="images/like.png"/></a>
                     <span class="demo-like-sum6 demo-like-sum"></span>
                 </div>
             </div>
@@ -407,7 +423,10 @@
                         <a href="demo7" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                     </div>
                     <div class="demo-like">
-                        <a class="demo-like-icon7"><img class="demo-like-icon" src="images/like.png"/></a>
+                        <a href="javascript:;" class="demo-like-img-on demo-like-img7-on"><img class="demo-like-icon"
+                                                                                               src="images/like-on.png"/></a>
+                        <a href="javascript:;" onclick="like(7)" title="赞" class="demo-like-img demo-like-img7"><img
+                                class="demo-like-icon" src="images/like.png"/></a>
                         <span class="demo-like-sum7 demo-like-sum"></span>
                     </div>
                 </div>
@@ -455,7 +474,10 @@
                     <a href="demo8" target="_blank"><span class="demo-banner-link-text">了解Demo详情</span></a>
                 </div>
                 <div class="demo-like">
-                    <a class="demo-like-icon8"><img class="demo-like-icon" src="images/like.png"/></a>
+                    <a href="javascript:;" class="demo-like-img-on demo-like-img8-on"><img class="demo-like-icon"
+                                                                                           src="images/like-on.png"/></a>
+                    <a href="javascript:;" onclick="like(8)" title="赞" class="demo-like-img demo-like-img8"><img
+                            class="demo-like-icon" src="images/like.png"/></a>
                     <span class="demo-like-sum8 demo-like-sum"></span>
                 </div>
             </div>
@@ -465,7 +487,6 @@
 </div>
 
 </div>
-
 
 <footer class="foot">
     <img class="foot-left-img" src="images/foot_bg_l@2x.png"/>
@@ -477,15 +498,15 @@
         </div>
         <div class="foot-text">
             <p>网站更新时间：2019年11月</p>
-            <p>访问人次：178289人次</p>
+            <p>访问人次：&nbsp;<span id="visit"></span>&nbsp;人次</p>
             <p>©版权所有 施耐德电气（中国）有限公司 京ICP备05053940号-5</p>
         </div>
     </div>
 </footer>
 </body>
+
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/demo.js"></script>
-<script type="text/javascript" src="js/nav.js"></script>
 
 </html>
