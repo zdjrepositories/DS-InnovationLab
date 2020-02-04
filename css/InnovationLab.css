@@ -405,15 +405,21 @@ index-first-banner-title-top-active{
     z-index: 3;
     position: absolute;
     animation-name: img-right;
-    animation:img-left 1s infinite;
+    animation:img-left 2s infinite;
     animation-direction:alternate;
-    -webkit-animation:img-left 1s infinite;
+    -webkit-animation:img-left 2s infinite;
     -webkit-animation-direction:alternate;
 }
 @keyframes img-left{
     0% {
-        top: 260px;
+        top: 255px;
     }
+    5%{
+        top:255px;
+    }
+    95%{
+         top:280px;
+     }
     100%{
         top: 280px;
     }
@@ -427,18 +433,26 @@ index-first-banner-title-top-active{
     z-index: 3;
     position: absolute;
     animation-name: img-right;
-    animation:img-right 1s infinite;
+    animation:img-right 2s infinite;
     animation-direction:alternate;
     animation-timing-function: linear;
-    -webkit-animation:img-right 1s infinite;
+    -webkit-animation:img-right 2s infinite;
     -webkit-animation-direction:alternate;
     animation-delay: 0.5s;
 }
 
 @keyframes img-right{
     0% {
-        left: 640px;
+        left: 635px;
         top: 280px;
+    }
+    5%{
+        left: 635px;
+        top:280px
+    }
+    95%{
+        left: 660px;;
+        top: 290px;
     }
     100%{
         left: 660px;;

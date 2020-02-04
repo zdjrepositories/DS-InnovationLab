@@ -5,7 +5,6 @@ $(function () {
         changebanner1();
         changebanner2();
         changebanner3();
-        //
         getLike();
         getVisit()
 
@@ -95,13 +94,6 @@ $(function () {
                 $(".index-third-banner>ul").css("margin-left", "-2248px");
             });
         }
-
-        $(".index-third-content-like-img").click(function (){
-            $('.index-third-content-like-img').css("opacity", "0");
-            $('.index-third-content-like-img-on').css("opacity", "1");
-            $('.index-third-content-like-sum').css("color", "#3dcd58");
-        });
-
 
     }
 );

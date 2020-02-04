@@ -1,8 +1,9 @@
 function index_like(id) {
-    $(".index-third-content-like-img" + id).css("opacity", "0");
+    console.log(id);
+   $(".index-third-content-like-img" + id).css("opacity", "0");
     $(".index-third-content-like-img-on" + id).css("opacity", "1");
-    $(".demo-like-sum"+id).css("color", "#3dcd58");
-    var sum = parseInt($(".demo-like-sum").text());
+   $(".demo-like-sum" + id).css("color", "#3dcd58");
+    var sum = parseInt($(".demo-like-sum"+ id).text());
     $(".demo-like-sum" + id).text(sum + 1);
     $(".index-third-content-like-img" + id).attr('onclick', '');
     giveLike(id)
@@ -64,20 +65,21 @@ function head(page) {
     var head_hight = $(document.documentElement).scrollTop() + $(document.body).scrollTop();  // 目前监听的是整个body的滚动条距离
     if (head_hight > 20) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
-        $('.head-list>li:nth-child('+page+') a').css("color", "#fff")
+        $('.head-list>li:nth-child(' + page + ') a').css("color", "#fff")
         $('.head').addClass("head-active");
-    } else if (head_hight< 20) {
+    } else if (head_hight < 20) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
-        $('.head-list>li:nth-child('+page+') a').css("color", "#3dcd58")
+        $('.head-list>li:nth-child(' + page + ') a').css("color", "#3dcd58")
         $('.head').removeClass("head-active");
     }
 }
+
 function demo_menu() {//导航栏动画
     $(".head-nav-demo").hover(function () {
         $(".head-nav-demo-list").slideDown(400);
     }, function () {
         $(".head-nav-demo-list").slideUp(400);
-    }) ;
+    });
     $(".head-nav-demo-list li").hover(function () {
         $(".head-nav-demo-list>li:hover").css("background-color", "#f0fff0");
         $(".head-nav-demo-list>li:hover>a").css("color", "#3dcd58");
