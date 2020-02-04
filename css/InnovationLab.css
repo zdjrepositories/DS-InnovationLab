@@ -336,6 +336,7 @@ index-first-banner-title-top-active{
     text-align: center;
     color: #333333;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 
 }
 .index-second-title-top{
@@ -363,6 +364,7 @@ index-first-banner-title-top-active{
 .index-second-banner{
     text-align: center;
     opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-second-banner-left{
     width: 50%;
@@ -470,6 +472,8 @@ index-first-banner-title-top-active{
 }
 .index-third-title{
     text-align: center;
+    opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-third-title-top{
     padding-top: 30px;
@@ -583,7 +587,7 @@ index-first-banner-title-top-active{
 .index-third-banner-arrows{
     width: 1024px;
     margin-top: 0px;
-    height: 20px;
+    height: 16px;
     text-align: center;
     position: relative;
     margin: auto;
@@ -592,7 +596,7 @@ index-first-banner-title-top-active{
     width: 0px;
     height: 0px;
     margin-left: 334px;
-    border: 10px solid #ffffff;
+    border: 8px solid #ffffff;
     border-color:transparent transparent  #ffffff transparent;
 
 }
@@ -674,7 +678,10 @@ index-first-banner-title-top-active{
     color: #333333;
     margin-top:16px;
 }
-
+.index-third-banner ul {
+    opacity: 0;
+    transition: all 500ms cubic-bezier(0, 0, 0.25, 1);
+}
 .index-demo-content-text li{
     width: 464px;
     font-size: 14px;
@@ -785,7 +792,10 @@ index-first-banner-title-top-active{
 }
 
 
-
+.index-third-banner-tab{
+    opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
+}
 .index-third-dome{
     width: 301px;
     height: 44px;
@@ -794,6 +804,8 @@ index-first-banner-title-top-active{
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
     margin:30px auto;
+    opacity: 0;
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-third-dome-text{
     width: 301px;
