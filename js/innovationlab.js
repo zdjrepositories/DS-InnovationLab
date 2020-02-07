@@ -21,7 +21,7 @@ function like(id) {
 
 function giveLike(id) {
     $.ajax({
-        url: 'http://118.31.229.62:8004/innovationlab/giveLike?id=' + id,
+        url: 'http://118.31.229.62:8005/innovationlab/giveLike?id=' + id,
         type: 'get',
         async: false,
         data: {},
@@ -32,7 +32,7 @@ function giveLike(id) {
 
 function getLike() {
     $.ajax({
-        url: 'http://118.31.229.62:8004/innovationlab/showLike',
+        url: 'http://118.31.229.62:8005/innovationlab/showLike',
         type: 'get',
         async: false,
         data: {},
@@ -48,14 +48,17 @@ function getLike() {
         }
     })
 }
-
 function getVisit() {
     $.ajax({
-        url: 'http://118.31.229.62:8004/innovationlab/giveVisit',
+        xhrFields: {
+            withCredentials: true
+        },
+
+        url: 'http://118.31.229.62:8005/innovationlab/giveVisit',
         type: 'get',
         async: false,
         success: function (data) {
-            console.log(data);
+            visit=data;
             $("#visit").text(data);
         }
     })
@@ -63,13 +66,14 @@ function getVisit() {
 
 function head(page) {
     var head_hight = $(document.documentElement).scrollTop() + $(document.body).scrollTop();  // 目前监听的是整个body的滚动条距离
+    $('.head-list>li:nth-child(' + page + ')>a').css("font-weight", "520");
     if (head_hight > 20) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
-        $('.head-list>li:nth-child(' + page + ') a').css("color", "#fff")
+        $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");
         $('.head').addClass("head-active");
     } else if (head_hight < 20) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
-        $('.head-list>li:nth-child(' + page + ') a').css("color", "#3dcd58")
+        $('.head-list>li:nth-child(' + page + ')>a').css("color", "#3dcd58");
         $('.head').removeClass("head-active");
     }
 }

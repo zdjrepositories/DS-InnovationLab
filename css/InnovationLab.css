@@ -39,7 +39,8 @@ img{
     position: fixed;
     color: white;
     top: 0;
-    transition:all 1s;
+    -webkit-transition:all 1s;
+    transition:all 500ms;
 }
 .head-active{
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
@@ -81,26 +82,26 @@ img{
     padding-top: 24px;
 }
 .head-nav>ul>li{
-    height: 70px;
+    height: 40px;
 }
 .head-nav>ul>li>a{
     height: 35px;
     font-size: 16px;
-    font-weight: 500;
-    font-weight: normal;
+    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+    -webkit-transition:color 100ms;
     transition:color 1s;
 }
 .head-nav>ul>li>a:hover{
     border-bottom-style:solid;
 }
 .head-nav.list>li{
-    height: 70px;
+    height: 10px;
     margin-left: 40px;
     position: relative;
 }
@@ -336,6 +337,7 @@ index-first-banner-title-top-active{
     text-align: center;
     color: #333333;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 
 }
@@ -364,6 +366,7 @@ index-first-banner-title-top-active{
 .index-second-banner{
     text-align: center;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-second-banner-left{
@@ -405,9 +408,9 @@ index-first-banner-title-top-active{
     z-index: 3;
     position: absolute;
     animation-name: img-right;
-    animation:img-left 2s infinite;
+    animation:img-left 1300ms infinite;
     animation-direction:alternate;
-    -webkit-animation:img-left 2s infinite;
+    -webkit-animation:img-left 1300ms infinite;
     -webkit-animation-direction:alternate;
 }
 @keyframes img-left{
@@ -433,10 +436,10 @@ index-first-banner-title-top-active{
     z-index: 3;
     position: absolute;
     animation-name: img-right;
-    animation:img-right 2s infinite;
+    animation:img-right 1300ms infinite;
     animation-direction:alternate;
     animation-timing-function: linear;
-    -webkit-animation:img-right 2s infinite;
+    -webkit-animation:img-right 1300ms infinite;
     -webkit-animation-direction:alternate;
     animation-delay: 0.5s;
 }
@@ -452,22 +455,26 @@ index-first-banner-title-top-active{
     }
     95%{
         left: 660px;;
-        top: 290px;
+        top: 295px;
     }
     100%{
         left: 660px;;
-        top: 290px;
+        top: 295px;
     }
 }
 .index-second-banner-content-text{
+
     display: inline-block;
     margin-top: 20px;
 }
 .index-second-banner img{
 
  }
+.en{
+    font-family: Arial Rounded MT Pro;
+}
 .index-second-banner samp{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -487,6 +494,7 @@ index-first-banner-title-top-active{
 .index-third-title{
     text-align: center;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-third-title-top{
@@ -535,6 +543,7 @@ index-first-banner-title-top-active{
 .index-third-banner>ul{
     width: 3672px;
     height: 447px;
+    -webkit-transition:all 1s;
     transition:all 1s;
     z-index: 5;
     position: relative;
@@ -571,10 +580,9 @@ index-first-banner-title-top-active{
     text-align: center;
 }
 .index-third-title1{
-    margin: 0 0px 0 38px;
+    margin: 0 59px 0 38px;
 }
 .index-third-title2{
-    padding: 0 0px 0 59px;
     margin: 0 60px 0 3px;
 }
 .index-third-content-img{
@@ -596,6 +604,8 @@ index-first-banner-title-top-active{
 
 }
 .index-third-content-text{
+    top: 50%;
+    transform: translateY(-54%);/* 元素往下位移自身高度50%的距离 */
     position: absolute;
 }
 .index-third-banner-arrows{
@@ -622,7 +632,7 @@ index-first-banner-title-top-active{
 }
 .index-demo-banner-title{
     width: 360px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -683,7 +693,7 @@ index-first-banner-title-top-active{
 }
 .index-demo-banner-value{
     height: 22px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -694,7 +704,8 @@ index-first-banner-title-top-active{
 }
 .index-third-banner ul {
     opacity: 0;
-    transition: all 500ms cubic-bezier(0, 0, 0.25, 1);
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
+    transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-demo-content-text li{
     width: 464px;
@@ -713,8 +724,10 @@ index-first-banner-title-top-active{
     margin-top: 3px;
     margin-bottom: 3px;
     margin-right: 4px;
-
 }
+.index-demo-banner-function-ul li{
+     color: #666;
+ }
 .index-demo-banner-value-ul li:before{
     display: inline-block;
     content: url("../images/V@2x.png");
@@ -722,10 +735,13 @@ index-first-banner-title-top-active{
     margin-bottom: 3px;
     margin-right: 4px;
 }
+.index-demo-banner-value-ul li{
+    color: #666;
+}
 .index-demo-banner-function{
     width: 450px;
     height: 22px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -750,6 +766,9 @@ index-first-banner-title-top-active{
     z-index: 5;
     margin-top:385px;
 }
+.index-third-content-link-text:hover{
+    color: #64d981;
+}
 .index-third-content-like{
     margin:auto 0 16px 25px;
     border-left:1px solid #d9d9d9;
@@ -765,6 +784,7 @@ index-first-banner-title-top-active{
     height: 17px;
     z-index: 3;
     position: absolute;
+    -webkit-transition:all 100ms;
     transition:all 100ms;
 }
 .index-third-content-like-img-on{
@@ -772,6 +792,7 @@ index-first-banner-title-top-active{
     height: 17px;
     z-index: 3;
     position: absolute;
+    -webkit-transition:all 100ms;
     transition:all 100ms;
     opacity: 0;
 }
@@ -802,12 +823,14 @@ index-first-banner-title-top-active{
     line-height: normal;
     letter-spacing: normal;
     color: #bfbfbf;
+    -webkit-transition:all 100ms;
     transition:all 100ms;
 }
 
 
 .index-third-banner-tab{
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-third-dome{
@@ -819,16 +842,16 @@ index-first-banner-title-top-active{
     text-align: center;
     margin:30px auto;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .index-third-dome-text{
     width: 301px;
-    height: 44px;
     display: inline-block;
     padding-top: 11px;
     padding-bottom: 6px;
-    height: 22px;
-    font-size: 16px;
+    height: 36px;
+    font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -1083,7 +1106,7 @@ index-first-banner-title-top-active{
     color: #999999;
     left:411px;
     bottom: -10px;
-    z-index:900;
+    z-index:10;
     position:absolute;
 }
 .demo-banner-title{
@@ -1476,6 +1499,7 @@ index-first-banner-title-top-active{
     float: right;
     margin-right: 140px;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 
@@ -1497,6 +1521,7 @@ index-first-banner-title-top-active{
 }
 .about-first-title{
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-first-title-top{
@@ -1557,6 +1582,7 @@ index-first-banner-title-top-active{
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content{
@@ -1585,6 +1611,7 @@ index-first-banner-title-top-active{
     float: left;
     margin-bottom: 40px;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-banner-bg{
@@ -1608,6 +1635,7 @@ index-first-banner-title-top-active{
     height: 2px;
     background-color: #3dcd58;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content-right ul{
@@ -1639,6 +1667,7 @@ padding-right: 10px;
     text-align: left;
     color: #3dcd58;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-second-content-right-title2{
@@ -1655,6 +1684,7 @@ padding-right: 10px;
     margin-bottom: 47px;
     color: #333333;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 
@@ -1667,6 +1697,7 @@ padding-right: 10px;
 }
 .about-third-title{
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-third-title-top{
@@ -1714,6 +1745,7 @@ padding-right: 10px;
     vertical-align: middle;
     text-align: center;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-third-banner img{
@@ -1757,6 +1789,7 @@ padding-right: 10px;
 }
 .about-fourth-title{
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
 }
 .about-fourth-title-top{
@@ -1793,6 +1826,7 @@ padding-right: 10px;
     margin:46px auto;
     border-radius: 10px;
     opacity: 0;
+    -webkit-transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     transition:all 500ms cubic-bezier(0, 0, 0.25, 1);
     background-color: #ffffff;
 

@@ -1,73 +1,22 @@
 $(function () {
+        demo_menu();
+        demofirst();
+        load();
+        demosidenav();
         getLike();
         getVisit();
-        load();
-        demo_menu();
-        demosidenav();
-        demofirst();
 
         function load() {
             head(2);
-
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
             var wTop = $(window).height();//浏览器可视高度
             var demo = $("#demo1").offset().top;//浏览器可视高度
             var eTop = $('.demo-content-banner-demo1').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(1);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(1);
-                }
+            var t;
+            for( t=1;t<(dTop-50)/700+1;t++){
+                demo_load(t);
             }
-             eTop = $('.demo-content-banner-demo2').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(2);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(2);
-                }
-            }
-            eTop = $('.demo-content-banner-demo3').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(3);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(3);
-                }
-            }
-            eTop = $('.demo-content-banner-demo4').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(4);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(4);
-                }
-            }
-           eTop = $('.demo-content-banner-demo5').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(5);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(5);
-                }
-            }
-            eTop = $('.demo-content-banner-demo6').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(6);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(6);
-                }
-            }
-            eTop = $('.demo-content-banner-demo7').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(7);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(7);
-                }
-            }
-            eTop = $('.demo-content-banner-demo8').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - 100 > eTop) {
-                demo_load(8);
-                if (dTop + wTop - 100 < eTop + 700) {
-                    nav_anchor(8);
-                }
-            }
+            nav_anchor(t-1);
         }
 
         //侧边栏
