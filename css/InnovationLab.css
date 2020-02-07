@@ -864,7 +864,7 @@ index-first-banner-title-top-active{
     display: inline-block;
     margin-bottom: -5px;
     width: 18px;
-    height: 22px;
+    height: 20px;
     text-align: center;
 }
 .index-third-dome>samp{
@@ -1274,8 +1274,6 @@ index-first-banner-title-top-active{
 }
 .demo-banner-link-text{
     display: inline-block;
-    height: 20px;
-    font-family: PingFangSC;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -1284,6 +1282,9 @@ index-first-banner-title-top-active{
     letter-spacing: normal;
     color: #ffffff;
     margin-top:8px;
+}
+.demo-banner-link-text:hover{
+    color: #64d981;
 }
 .demo-banner-link-text-no{
     display: inline-block;
@@ -1295,6 +1296,14 @@ index-first-banner-title-top-active{
     letter-spacing: normal;
     color: #c0c0c0;
     margin-top:8px;
+}
+.dome-text-arrows{
+    display: inline-block;
+    margin-bottom: -5px;
+    padding-left: 8px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
 }
 .demo-like{
     margin:35px 0 0 25px;
@@ -1910,7 +1919,7 @@ padding-right: 10px;
 .foot{
     width: 100%;
     height: 132px;
-    position: relative;
+    position: absolute;
     background-color: #333333;
 }
 .foot-left-img{
@@ -1941,11 +1950,13 @@ padding-right: 10px;
 }
 .foot-logo{
     height: 59px;
-    padding-top: 37px;
+    top: 50%;
+    transform: translateY(-50%);/* 元素往下位移自身高度50%的距离 */
     float: left;
     font-size: 27px;
     text-align: center;
     color: #ffffff;
+    position: absolute;
 }
 .foot-logo-left{
     font-family: Arial Rounded MT Pro ExtraBold;
