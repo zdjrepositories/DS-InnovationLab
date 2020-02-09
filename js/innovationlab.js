@@ -1,17 +1,18 @@
 function index_like(id) {
-    console.log(id);
    $(".index-third-content-like-img" + id).css("opacity", "0");
     $(".index-third-content-like-img-on" + id).css("opacity", "1");
    $(".demo-like-sum" + id).css("color", "#3dcd58");
     var sum = parseInt($(".demo-like-sum"+ id).text());
     $(".demo-like-sum" + id).text(sum + 1);
     $(".index-third-content-like-img" + id).attr('onclick', '');
-    giveLike(id)
+    $(".index-third-content-like-img-on" + id).addClass('like');
+    giveLike(id);
 }
 
 function like(id) {
     $(".demo-like-img" + id).css("opacity", "0");
     $(".demo-like-img" + id + "-on").css("opacity", "1");
+    $(".demo-like-img" + id + "-on").addClass('like-on');
     $(".demo-like-sum" + id).css("color", "#3dcd58");
     var sum = parseInt($(".demo-like-sum" + id).text());
     $(".demo-like-sum" + id).text(sum + 1);
@@ -54,7 +55,7 @@ function getVisit() {
             withCredentials: true
         },
 
-        url: 'http://118.31.229.62:8005/innovationlab/giveVisit',
+        url: 'http://127.0.0.1:8005/innovationlab/giveVisit',
         type: 'get',
         async: false,
         success: function (data) {
@@ -67,11 +68,11 @@ function getVisit() {
 function head(page) {
     var head_hight = $(document.documentElement).scrollTop() + $(document.body).scrollTop();  // 目前监听的是整个body的滚动条距离
     $('.head-list>li:nth-child(' + page + ')>a').css("font-weight", "520");
-    if (head_hight > 20) {
+    if (head_hight > 30) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");
         $('.head').addClass("head-active");
-    } else if (head_hight < 20) {
+    } else if (head_hight < 30) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#3dcd58");
         $('.head').removeClass("head-active");
@@ -92,3 +93,7 @@ function demo_menu() {//导航栏动画
         $(".head-nav-demo-list>li>a").css("color", "#666");
     });
 }
+$(".head-nav-demo-list>li").click(function () {
+}, function () {
+    $(".head-nav-demo-list").slideUp(200);
+}, true)

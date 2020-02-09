@@ -8,6 +8,7 @@ $(function () {
 
         function load() {
             head(2);
+
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
             var wTop = $(window).height();//浏览器可视高度
             var demo = $("#demo1").offset().top;//浏览器可视高度
@@ -35,11 +36,11 @@ $(function () {
         })
 
         function nav_anchor(demo) {
-            var top = (demo - 1) * 38;
+            var top = (demo - 1) * 37.2;
             $(".demo-side-nav-anchor").css("opacity", "1");
             $(".demo-side-nav-anchor").css("margin-top", top + "px");
-            $(".demo-side-nav-list>ul>li>a").css("color", "#666666");
-            $(".demo-side-nav-list>ul>li:nth-child(" + demo + ")>a").css("color", "#3dcd58");
+            $(".demo-side-nav-list ul>li>a").css("color", "#666666");
+            $(".demo-side-nav-list ul>li:nth-child(" + demo + ")>a").css("color", "#3dcd58");
             console.log()
         }
 
@@ -164,6 +165,7 @@ $(function () {
 
         function demofirst() {
             $('.demo-first-title').delay(300).animate({opacity: 1}, 3000, 'easeOutCirc');
+            setTimeout(function () { demo_load(1); }, 800);
         }
 
     }
