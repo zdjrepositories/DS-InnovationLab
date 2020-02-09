@@ -368,13 +368,14 @@ img{
 .index-second-banner-left-content{
     float: right;
     padding-right: 122px;
-
+    width: 335px;
+    height: 275px;
 }
 .index-second-banner-right-content{
     float: left;
     padding-left: 122px;
-    align: center;
-
+    width: 335px;
+    height: 275px;
 }
 .index-second-banner-content-img{
     display: inline-block;
@@ -389,7 +390,7 @@ img{
     width: 186px;
     height: 198px;
     top:260px;
-    left: 150px;
+    left: 130px;
     z-index: 3;
     position: absolute;
     animation-name: img-right;
@@ -397,6 +398,9 @@ img{
     animation-direction:alternate;
     -webkit-animation:img-left 1000ms infinite;
     -webkit-animation-direction:alternate;
+    opacity: 0;
+    -webkit-transition:all  cubic-bezier(0, 0, 0.25, 1);
+    transition:all  cubic-bezier(0, 0, 0.25, 1);
 }
 @keyframes img-left{
     0% {
@@ -416,7 +420,7 @@ img{
     display: inline-block;
     width: 186px;
     height: 190px;
-    left: 640px;
+    left: 665px;
     top:280px;
     z-index: 3;
     position: absolute;
@@ -427,24 +431,27 @@ img{
     -webkit-animation:img-right 1000ms infinite;
     -webkit-animation-direction:alternate;
     animation-delay: 0.5s;
+    opacity: 0;
+    -webkit-transition:all  cubic-bezier(0, 0, 0.25, 1);
+    transition:all  cubic-bezier(0, 0, 0.25, 1);
 }
 
 @keyframes img-right{
     0% {
-        left: 635px;
+        left: 690px;
         top: 281px;
     }
     5%{
-        left: 635px;
+        left: 690px;
         top:281px
     }
     95%{
-        left: 660px;;
-        top: 294.5px;
+        left: 720px;;
+        top: 297px;
     }
     100%{
-        left: 660px;;
-        top: 294.5px;
+        left: 720px;;
+        top: 297px;
     }
 }
 .index-second-banner-content-text{
@@ -1357,7 +1364,7 @@ img{
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #bfbfbf;;
+    color: #bfbfbf;
 }
 .demo-side-nav{
     display: inline-block;
@@ -1408,45 +1415,29 @@ img{
     z-index: 100;
     position: fixed;
     background-color: white;
-
 }
-.demo-side-nav-line{
-    margin: 17px 10px 10px 28px ;
-    float: left;
-    width: 2px;
-    height: 265px;
-    border-radius: 1.5px;
-    background-color: #e9e9e9;
+.demo-side-nav-table{
+    width: 192px;
+    height: 284px;
+    top:12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    position: absolute;
+}
+.demo-side-nav-table tr{
+}
+.demo-side-nav-table td:first-child {
+    width: 20px;
     text-align: center;
 }
-.demo-side-nav-circle-arrive{
-    background-color: #f0fff0;
+.demo-side-nav-table td:last-child{
+    width: 150px;
+    text-align: left;
 }
-.demo-side-nav-anchor{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    background-color: #3dcd58;
-    position: absolute;
-    z-index: 99;
-    margin-left: -3px;
-    opacity: 0;
-}
-.demo-side-nav-circle{
-    width: 7px;
-    height: 7px;
-    margin-top: -1px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    background-color: #d9d9d9;
-    margin-left: -2.5px;
-    margin-bottom: 32px;
-}
-
-.demo-side-nav-list a{
+.demo-side-nav-table a{
+    width: 138px;
+    padding-left: 12px;
     display: inline-block;
     font-size: 14px;
     font-weight: normal;
@@ -1455,17 +1446,49 @@ img{
     line-height: normal;
     letter-spacing: normal;
     color: #666666;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-.demo-side-nav-list ul{
-    float: right;
-    margin: 1px 12px 1px 0px;
+.demo-side-nav-line{
+    margin: 26px 10px 10px 24px ;
+    float: left;
+    width: 2px;
+    height: 254px;
+    border-radius: 1.5px;
+    background-color:#d9d9d9;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
 }
-.demo-side-nav-list ul li{
-    padding: 9.5px 10px 9.5px 10px;
-    text-align: left;
+.demo-side-nav-circle-arrive{
+    background-color: #f0fff0;
 }
-.demo-side-nav-list ul li:hover{
+.demo-side-nav-anchor{
+    width: 10px;
+    height: 10px;
+    left: 23.5px;
+    top: 23px;
+    background-color: #3dcd58;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    margin-left: -3px;
+    opacity: 0;
+}
+.demo-side-nav-circle{
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+.demo-side-nav-list a:hover{
     background-color: #f0fff0;
 }
 

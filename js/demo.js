@@ -36,12 +36,10 @@ $(function () {
         })
 
         function nav_anchor(demo) {
-            var top = (demo - 1) * 37.2;
-            $(".demo-side-nav-anchor").css("opacity", "1");
-            $(".demo-side-nav-anchor").css("margin-top", top + "px");
-            $(".demo-side-nav-list ul>li>a").css("color", "#666666");
-            $(".demo-side-nav-list ul>li:nth-child(" + demo + ")>a").css("color", "#3dcd58");
-            console.log()
+            $(".demo-side-nav-list a").css("color", "#666666");
+            $(".demo-side-nav-table tr:nth-child(" + demo + ") a").css("color", "#3dcd58");
+            $(".demo-side-nav-anchor").css("margin-top",(demo-1)*35.8+"px");
+            $(".demo-side-nav-anchor").css("opacity",1);
         }
 
         function demo_load(demo) {

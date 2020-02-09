@@ -55,7 +55,7 @@ function getVisit() {
             withCredentials: true
         },
 
-        url: 'http://127.0.0.1:8005/innovationlab/giveVisit',
+        url: 'http://118.31.229.62:8005/innovationlab/giveVisit',
         type: 'get',
         async: false,
         success: function (data) {
