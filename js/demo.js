@@ -38,8 +38,8 @@ $(function () {
         function nav_anchor(demo) {
             $(".demo-side-nav-list a").css("color", "#666666");
             $(".demo-side-nav-table tr:nth-child(" + demo + ") a").css("color", "#3dcd58");
-            $(".demo-side-nav-anchor").css("margin-top",(demo-1)*35.8+"px");
-            $(".demo-side-nav-anchor").css("opacity",1);
+            $(".demo-side-nav-anchor").remove();
+            $(".demo-side-nav-table tr:nth-child(" + demo + ") td:first-child").append("<div class=\"demo-side-nav-anchor\"></div>");
         }
 
         function demo_load(demo) {
@@ -127,6 +127,7 @@ $(function () {
                 $(".demo-content-text-demo" + demo + ">.demo-banner-value-content li:nth-child(1)").delay(350).animate({
                     marginLeft: '0px',
                     opacity: 1
+
                 }, 650, 'easeOutCirc');
                 $(".demo-content-text-demo" + demo + ">.demo-banner-value-content li:nth-child(2)").delay(400).animate({
                     marginLeft: '0px',
@@ -157,6 +158,7 @@ $(function () {
                     opacity: 1
                 }, 650, 'easeOutCirc');
                 $(".demo-content-text-demo" + demo + ">.demo-banner-link").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
+
                 $(".demo-content-text-demo" + demo + ">.demo-like").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
             }
         }
@@ -165,6 +167,5 @@ $(function () {
             $('.demo-first-title').delay(300).animate({opacity: 1}, 3000, 'easeOutCirc');
             setTimeout(function () { demo_load(1); }, 800);
         }
-
     }
 )
