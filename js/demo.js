@@ -8,16 +8,15 @@ $(function () {
 
         function load() {
             head(2);
-
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
             var wTop = $(window).height();//浏览器可视高度
             var demo = $("#demo1").offset().top;//浏览器可视高度
             var eTop = $('.demo-content-banner-demo1').offset().top;//容器距离整个页面顶部的距离
             var t;
-            for( t=1;t<(dTop-50)/700+1;t++){
+            for (t = 1; t < (dTop - 50) / 700 + 1; t++) {
                 demo_load(t);
             }
-            nav_anchor(t-1);
+            nav_anchor(t - 1);
         }
 
         //侧边栏
@@ -165,7 +164,9 @@ $(function () {
 
         function demofirst() {
             $('.demo-first-title').delay(300).animate({opacity: 1}, 3000, 'easeOutCirc');
-            setTimeout(function () { demo_load(1); }, 800);
+            setTimeout(function () {
+                demo_load(1);
+            }, 800);
         }
     }
 )

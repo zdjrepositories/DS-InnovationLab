@@ -1,0 +1,103 @@
+html,body{
+    min-width:1024px;
+    height: 100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.login-first{
+    width: 100%;
+    height: 288px;
+    background-color: #3dcd58;
+}
+.head-logo{
+    height: 43px;
+    text-align: center;
+    float: left;
+    margin: 14px 0 0 60px;
+}
+
+.head-logo-left{
+    font-size: 36px;
+    font-family: Arial Rounded MT Pro ExtraBold;
+    color: #ffffff;
+}
+.head-logo-right{
+    font-size: 20px;
+    font-family: Arial Rounded MT Pro;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.login-title{
+    display: inline-block;
+    margin:116px auto;
+    font-family: Arial Rounded MT;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);/* 元素往下位移自身高度50%的距离 */
+}
+.login-banner{
+    top:176px;
+    width: 621px;
+    height: 459px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);/* 元素往下位移自身高度50%的距离 */
+}
+.login-banner-foot{
+    width: 580px;
+    height: 20px;
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);/* 元素往下位移自身高度50%的距离 */
+}
+.login-mail{
+    display: inline-block;
+}
+.login-foot{
+    width: 476px;
+    height: 20px;
+    bottom: 20px;
+    font-family: PingFangSC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);/* 元素往下位移自身高度50%的距离 */
+}

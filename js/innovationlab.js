@@ -1,3 +1,4 @@
+var address=window.location.origin;
 function index_like(id) {
    $(".index-third-content-like-img" + id).css("opacity", "0");
     $(".index-third-content-like-img-on" + id).css("opacity", "1");
@@ -22,7 +23,7 @@ function like(id) {
 
 function giveLike(id) {
     $.ajax({
-        url: 'http://118.31.229.62:8005/innovationlab/giveLike?id=' + id,
+        url: address+'/innovationlab/giveLike?id=' + id,
         type: 'get',
         async: false,
         data: {},
@@ -31,9 +32,10 @@ function giveLike(id) {
     })
 }
 
+console.log(address);
 function getLike() {
     $.ajax({
-        url: 'http://118.31.229.62:8005/innovationlab/showLike',
+        url: address+'/innovationlab/showLike',
         type: 'get',
         async: false,
         data: {},
@@ -54,8 +56,7 @@ function getVisit() {
         xhrFields: {
             withCredentials: true
         },
-
-        url: 'http://118.31.229.62:8005/innovationlab/giveVisit',
+        url: address+'/innovationlab/giveVisit',
         type: 'get',
         async: false,
         success: function (data) {
