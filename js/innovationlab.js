@@ -1,4 +1,4 @@
-var address=window.location.origin;
+
 function index_like(id) {
    $(".index-third-content-like-img" + id).css("opacity", "0");
     $(".index-third-content-like-img-on" + id).css("opacity", "1");
@@ -23,7 +23,7 @@ function like(id) {
 
 function giveLike(id) {
     $.ajax({
-        url: address+'/innovationlab/giveLike?id=' + id,
+        url: '/innovationlab/giveLike?id=' + id,
         type: 'get',
         async: false,
         data: {},
@@ -35,7 +35,7 @@ function giveLike(id) {
 console.log(address);
 function getLike() {
     $.ajax({
-        url: address+'/innovationlab/showLike',
+        url: '/innovationlab/showLike',
         type: 'get',
         async: false,
         data: {},
@@ -56,7 +56,7 @@ function getVisit() {
         xhrFields: {
             withCredentials: true
         },
-        url: address+'/innovationlab/giveVisit',
+        url: '/innovationlab/giveVisit',
         type: 'get',
         async: false,
         success: function (data) {
@@ -80,6 +80,34 @@ function head(page) {
     }
 }
 
+function getUser() {
+    $.ajax({
+        url: '/innovationlab/getUser',
+        type: 'get',
+        async: false,
+        data: {},
+        success: function (data) {
+            var user=data;
+            if(user!=""){
+                $(".head-login").html("<div class='head-photo'>"+"user.substing(0,1);"+"</div>  <a href='#' onclick='exit()' >退出登录</a>")
+            }
+        }
+    })
+}
+function exit() {
+    $.ajax({
+        url: '/innovationlab/exitUser',
+        type: 'get',
+        async: false,
+        data: {},
+        success: function (data) {
+            var user=data;
+            if(user!=""){
+                $(".head-login").html(" <img class='head-login' src='images/head_white.png'/> <a href='login.html?page=demo'>用户登录</a>")
+            }
+        }
+    })
+}
 function demo_menu() {//导航栏动画
     $(".head-nav-demo").hover(function () {
         $(".head-nav-demo-list").slideDown(400);
