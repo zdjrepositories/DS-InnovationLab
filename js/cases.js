@@ -4,9 +4,10 @@ function casesfirst() {
     $('.cases1').delay(1000).animate({opacity: 1}, 500);
 }
 
-$(function () {
+$(function () {getUser('cases');
         demo_menu();
         casesfirst();
+
         getVisit()
         load();
 

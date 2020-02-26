@@ -8,10 +8,12 @@ function indexfirst() {
 }
 
 $(function () {
+getUser('index');
         demo_menu();
         indexfirst();
         getLike();
-        getVisit()
+        getVisit();
+
         load();
 
 

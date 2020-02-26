@@ -32,7 +32,6 @@ function giveLike(id) {
     })
 }
 
-console.log(address);
 function getLike() {
     $.ajax({
         url: '/innovationlab/showLike',
@@ -80,31 +79,52 @@ function head(page) {
     }
 }
 
-function getUser() {
+function getUser(page) {
     $.ajax({
         url: '/innovationlab/getUser',
         type: 'get',
-        async: false,
+        async: true,
         data: {},
         success: function (data) {
             var user=data;
             if(user!=""){
-                $(".head-login").html("<div class='head-photo'>"+"user.substing(0,1);"+"</div>  <a href='#' onclick='exit()' >退出登录</a>")
-            }
+               var text="<div class='head-photo'><h5 class='head-photo-text'>" + user.substring(0, 1) + "</h5></div>  <a href='javascript:;'  onclick=exitUser('"+page+"')>退出登录</a>"
+                $(".head-login").html(text);
+                }
         }
     })
 }
-function exit() {
+function exitUser(page) {
+var result = confirm('确认退出登录？');
+    if(result){
+       $.ajax({
+         url: '/innovationlab/exitUser',
+              type: 'get',
+              async: false,
+              data: {},
+              success: function (data) {
+
+                      $(".head-login").html("<img class='head-login' src='images/head_white.png'/> <a href='login.html?page=" + page + ">用户登录</a>");
+                      window.location.href = page + ".html";
+                  }
+          })
+    }else{
+    }
+
+}
+function getDemo(page,demo) {
     $.ajax({
-        url: '/innovationlab/exitUser',
+        url: '/innovationlab/getDemo?demo='+demo,
         type: 'get',
-        async: false,
+        async: true,
         data: {},
         success: function (data) {
-            var user=data;
-            if(user!=""){
-                $(".head-login").html(" <img class='head-login' src='images/head_white.png'/> <a href='login.html?page=demo'>用户登录</a>")
-            }
+         if(data!=""){
+            window.open(data);
+         }else{
+            window.location.href = 'login.html?page='+page+'&demo='+demo;
+         }
+
         }
     })
 }

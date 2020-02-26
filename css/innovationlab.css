@@ -162,17 +162,31 @@ img{
     position: relative;
 }
 .head-photo{
-    width: 24px;
-    height: 24px;
+    display: inline-block;
+        float: left;
+        top:-5px;
+        left: 0px;
+
+        width: 30px;
+        height: 30px;
+        position: relative;
+    border-radius: 50%;
     background-color: #ffffff;
-    font-family: PingFangSC;
-    font-size: 14px;
+
+}
+.head-photo-text{
+    display: inline-block;
+    text-align:center;
+    font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     color: #3dcd58;
+    top: -6px;
+        position: absolute;
+        left: 9px;
 }
 .head-login>a{
     display: inline-block;

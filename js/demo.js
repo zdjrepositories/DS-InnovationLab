@@ -1,4 +1,4 @@
-$(function () {
+$(function () { getUser('demo');
         demo_menu();
         demofirst();
         load();

@@ -2,6 +2,7 @@ html, body {
     min-width: 1024px;
     height: 100%;
     text-align: center;
+    margin: 0px;
 }
 
 a {
@@ -193,7 +194,81 @@ button {
 button:hover{
     background-color: #64d981;
 }
-
+.login-left{
+    display: inline-block;
+    float: left;
+    width: 235.5px;
+    height: 62.5px;
+    top:176px;
+    left:150px;
+    position: absolute;
+}
+.login-left1{
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    top:239px;
+    left:160px;
+    position: absolute;
+}
+.login-left2{
+    display: inline-block;
+    float: left;
+    width: 71px;
+    height: 67px;
+    top:82px;
+    left:380px;
+    position: absolute;
+}
+.login-conter{
+    display: inline-block;
+    width: 171px;
+    height: 76px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* 元素往下位移自身高度50%的距离 */
+    position: absolute;
+}
+.login-right{
+    display: inline-block;
+    float: right;
+    width: 96px;
+    height: 81.5px;
+    top:0px;
+    right:150px;
+    position: absolute;
+}
+.login-right1{
+    display: inline-block;
+    float: right;
+    width: 108px;
+    height: 108px;
+    top:110px;
+    right:10px;
+    position: absolute;
+}
+.login-right2{
+     display: inline-block;
+     float: right;
+     width: 50px;
+     height: 50px;
+     top:96px;
+     right:350px;
+     position: absolute;
+ }
+.login-banner img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top:140px;
+    right: 82px;
+    z-index: 15;
+    position: absolute;
+}
+.login-pwd-no{
+    opacity: 0;
+}
 .login-banner-foot {
     width: 580px;
     height: 20px;
