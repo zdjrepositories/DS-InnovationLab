@@ -32,8 +32,10 @@ function GetQueryString(name) {
 function pwd(){
     $(".login-pwd-no").css("opacity", 1);
     $(".login-pwd").css("opacity", 0); //点击登录后显示loading，隐藏输入框
+    $("#password").attr("type","text");
 }
 function pwdno(){
     $(".login-pwd-no").css("opacity", 0);
     $(".login-pwd").css("opacity", 1); //点击登录后显示loading，隐藏输入框
+    $("#password").attr("type","password");
 }
