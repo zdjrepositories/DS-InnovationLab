@@ -74,7 +74,7 @@ a {
 }
 .login-input{
     height: 17px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 80px;
     font-family: PingFangSC;
     font-size: 12px;
@@ -102,6 +102,7 @@ input {
     -moz-appearance: none;
     width: 460px;
     border: 0px;
+    background-color: white;
     border-bottom: 1.5px solid #d9d9d9;
 }
 input:focus{
@@ -171,7 +172,24 @@ input:-ms-input-placeholder { /* Internet Explorer 10+*/
     color: #000000;
 
 }
-
+.login-error{
+    width: 72px;
+    height: 17px;
+    margin-top: 2px;
+    font-family: PingFangSC;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ff4d4d;
+    left: 80px;
+    position: relative;
+    z-index: 20;
+    text-align: left;
+    opacity: 0;
+}
 button {
     width: 460px;
     height: 50px;
@@ -268,7 +286,23 @@ button:hover{
     -webkit-transition: opacity 300ms;
     transition: opacity 300ms;
 }
-
+.login-code-img{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    top:210px;
+    right: 82px;
+    float: right;
+    position: absolute;
+    z-index: 20;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    text-align: center;
+}
+.login-code-text{
+    margin-top: 8px;
+    color: #000000;
+}
 .login-pwd-no{
     opacity: 0;
 }
