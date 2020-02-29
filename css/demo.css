@@ -422,11 +422,13 @@
     z-index: 2;
     position: absolute;
     opacity: 0;
-    -webkit-transition:transform 700ms;
-    transition:transform 700ms;
-    -ms-transform:scale(2,2) ; /* IE 9 */
-    -webkit-transform: scale(2,2); /* Safari */
-    transform: scale(2,2); /* 标准语法 */
+    -webkit-transition: transform 700ms;
+    transition: transform 700ms;
+    transform: scale(2, 2);
+    -ms-transform: scale(2, 2); /* IE 9 */
+    -moz-transform: scale(2, 2); /* Firefox */
+    -webkit-transform: scale(2, 2); /* Safari and Chrome */
+    -o-transform: scale(2, 2); /* Opera */
 }
 .like-on{
     transform:rotate(0deg);

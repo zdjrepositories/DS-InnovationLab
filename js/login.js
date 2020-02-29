@@ -16,19 +16,26 @@ function login() {
         $(".login-input-code-error").css("opacity", 1); //点击登录后显示loading，隐藏输入框
     }
     else  {
-
+        $(".login-banner button").text("正在登录");
         $.post("/innovationlab/login",{"email":$('#email').val(),"password":$('#password').val()},function (data) {
-           if(data=="1"){
-           var page= GetQueryString("page")+".html";
-             window.location.href=page;
-             if(GetQueryString("demo")!=""){
-                getDemo(GetQueryString("page"),GetQueryString("demo"));
-               }
-           }
-
+            if(data=="1"){
+                alert("demo="+GetQueryString("demo"));
+                if(GetQueryString("demo")!=""){
+                    getDemo(GetQueryString("page"),GetQueryString("demo"));
+                    alert("demo="+GetQueryString("demo"));
+                }
+                alert(GetQueryString("demo"));
+                var page= GetQueryString("page")+".html";
+                window.location.href=page;
+            } else{
+                $(".login-input-password-error").text("邮箱或密码错误");
+                $(".login-input-password-error").css("opacity", 1);
+                $(".login-banner button").text("登录");
+            }
         })
     }
 }
+
 
 
 function GetQueryString(name) {

@@ -1,0 +1,21 @@
+.demo{
+    width: 1024px;
+    margin: auto;
+    padding: 30px;
+    height: 650px;
+}
+.demo-title{
+   margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #3dcd58;
+}
+.demo-title2{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #3dcd58;
+}
+table{
+    text-align: left;
+    border:1px #3dcd58 solid ;
+}

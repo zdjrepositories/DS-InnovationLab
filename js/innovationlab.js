@@ -1,12 +1,11 @@
-
 function index_like(id) {
-   $(".index-third-content-like-img" + id).css("opacity", "0");
-    $(".index-third-content-like-img-on" + id).css("opacity", "1");
+   $(".index-fourth-content-like-img" + id).css("opacity", "0");
+    $(".index-fourth-content-like-img-on" + id).css("opacity", "1");
    $(".demo-like-sum" + id).css("color", "#3dcd58");
     var sum = parseInt($(".demo-like-sum"+ id).text());
     $(".demo-like-sum" + id).text(sum + 1);
-    $(".index-third-content-like-img" + id).attr('onclick', '');
-    $(".index-third-content-like-img-on" + id).addClass('like');
+    $(".index-fourth-content-like-img" + id).attr('onclick', '');
+    $(".index-fourth-content-like-img-on" + id).addClass('like');
     giveLike(id);
 }
 

@@ -77,7 +77,7 @@ a {
     margin-top: 30px;
     margin-left: 80px;
     font-family: PingFangSC;
-    font-size: 12px;
+    font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -95,7 +95,7 @@ a {
 input {
     height: 22px;
     margin-top: 0px;
-    font-size: 18px;
+    font-size: 28px;
     outline: 0;
     appearance: none;
     -web-kit-appearance: none;
@@ -148,7 +148,6 @@ input::-moz-placeholder { /* Mozilla Firefox 19+*/
     width: 112px;
     height: 22px;
     opacity: 0.3;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -162,7 +161,6 @@ input:-ms-input-placeholder { /* Internet Explorer 10+*/
     width: 112px;
     height: 22px;
     opacity: 0.3;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -173,7 +171,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+*/
 
 }
 .login-error{
-    width: 72px;
+    width: 100px;
     height: 17px;
     margin-top: 2px;
     font-family: PingFangSC;
@@ -196,7 +194,6 @@ button {
     margin-top: 60px;
     border-radius: 2px;
     background-color: #3dcd58;
-    font-family: PingFangSC;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -208,6 +205,7 @@ button {
     -web-kit-appearance: none;
     -moz-appearance: none;
     border: 0px;
+    outline:0 none !important; blr:expression(this.onFocus=this.blur());
 }
 button:hover{
     background-color: #64d981;
