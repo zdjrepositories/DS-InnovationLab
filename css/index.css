@@ -29,9 +29,9 @@
     font-size: 60px;
     font-weight: 800;
     color: #3dcd58;
-    opacity: 0;
     -webkit-transition: opacity cubic-bezier(0, 0, 0.25, 1);
     transition: opacity cubic-bezier(0, 0, 0.25, 1);
+    opacity: 0;
 }
 
 .index-first-banner-title-bottom {
@@ -41,9 +41,9 @@
     margin-top: 30px;
     font-size: 40px;
     color: #3dcd58;
-    opacity: 0;
     -webkit-transition: opacity cubic-bezier(0, 0, 0.25, 1);
     transition: opacity cubic-bezier(0, 0, 0.25, 1);
+    opacity: 0;
 }
 
 .index-first-banner-title p {
@@ -212,6 +212,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    opacity: 0.8;
 }
 
 .index-second-banner {
@@ -403,6 +404,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    opacity: 0.8;
 }
 
 .index-third-content-list {
@@ -438,7 +440,7 @@
     height: 243px;
     -webkit-transition: all 500ms;
     transition: all 500ms;
-    box-shadow: 3px 3px 3px 3px rgba(0.08, 0.08, 0.08, 0.08);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
 }
 .index-third-content-border {
      display: inline-block;
@@ -597,6 +599,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    opacity: 0.8;
 }
 
 .index-fourth-banner {
@@ -873,7 +876,6 @@
 }
 
 .index-fourth-content-like-img-on {
-    display: inline-block;
     width: 17px;
     height: 17px;
     z-index: 3;
@@ -887,14 +889,16 @@
     -webkit-transform: scale(2, 2); /* Safari and Chrome */
     -o-transform: scale(2, 2); /* Opera */
 }
-.like{
-    transform:skew(0deg,0deg);
-    -ms-transform: skew(0deg,0deg); /* IE 9 */
-    -moz-transform: skew(0deg,0deg); /* Firefox */
-    -webkit-transform: skew(0deg,0deg); /* Safari and Chrome */
-    -o-transform:skew(0deg,0deg); /* Opera */
+
+.like {
+    transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg); /* IE 9 */
+    -moz-transform: skew(0deg, 0deg); /* Firefox */
+    -webkit-transform: skew(0deg, 0deg); /* Safari and Chrome */
+    -o-transform: skew(0deg, 0deg); /* Opera */
 
 }
+
 .index-fourth-content-like-icon {
     display: inline-block;
     margin-top: 2px;
@@ -1066,7 +1070,6 @@
 .index-fifth-title-top {
     padding-top: 57px;
     height: 50px;
-    font-family: PingFangSC;
     font-size: 36px;
     font-weight: 500;
     font-stretch: normal;

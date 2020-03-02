@@ -97,6 +97,9 @@ img{
 .head-nav>ul>li>a:hover{
     border-bottom-style:solid;
 }
+.head-login a:hover{
+    border-bottom-style:solid;
+}
 .head-nav.list>li{
     height: 10px;
     margin-left: 40px;
@@ -165,18 +168,15 @@ img{
     display: inline-block;
         float: left;
         top:-5px;
-        left: 0px;
-
+        left: -10px;
         width: 30px;
         height: 30px;
-        position: relative;
+        position: absolute;
     border-radius: 50%;
     background-color: #ffffff;
-
 }
 .head-photo-text{
     display: inline-block;
-    text-align:center;
     font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
@@ -184,9 +184,11 @@ img{
     line-height: normal;
     letter-spacing: normal;
     color: #3dcd58;
-    top: -3px;
-        position: absolute;
-        left: 9px;
+    position: relative;
+    z-index:200;
+    right:8px;
+    float:right;
+
 }
 .head-login>a{
     display: inline-block;

@@ -54,18 +54,18 @@ function load() {
     var wTop = $(window).height();//浏览器可视高度
     var eTop = 0;
     eTop = $('.index-second-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-second-title').height() * 0.25) - 380 > eTop) {
+    if (dTop + wTop - ($('.index-second-title').height() * 0.25) - 280 > eTop) {
         $('.index-second-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-second-banner').offset().top;
-    if (dTop + wTop - ($('.index-second-banner').height() * 0.25) - 380 > eTop) {
+    if (dTop + wTop - ($('.index-second-banner').height() * 0.25) - 280 > eTop) {
         $('.index-second-banner').animate({opacity: 1}, 500);
         $('.index-second-banner-content-img-left-float').animate({opacity: 1}, 500);
         $('.index-second-banner-content-img-right-float').animate({opacity: 1}, 500);
     }
 
     eTop = $('.index-third-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-third-title').height() * 0.25) - 300 > eTop) {
+    if (dTop + wTop - ($('.index-third-title').height() * 0.25) - 250 > eTop) {
         $('.index-third-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-third-content-list').offset().top;
@@ -73,11 +73,11 @@ function load() {
         $('.index-third-content-list').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-fourth-title').height() * 0.25) - 300 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-title').height() * 0.25) - 200 > eTop) {
         $('.index-fourth-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-banner').offset().top;
-    if (dTop + wTop - ($('.index-fourth-banner').height() * 0.25) - 300 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-banner').height() * 0.25) - 200 > eTop) {
         $('.index-fourth-banner').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-banner-tab').offset().top;
@@ -94,7 +94,7 @@ function load() {
     }
 
     eTop = $('.index-fifth-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-fifth-title').height() * 0.25) - 300 > eTop) {
+    if (dTop + wTop - ($('.index-fifth-title').height() * 0.25) - 200 > eTop) {
         $('.index-fifth-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fifth-banner').offset().top;

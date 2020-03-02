@@ -1,3 +1,4 @@
+
 function index_like(id) {
    $(".index-fourth-content-like-img" + id).css("opacity", "0");
     $(".index-fourth-content-like-img-on" + id).css("opacity", "1");
@@ -71,8 +72,10 @@ function head(page) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");
         $('.head').addClass("head-active");
+        $(".head-login a").css("border-color", "#fff");
     } else if (head_hight < 30) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
+        $(".head-login a").css("border-color", "#3dcd58");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#3dcd58");
         $('.head').removeClass("head-active");
     }
@@ -87,8 +90,28 @@ function getUser(page) {
         success: function (data) {
             var user=data;
             if(user!=""){
-               var text="<div class='head-photo'><h5 class='head-photo-text'>" + user.substring(0, 1) + "</h5></div>  <a href='javascript:;'  onclick=exitUser('"+page+"')>退出登录</a>"
+               var text="<div class='head-photo'><div class='head-photo-text'>" + user.substring(0, 1) + "</div> </div> <a href='javascript:;'  onclick=exitUser('"+page+"')>退出登录</a>"
                 $(".head-login").html(text);
+                    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+                    var isOpera = userAgent.indexOf("Opera") > -1;
+                    if (isOpera) {
+                        $('.head-photo-text').css("top","-7px")
+                    }; //判断是否Opera浏览器
+                    if (userAgent.indexOf("Firefox") > -1) {
+                       $('.head-photo-text').css("top","-4px")
+                    } //判断是否Firefox浏览器
+                    if (userAgent.indexOf("Chrome") > -1){
+                  $('.head-photo-text').css("top","-7px")
+                 }
+                    if (userAgent.indexOf("Safari") > -1) {
+                       $('.head-photo-text').css("top","-7px")
+                    } //判断是否Safari浏览器
+                    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+                        $('.head-photo-text').css("top","-7px")
+                    }; //判断是否IE浏览器
+if (userAgent.indexOf("Edge") > -1) {
+                       $('.head-photo-text').css("top","-4px")
+                    } //判断是否Safari浏览器
                 }
         }
     })
@@ -123,7 +146,6 @@ function getDemo(page,demo) {
          }else{
             window.location.href = 'login.html?page='+page+'&demo='+demo;
          }
-
         }
     })
 }

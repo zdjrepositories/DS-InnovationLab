@@ -27,7 +27,7 @@
 .cases-first-title-top {
     display: inline-block;
     float: left;
-    top: 145px;
+    top: 115px;
     font-size: 54px;
     font-weight: 500;
     font-stretch: normal;
@@ -41,7 +41,7 @@
 .cases-first-title-center {
     display: inline-block;
     float: left;
-    top: 232px;
+    top: 202px;
     width: 47px;
     height: 5px;
     background-color: #3dcd58;
@@ -51,7 +51,7 @@
 .cases-first-title-bottom {
     display: inline-block;
     float: left;
-    top: 258px;
+    top: 228px;
     height: 42px;
     font-family: Arial Rounded MT Pro;
     font-size: 37px;
@@ -70,7 +70,7 @@
     float: right;
     width: 720px;
     height: 333px;
-    right: 0px;
+    right: -105px;
     bottom: 0px;
     position: absolute;
     opacity: 0;
@@ -80,7 +80,6 @@
     width: 1024px;
     height: 1594px;
     margin: auto;
-
 }
 
 .cases {
@@ -150,7 +149,7 @@
 }
 .cases-second-banner-img1 img {
     display: inline-block;
-    margin: 139px auto;
+    margin: 115px auto;
     width: 242px;
     height: 213px;
 }
@@ -307,6 +306,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    opacity: 0.8;
 }
 .cases-third-banner{
     height: 262px;
@@ -361,7 +361,7 @@
     width:35px;
     height:25px;
     z-index: 3;
-    margin: 30px auto auto -373px;
+    margin: 30px auto auto -372px;
     position: absolute;
 }
 .cases-third-banner-right-line{
@@ -430,6 +430,43 @@ margin-top: 32px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: normal;
-    color: #333333;
+    color: #666;
     text-align: left;
+}
+
+.left {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /*兼容ie8-*/
+}
+
+.left-arrow1,
+.left-arrow2 {
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    /*兼容ie8-*/
+    border-top: 10px transparent dashed;
+    border-left: 10px transparent dashed;
+    border-bottom: 10px transparent dashed;
+    border-right: 10px white solid;
+    overflow: hidden;
+}
+
+.left-arrow1 {
+    border-right: 10px #d9d9d9 solid;
+}
+
+.left-arrow2 {
+    left: 1.5px;
+    /*重要*/
+    border-right: 10px white solid;
 }

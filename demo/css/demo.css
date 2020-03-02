@@ -53,7 +53,19 @@ a {
     position: absolute;
 }
 
-
+.await-ing{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    animation: rotation 2s linear infinite;
+    -moz-animation: rotation 2s linear infinite;
+    -webkit-animation: rotation 2s linear infinite;
+    -o-animation: rotation 2s linear infinite;
+}
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
 
 .foot{
     width: 100%;

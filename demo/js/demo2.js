@@ -21,9 +21,8 @@ $(function () {
 });
 
 function dispose(){
-    $(".demo-button-text").text("正在识别");
+    $(".demo-button-text").html("<img class='await-ing' src='images/circle.png'>&nbsp;正在识别...");
     setTimeout("disposeimg()",1200);
-
 }
 
 function disposeimg(){

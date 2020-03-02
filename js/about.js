@@ -13,7 +13,7 @@ $(function () {getUser('about');
                 $('.about-third-title').animate({opacity:1},500).css({flter:"Alpha(Opacity=100)"});
             }
             eTop = $('.about-third-banner-table').offset().top;
-            if (dTop + wTop - ($('.about-third-banner-table').height() * 0.25) - 250 > eTop) {
+            if (dTop + wTop - ($('.about-third-banner-table').height() * 0.25) - 100 > eTop) {
                 $('.about-third-banner-table').animate({opacity: "1"},500);
             }
             eTop = $('.about-fourth-title').offset().top;
@@ -21,7 +21,7 @@ $(function () {getUser('about');
                 $('.about-fourth-title').animate({opacity: 1},500);
             }
             eTop = $('.about-fourth-banner').offset().top;
-            if (dTop + wTop - ($('.about-fourth-banner').height() * 0.25) - 250 > eTop) {
+            if (dTop + wTop - ($('.about-fourth-banner').height() * 0.25) - 200 > eTop) {
                 $('.about-fourth-banner').animate({opacity: 1},500);
             }
         }
