@@ -13,7 +13,7 @@ $(function () { getUser('demo');
             var demo = $("#demo1").offset().top;//浏览器可视高度
             var eTop = $('.demo-content-banner-demo1').offset().top;//容器距离整个页面顶部的距离
             var t;
-            for (t = 1; t < (dTop - 50) / 700 + 1; t++) {
+            for (t = 1; t < (dTop +50) / 700 + 1; t++) {
                 demo_load(t);
             }
             nav_anchor(t - 1);

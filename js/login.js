@@ -24,7 +24,7 @@ function login() {
         $(".login-button").css("background-color", "#64d975");
         $.post("/innovationlab/login", {"email": $('#email').val(), "password": $('#password').val()}, function (data) {
             if (data == "1") {
-                $(".succeed-button").css("opacity", 1);
+                $(".login-button").html("<img src=\"images/true.png\">&nbsp;&nbsp;&nbsp;登录成功");
                 if (GetQueryString("demo") != "") {
                     getDemo(GetQueryString("page"), GetQueryString("demo"));
                 }
@@ -74,8 +74,22 @@ $(function () {
     $("input").change(function () {
         login_load();
     })
+    if ($("input[name=email]").val() != "") {
+                 $(".login-input-mail").css("color", "#3dcd58");
+                       $(".login-input-mail").css("top", "45px");
+                       $(".login-input-mail").css("font-size", "12px");
+                       $(".login-input-mail-error").css("opacity", 0);
+                       $("input[name=email]").css("border-bottom-color", "#d9d9d9");
+            }
+      if($("input[name=password]").val() != "")  {
+                  $("#lns").hide();
+                  $(".login-input-password").css("color", "#3dcd58");
+                  $(".login-input-password").css("top", "125px");
+                  $(".login-input-password").css("font-size", "12px");
+                  $(".login-input-password-error").css("opacity", 0);
+                  $("input[name=password]").css("border-bottom-color", "#d9d9d9");
 
-
+     }
     $("#email").focus(function () {
         $(".login-input-mail").css("color", "#3dcd58");
         $(".login-input-mail").css("top", "45px");

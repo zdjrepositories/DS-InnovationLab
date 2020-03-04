@@ -19,3 +19,13 @@ table{
     text-align: left;
     border:1px #3dcd58 solid ;
 }
+table th{
+    text-align: center;
+}
+table td>img{
+    width:15px;
+    height:15px;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}

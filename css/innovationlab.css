@@ -97,9 +97,6 @@ img{
 .head-nav>ul>li>a:hover{
     border-bottom-style:solid;
 }
-.head-login a:hover{
-    border-bottom-style:solid;
-}
 .head-nav.list>li{
     height: 10px;
     margin-left: 40px;
@@ -155,9 +152,10 @@ img{
     right: 55px;
     position: absolute;
 }
-.head-login>img{
+.head-login img{
     display: inline-block;
     float: left;
+    margin-right: 5px;
     top:-5px;
     left: 0px;
     width: 30px;

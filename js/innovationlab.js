@@ -72,10 +72,8 @@ function head(page) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");
         $('.head').addClass("head-active");
-        $(".head-login a").css("border-color", "#fff");
     } else if (head_hight < 30) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
-        $(".head-login a").css("border-color", "#3dcd58");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#3dcd58");
         $('.head').removeClass("head-active");
     }

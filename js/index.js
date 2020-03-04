@@ -65,27 +65,27 @@ function load() {
     }
 
     eTop = $('.index-third-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-third-title').height() * 0.25) - 250 > eTop) {
+    if (dTop + wTop - ($('.index-third-title').height() * 0.25) - 150 > eTop) {
         $('.index-third-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-third-content-list').offset().top;
-    if (dTop + wTop - ($('.index-third-content-list').height() * 0.25) - 150 > eTop) {
+    if (dTop + wTop - ($('.index-third-content-list').height() * 0.25)  > eTop) {
         $('.index-third-content-list').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-fourth-title').height() * 0.25) - 200 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-title').height() * 0.25) - 100 > eTop) {
         $('.index-fourth-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-banner').offset().top;
-    if (dTop + wTop - ($('.index-fourth-banner').height() * 0.25) - 200 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-banner').height() * 0.25) - 100 > eTop) {
         $('.index-fourth-banner').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-banner-tab').offset().top;
-    if (dTop + wTop - ($('.index-fourth-banner-tab').height() * 0.25) - 180 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-banner-tab').height() * 0.25) - 100 > eTop) {
         $('.index-fourth-banner-tab').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-banner ul').offset().top;
-    if (dTop + wTop - ($('.index-fourth-banner ul').height() * 0.25) - 180 > eTop) {
+    if (dTop + wTop - ($('.index-fourth-banner ul').height() * 0.25) - 100 > eTop) {
         $('.index-fourth-banner ul').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-dome').offset().top;
@@ -94,11 +94,11 @@ function load() {
     }
 
     eTop = $('.index-fifth-title').offset().top;//容器距离整个页面顶部的距离
-    if (dTop + wTop - ($('.index-fifth-title').height() * 0.25) - 200 > eTop) {
+    if (dTop + wTop - ($('.index-fifth-title').height() * 0.25) - 100 > eTop) {
         $('.index-fifth-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fifth-banner').offset().top;
-    if (dTop + wTop - ($('.index-fifth-banner').height() * 0.25) - 100 > eTop) {
+    if (dTop + wTop - ($('.index-fifth-banner').height() * 0.25) - 50 > eTop) {
         $('.index-fifth-banner').animate({opacity: 1}, 500);
     }
 }
