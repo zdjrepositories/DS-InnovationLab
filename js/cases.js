@@ -4,12 +4,12 @@ function casesfirst() {
     $('.cases1').delay(1000).animate({opacity: 1}, 500);
 }
 
-$(function () {getUser('cases');
-        demo_menu();
-        casesfirst();
-
-        getVisit()
-        load();
+$(function () {
+    getUser('cases');
+    demo_menu();
+    casesfirst();
+    getVisit()
+    load();
 
 
         window.addEventListener('scroll', function () {

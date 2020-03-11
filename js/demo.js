@@ -101,6 +101,7 @@ $(function () { getUser('demo');
                 }, 650, 'easeOutCirc');
                 $(".demo-content-text-demo" + demo + ">.demo-banner-link").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
                 $(".demo-content-text-demo" + demo + ">.demo-like").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
+                $(".demo-guide").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
             } else {
                 $('.demo-content-banner-demo' + demo).delay(100).animate({left: '-261px', opacity: 1}, 850, 'easeOutCirc');
                 $(".demo-content-text-demo" + demo + ">.demo-banner-line").delay(100).animate({
@@ -159,8 +160,9 @@ $(function () { getUser('demo');
                 $(".demo-content-text-demo" + demo + ">.demo-banner-link").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
 
                 $(".demo-content-text-demo" + demo + ">.demo-like").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
-            }
-        }
+                $(".demo-guide").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
+     }
+  }
 
         function demofirst() {
             $('.demo-first-title').delay(300).animate({opacity: 1}, 3000, 'easeOutCirc');
