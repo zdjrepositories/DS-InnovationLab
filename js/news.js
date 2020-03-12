@@ -1,29 +1,33 @@
 $(function () {
-    getUser('news');
+        getUser('news');
         load();
         demo_menu();
         getVisit();
+        newfirst();
 
         function load() {
             head(4);
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
             var wTop = $(window).height();//浏览器可视高度
-            var eTop = $('.about-third-title').offset().top;//容器距离整个页面顶部的距离
-            if (dTop + wTop - ($('.about-third-title').height() * 0.25) - 100 > eTop) {
-                $('.about-third-title').animate({opacity:1},500).css({flter:"Alpha(Opacity=100)"});
+            var eTop = $('.news-third-title').offset().top;//容器距离整个页面顶部的距离
+            if (dTop + wTop - ($('.news-third-title').height() * 0.25) - 100 > eTop) {
+                $('.news-third-title').animate({opacity: 1}, 500);
             }
-            eTop = $('.about-third-banner-table').offset().top;
-            if (dTop + wTop - ($('.about-third-banner-table').height() * 0.25) - 100 > eTop) {
-                $('.about-third-banner-table').animate({opacity: "1"},500);
+            var eTop = $('.news-third-content-years').offset().top;//容器距离整个页面顶部的距离
+            if (dTop + wTop - ($('.news-third-content-years').height() * 0.25) - 100 > eTop) {
+                $('.news-third-content-years').animate({opacity: 1}, 500);
             }
-            eTop = $('.about-fourth-title').offset().top;
-            if (dTop + wTop - ($('.about-fourth-title').height() * 0.25) - 150 > eTop) {
-                $('.about-fourth-title').animate({opacity: 1},500);
+            var eTop = $('.news-third-content-monthly-2019').offset().top;//容器距离整个页面顶部的距离
+            if (dTop + wTop - ($('.news-third-content-monthly-2019').height() * 0.25) - 100 > eTop) {
+                $('.news-third-content-monthly-2019').animate({opacity: 1}, 500);
             }
-            eTop = $('.about-fourth-banner').offset().top;
-            if (dTop + wTop - ($('.about-fourth-banner').height() * 0.25) - 100 > eTop) {
-                $('.about-fourth-banner').animate({opacity: 1},500);
-            }
+        }
+
+        function newfirst() {
+            $('.news-first-banner-img').animate({opacity: 1}, 500);
+            $('.news-first-title').delay(150).animate({opacity: 1}, 500);
+            $('.news-second-title').delay(300).animate({opacity: 1}, 500);
+            $('.news-second-content').delay(450).animate({opacity: 1}, 500);
         }
 
         window.addEventListener('scroll', function () {
@@ -32,4 +36,16 @@ $(function () {
         )
     }
 )
+
+function click2019() {
+    $('.news-third ').css("height", "1340");
+    $('.news-third-content-monthly-2020').hide();
+    $('.news-third-content-monthly-2019').show();
+}
+
+function click2020() {
+    $('.news-third ').css("height", "640");
+    $('.news-third-content-monthly-2019').hide();
+    $('.news-third-content-monthly-2020').show();
+}
 
