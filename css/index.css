@@ -883,6 +883,8 @@ margin-top: 375px;
     margin-left: 10px;
     position: absolute;
     opacity: 0;
+}
+.index-fourth-content-like-img-on>img {
     -webkit-transition: transform 700ms;
     transition: transform 700ms;
     transform: scale(2, 2);
@@ -892,14 +894,6 @@ margin-top: 375px;
     -o-transform: scale(2, 2); /* Opera */
 }
 
-.like {
-    transform: skew(0deg, 0deg);
-    -ms-transform: skew(0deg, 0deg); /* IE 9 */
-    -moz-transform: skew(0deg, 0deg); /* Firefox */
-    -webkit-transform: skew(0deg, 0deg); /* Safari and Chrome */
-    -o-transform: skew(0deg, 0deg); /* Opera */
-
-}
 
 .index-fourth-content-like-icon {
     display: inline-block;
@@ -939,6 +933,11 @@ margin-top: 375px;
     color: #999;
     -webkit-transition: all 100ms;
     transition: all 100ms;
+    transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg); /* IE 9 */
+    -moz-transform: skew(0deg, 0deg); /* Firefox */
+    -webkit-transform: skew(0deg, 0deg); /* Safari and Chrome */
+    -o-transform: skew(0deg, 0deg); /* Opera */
 }
 .demo-guide{
     width:412px;
@@ -1122,7 +1121,6 @@ margin-top: 375px;
     margin: 12px auto;
     font-family: Arial Rounded MT Pro Light;
     opacity: 0.8;
-    
     font-size: 24px;
     text-align: center;
     color: #333333;

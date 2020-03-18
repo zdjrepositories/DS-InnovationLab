@@ -5,14 +5,20 @@ function index_like(id) {
     var sum = parseInt($(".demo-like-sum"+ id).text());
     $(".demo-like-sum" + id).text(sum + 1);
     $(".index-fourth-content-like-img" + id).attr('onclick', '');
-    $(".index-fourth-content-like-img-on" + id).addClass('like');
+    $(".index-fourth-content-like-img-on" + id+">img").css("transform","skew(0deg, 0deg)");
+    $(".index-fourth-content-like-img-on" + id+">img").css("-ms-transform","skew(0deg, 0deg)");
+    $(".index-fourth-content-like-img-on" + id+">img").css("-moz-transform","skew(0deg, 0deg)")
+    $(".index-fourth-content-like-img-on" + id+">img").css("-o-transform","skew(0deg, 0deg)")
     giveLike(id);
 }
 
 function like(id) {
     $(".demo-like-img" + id).css("opacity", "0");
     $(".demo-like-img" + id + "-on").css("opacity", "1");
-    $(".demo-like-img" + id + "-on").addClass('like-on');
+    $(".demo-like-img" + id + "-on>img").css("transform","skew(0deg, 0deg)");
+    $(".demo-like-img" + id + "-on>img").css("-ms-transform","skew(0deg, 0deg)");
+    $(".demo-like-img" + id + "-on>img").css("-moz-transform","skew(0deg, 0deg)")
+    $(".demo-like-img" + id + "-on>img").css("-o-transform","skew(0deg, 0deg)")
     $(".demo-like-sum" + id).css("color", "#3dcd58");
     var sum = parseInt($(".demo-like-sum" + id).text());
     $(".demo-like-sum" + id).text(sum + 1);
@@ -103,7 +109,6 @@ var result = confirm('确认退出登录？');
               async: false,
               data: {},
               success: function (data) {
-
                       $(".head-login").html("<a href='login.html?page=" + page + "><img class='head-login' src='images/head_white.png'/> 用户登录</a>");
                       window.location.href = page + ".html";
                   }

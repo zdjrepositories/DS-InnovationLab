@@ -460,6 +460,8 @@
     z-index: 2;
     position: absolute;
     opacity: 0;
+}
+.demo-like-img-on>img{
     -webkit-transition:transform 700ms;
     transition:transform 700ms;
     -ms-transform:scale(2,2) ; /* IE 9 */
@@ -475,16 +477,13 @@
     z-index: 2;
     position: absolute;
     opacity: 0;
+}
+.demo-like-img-on-demo1>img{
     -webkit-transition:transform 700ms;
     transition:transform 700ms;
     -ms-transform:scale(2,2) ; /* IE 9 */
     -webkit-transform: scale(2,2); /* Safari */
     transform: scale(2,2); /* 标准语法 */
-}
-.like-on{
-    transform:rotate(0deg);
-    -ms-transform:rotate(0deg); /* IE 9 */
-    -webkit-transform:rotate(0deg); /* Safari and Chrome */
 }
 .demo-like-icon{
     display: inline-block;
@@ -495,7 +494,7 @@
 }
 .demo-like-sum{
     height: 20px;
-    margin-left:170px;
+    margin-left:25px;
     top: 2px;
     font-size: 14px;
     font-weight: 600;
@@ -507,8 +506,8 @@
     position: relative;
 }
 .demo-like-sum-demo1{
-    height: 20px;
-    margin-left:300px;
+    height: 20px; 
+    margin-left:25px;
     top: 2px;
     font-size: 14px;
     font-weight: 600;

@@ -11,7 +11,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0px;
     font-size: 14px;
 }
-
+@font-face{
+    font-family: 'Arial Rounded MT Pro';
+    src:url('../font/ARIALROUNDEDMTPRO.OTF');
+}
+@font-face{
+    font-family: 'Arial Rounded MT Pro Bold';
+    src:url('../font/ARIALROUNDEDMTPRO-BOLD.OTF');
+}
+@font-face{
+    font-family: 'Arial Rounded MT Pro ExtraBold';
+    src:url('../font/ARIALROUNDEDMTPRO-EXTRABOLD.OTF');
+}
+@font-face{
+    font-family: 'Arial Rounded MT Pro Light';
+    src:url('../font/ARIALROUNDEDMTPRO-LIGHT.OTF');
+}
 a {
     text-decoration: none;
     display: block;
