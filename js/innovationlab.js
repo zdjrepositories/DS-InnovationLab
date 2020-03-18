@@ -1,4 +1,3 @@
-
 function index_like(id) {
    $(".index-fourth-content-like-img" + id).css("opacity", "0");
     $(".index-fourth-content-like-img-on" + id).css("opacity", "1");
@@ -67,7 +66,7 @@ function getVisit() {
 
 function head(page) {
     var head_hight = $(document.documentElement).scrollTop() + $(document.body).scrollTop();  // 目前监听的是整个body的滚动条距离
-    $('.head-list>li:nth-child(' + page + ')>a').css("font-weight", "520");
+    $('.head-list>li:nth-child(' + page + ')>a').css("font-weight", "600");
     if (head_hight > 30) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");

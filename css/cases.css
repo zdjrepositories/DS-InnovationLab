@@ -247,7 +247,9 @@
 .cases-second-banner-result h4{
     display: inline-block;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    margin-left: 2px;
+    margin-right: 2px;
     color: #3dcd58;
 }
 .cases-second-banner-line1 {
@@ -407,6 +409,8 @@
     height: 21px;
 margin-top: 32px;
     margin-left: 30px;
+
+    font-weight: 600;
     font-family: Arial Rounded MT;
     font-size: 18px;
     color: #333333;

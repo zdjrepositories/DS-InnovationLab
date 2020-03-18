@@ -1,66 +1,78 @@
-﻿html,body{
-    min-width:1024px;
+﻿html, body {
+    min-width: 1024px;
     height: 100%;
     text-align: center;
     font-family: Arial Rounded MT Pro Light;
+    -webkit-font-smoothing: antialiased;
 }
-html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
 }
-a{
+
+a {
     text-decoration: none;
     display: block;
 }
-li{
+
+li {
     list-style: none;
 }
-img{
+
+img {
     display: block;
 }
-.clearfix{
+
+.clearfix {
     *zoom: 1;
 }
-.clearfix:after{
+
+.clearfix:after {
     content: "";
     display: block;
     clear: both;
 }
 
 
-.head{
-    min-width:1024px;
+.head {
+    min-width: 1024px;
     width: 100%;
     height: 70px;
     z-index: 999;
     position: fixed;
     color: white;
     top: 0;
-    -webkit-transition:all 1s;
-    transition:all 500ms;
+    -webkit-transition: all 1s;
+    transition: all 500ms;
 }
-.head-active{
+
+.head-active {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
     background-color: #3dcd58;
 }
-#head-this{
+
+#head-this {
     color: #fff;
 }
-#head-this-active{
+
+#head-this-active {
     color: #3dcd58;
 }
-.head-logo{
+
+.head-logo {
     height: 43px;
     text-align: center;
     float: left;
     margin: 20px 0 0 60px;
 }
 
-.head-logo-left{
-    
+.head-logo-left {
+
 }
-.head-logo-right{
+
+.head-logo-right {
     font-size: 20px;
     font-family: Arial Rounded MT Pro;
     font-weight: normal;
@@ -71,16 +83,18 @@ img{
     color: #ffffff;
 }
 
-.head-nav{
+.head-nav {
     height: 30px;
     float: right;
     padding-right: 150px;
     padding-top: 24px;
 }
-.head-nav>ul>li{
+
+.head-nav > ul > li {
     height: 46px;
 }
-.head-nav>ul>li>a{
+
+.head-nav > ul > li > a {
     height: 35px;
     font-size: 16px;
     font-weight: 300;
@@ -90,26 +104,32 @@ img{
     letter-spacing: normal;
     text-align: center;
     color: #fff;
-    -webkit-transition:color 100ms;
-    transition:color 100ms;
+    -webkit-transition: color 100ms;
+    transition: color 100ms;
 }
-.head-nav>ul>li>a:hover{
-    border-bottom-style:solid;
+
+.head-nav > ul > li > a:hover {
+    border-bottom-style: solid;
 }
-.head-nav.list>li{
+
+.head-nav.list > li {
     height: 10px;
     margin-left: 40px;
     position: relative;
 }
+
 .head-nav ul li {
     float: left;
     margin-right: 30px;
 }
-.head-nav-demo-list{
+
+.head-nav-demo-list {
     display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 174px;
     height: 300px;
-    top:70px;
+    top: 70px;
     right: 443px;
     border-radius: 2px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
@@ -118,16 +138,19 @@ img{
     position: absolute;
     display: none;
 }
-.head-nav-demo-list li{
+
+.head-nav-demo-list li {
     height: 37.5px;
     width: 174px;
     text-align: center;
     background-color: #ffffff;
 }
-.head-nav-demo-list li:hover{
+
+.head-nav-demo-list li:hover {
 
 }
-.head-nav-demo-list a{
+
+.head-nav-demo-list a {
     padding-top: 8px;
     font-size: 14px;
     float: left;
@@ -140,53 +163,59 @@ img{
     letter-spacing: normal;
     color: #666666;
 }
-.head-nav-demo-list ul{
+
+.head-nav-demo-list ul {
     margin-top: 4px;
 }
-.head-login{
+
+.head-login {
     display: inline-block;
     float: right;
     width: 100px;
-    top:25px;
+    top: 25px;
     right: 55px;
     position: absolute;
 }
-.head-login img{
+
+.head-login img {
     display: inline-block;
     float: left;
     margin-right: 5px;
-    top:-5px;
+    top: -5px;
     left: 0px;
     width: 30px;
     height: 30px;
     position: relative;
 }
-.head-photo{
+
+.head-photo {
     display: inline-block;
-        float: left;
-        top:-5px;
-        left: -35px;
-        width: 30px;
-        height: 30px;
-        position: absolute;
+    float: left;
+    top: -5px;
+    left: -35px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
     border-radius: 50%;
     background-color: #ffffff;
 }
-    .head-photo-text{
-        display: inline-block;
-        font-size: 28px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #3dcd58;
-        position: absolute;
-        z-index: 200;
-        transform: translateY(-15%);
-        left: 8.5px;
+
+.head-photo-text {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3dcd58;
+    position: absolute;
+    z-index: 200;
+    transform: translateY(-15%);
+    left: 8.5px;
 }
-.head-login>a{
+
+.head-login > a {
     display: inline-block;
     float: right;
     height: 35px;
@@ -202,20 +231,22 @@ img{
 }
 
 
-.foot{
+.foot {
     width: 100%;
     height: 132px;
     position: absolute;
     background-color: #333333;
 }
-.foot-left-img{
+
+.foot-left-img {
     width: 432px;
     height: 132px;
     position: absolute;
-    z-index:5 ;
+    z-index: 5;
     float: left;
 }
-.foot-right-img{
+
+.foot-right-img {
     width: 116px;
     height: 132px;
     bottom: 0;
@@ -223,7 +254,8 @@ img{
     z-index: 5;
     position: absolute;
 }
-.foot-content{
+
+.foot-content {
     width: 1024px;
     height: 132px;
     font-weight: normal;
@@ -232,40 +264,56 @@ img{
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.foot-logo{
+
+.foot-logo {
     height: 59px;
     top: 50%;
-    transform: translateY(-50%);/* 元素往下位移自身高度50%的距离 */
+    transform: translateY(-50%); /* 元素往下位移自身高度50%的距离 */
     float: left;
     font-size: 27px;
     text-align: center;
     color: #ffffff;
     position: absolute;
 }
-.foot-logo-left{
+
+.foot-logo-left {
     font-family: Arial Rounded MT Pro ExtraBold;
 }
-.foot-logo-right{
+
+.foot-logo-right {
     font-family: Arial Rounded MT Pro;
 }
-.foot-logo-left{
+
+.foot-logo-left {
     font-size: 48.7px;
 }
-.foot-law{
+
+.foot-law {
     line-height: 15px;
-    margin-top:5px;
-    padding-right: 10px;
-    border-right: 1.5px solid #ffffff;
+    margin-top: 4px;
     height: 14px;
     font-size: 14px;
     text-align: right;
     float: left;
     color: #ffffff;
 }
+
+.foot-law-line {
+    display: inline-block;
+    margin-top: 5px;
+    width: 16px;
+    height: 13px;
+    margin-right: 16px;
+    border-right: 1px solid #ffffff;
+    float: left;
+}
+
 .foot-text {
-    width: 489px;
+    line-height: 15px;
+    margin-top: 5px;
+    width: 501px;
     height: 72px;
     margin-top: 30px;
     opacity: 0.8;

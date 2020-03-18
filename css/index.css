@@ -491,7 +491,7 @@
     width: 96px;
     height: 22px;
     margin-bottom: 12px;
-    font-family: PingFangSC;
+    
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -504,7 +504,7 @@
 .index-third-content-text {
     width: 215px;
     height: 40px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -665,12 +665,9 @@
     text-align: center;
 }
 
-.index-fourth-title1 {
-    margin: 0 59px 0 38px;
-}
 
 .index-fourth-title2 {
-    margin: 0 60px 0 3px;
+    margin: 0 60px 0 74px;
 }
 
 .index-fourth-content-img {
@@ -711,7 +708,7 @@
 .index-fourth-banner-arrows-icon {
     width: 0px;
     height: 0px;
-    margin-left: 334px;
+    margin-left: 310px;
     border: 8px solid #ffffff;
     border-color: transparent transparent #ffffff transparent;
 
@@ -755,7 +752,7 @@
 
 .index-demo-banner-explain {
     width: 406px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -861,29 +858,29 @@ margin-top: 375px;
 }
 
 .index-fourth-content-like {
-    margin: auto 0 16px 25px;
-    border-left: 1px solid #d9d9d9;
+    margin: auto 0 16px 0px;
     padding-left: 17px;
     float: left;
-    width: 100px;
+    width: 110px;
     z-index: 999;
     position: relative;
     top: 385px
 }
 
 .index-fourth-content-like-img {
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     z-index: 3;
     position: absolute;
     -webkit-transition: all 100ms;
-    transition: all 100ms;
+    transition: all 100ms;margin-left: 10px;
 }
 
 .index-fourth-content-like-img-on {
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     z-index: 3;
+    margin-left: 10px;
     position: absolute;
     opacity: 0;
     -webkit-transition: transform 700ms;
@@ -906,19 +903,42 @@ margin-top: 375px;
 
 .index-fourth-content-like-icon {
     display: inline-block;
-    margin-top: 2px;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-right: 3px;
     float: left;
 }
 
 .index-fourth-content-like-icon-on {
-    margin-top: 2px;
-    width: 16px;
-    height: 16px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
     margin-right: 3px;
     float: left;
+}
+.index-fourth-content-like-sum-line{
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+    width: 2px;
+    height: 14px;
+    margin-top: 3px;
+    border-left: 1px solid #d9d9d9;
+}
+.index-fourth-content-like-sum {
+    height: 20px;
+    top: 2px;
+    position: relative;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #999;
+    -webkit-transition: all 100ms;
+    transition: all 100ms;
 }
 .demo-guide{
     width:412px;
@@ -938,21 +958,7 @@ margin-top: 375px;
     margin-left: 3px;
     margin-right: 3px;
 }
-.index-fourth-content-like-sum {
-    height: 20px;
-    top: 3px;
-    position: relative;
-    margin-left: 20px;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #bfbfbf;
-    -webkit-transition: all 100ms;
-    transition: all 100ms;
-}
+
 
 .index-fourth-content-like-demo1 {
     top: 375px;
@@ -981,7 +987,7 @@ margin-top: 375px;
     width: 301px;
     height: 36px;
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 8px;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -1116,7 +1122,7 @@ margin-top: 375px;
     margin: 12px auto;
     font-family: Arial Rounded MT Pro Light;
     opacity: 0.8;
-    font-family: PingFangSC;
+    
     font-size: 24px;
     text-align: center;
     color: #333333;
@@ -1148,14 +1154,15 @@ margin-top: 375px;
     width: 128px;
     height: 107px;
     margin: 34px auto;
+    opacity: 0.8;
 }
 
 .index-fifth-content-title {
     width: 180px;
     margin-top: 5px;
-    font-family: PingFangSC;
+    
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;

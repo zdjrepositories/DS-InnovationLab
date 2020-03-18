@@ -66,7 +66,6 @@
 .about-first-title-top{
     top: 135px;
     left:  75px;
-    font-family: PingFangSC;
     font-size: 54px;
     font-weight: 500;
     font-stretch: normal;
@@ -207,7 +206,6 @@
 
 .about-second-content-right-title{
     margin-top: 36px;
-    font-family: PingFangSC;
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
@@ -223,7 +221,7 @@
 .about-second-content-right-title2{
     margin-top: 8px;
     height: 19px;
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -252,7 +250,6 @@
 .about-third-title-top{
     padding-top: 80px;
     height: 59px;
-    font-family: PingFangSC;
     font-size: 42px;
     font-weight: normal;
     font-stretch: normal;
@@ -271,7 +268,7 @@
 .about-third-title-bottom{
     padding-top: 11px;
     height: 32px;
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
@@ -316,7 +313,6 @@
     display: inline-block;
     margin-top: 31px;
     height: 25px;
-    font-family: PingFangSC;
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;

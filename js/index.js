@@ -35,13 +35,13 @@ getUser('index');
 
 function changebanner(id) {
     if (id == 1) {
-        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "334px"}, 250);
+        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "310px"}, 250);
         $("#index-fourth-banner-ul").animate({marginLeft: "0px"}, {queue: false, duration: 500})
     } else if (id == 2) {
-        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "501px"}, 250);
+        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "505px"}, 250);
         $("#index-fourth-banner-ul").animate({marginLeft: "-1124px"}, {queue: false, duration: 500})
     } else if (id == 3) {
-        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "687px"}, 250);
+        $('.index-fourth-banner-arrows-icon').animate({marginLeft: "689px"}, 250);
         $("#index-fourth-banner-ul").animate({marginLeft: "-2248px"}, {queue: false, duration: 500})
 
     }

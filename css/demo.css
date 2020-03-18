@@ -435,8 +435,8 @@
 }
 .demo-like-img{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-left: 146px;
     float: left;
     z-index: 3;
@@ -444,8 +444,8 @@
 }
 .demo-like-img-demo1{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-left: 276px;
     float: left;
     z-index: 3;
@@ -453,8 +453,8 @@
 }
 .demo-like-img-on{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-left: 146px;
     float: left;
     z-index: 2;
@@ -468,8 +468,8 @@
 }
 .demo-like-img-on-demo1{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-left: 276px;
     float: left;
     z-index: 2;
@@ -488,32 +488,36 @@
 }
 .demo-like-icon{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-right: 3px;
     float: left;
 }
 .demo-like-sum{
     height: 20px;
     margin-left:170px;
+    top: 2px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #bfbfbf;
+    color: #999;
+    position: relative;
 }
 .demo-like-sum-demo1{
     height: 20px;
     margin-left:300px;
+    top: 2px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #bfbfbf;
+    color: #999;
+    position: relative;
 }
 .demo-side-nav{
     display: inline-block;

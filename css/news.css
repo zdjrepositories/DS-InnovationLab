@@ -132,6 +132,7 @@
 }
 .news-second-content-left{
     display: inline-block;
+    border-radius: 12px 0px 0px 12px;
     width: 390px;
     height: 408px;
     float: left;
@@ -146,7 +147,7 @@
     height: 30px;
     margin-top: 15px;
     margin-left: 30px;
-    font-family: PingFangSC;
+    
     font-size: 22px;
     font-weight: 500;
     color: #333333;
@@ -156,7 +157,7 @@
     height: 20px;
     margin-top: 12px;
     margin-left: 30px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     color: #999999;
 }
@@ -165,7 +166,7 @@
     height: 150px;
     margin-top: 16px;
     margin-left: 30px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -180,7 +181,7 @@
     height: 50px;
     margin-top:24px;
     margin-left: 30px;
-    font-family: PingFangSC;
+    
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -198,7 +199,6 @@
     margin-left: 30px;
     float: left;
     height: 20px;
-    font-family: PingFangSC;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -275,7 +275,7 @@
     height: 36px;
     float: left;
     text-align: left;
-    margin-left: 18px;
+    margin-left: 10px;
     opacity: 0;
 }
 .news-third-content-year-2019{
@@ -290,11 +290,14 @@
     text-align: center;
 
 }
-.news-third-content-year-2019 a{
+.news-third-content-year-2019>div{
     color: #ffffff;
-    transform: skewX(25deg);
-}
 
+}
+.news-third-content-year-2020:hover div{
+    color: #64d981;
+
+}
 
 .news-third-content-year-2020{
     display: inline-block;
@@ -310,16 +313,25 @@
     text-align: center;
 }
 
-.news-third-content-year-2020 a{
+.news-third-content-year-2020>div{
     color: #3dcd58;
-    transform: skewX(25deg);
-
 }
-.news-third-content-years a{
+.news-third-content-years div{
+    width:70px;
+    height: 25px;
     display: inline-block;
-    margin-top: 8px;
     border-radius: 2px;
     text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    transform: skewX(25deg);
+    margin-top: 4px;
+
 }
 .news-third-content-monthly-2019{
     display: inline-block;
@@ -356,9 +368,8 @@
     display: inline-block;
     width: 233px;
     height: 314px;
-    margin-top: 4px;
-    margin-left: 4px;
-    border: solid 1px #e6e6e6;
+    margin-top: 5px;
+    margin-left: 5px;
     background-color: #f8f9f9;
     position: absolute;
     z-index: 1;
@@ -370,7 +381,6 @@
     float: left;
 }
 .news-third-content-monthly-title-top{
-    font-family: ArialRoundedMT;
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -380,7 +390,7 @@
     color: #333333;
 }
 .news-third-content-monthly-title-bottom{
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
@@ -395,10 +405,10 @@
     height: 37px;
     margin-top: 12px;
     margin-right: 12px;
-    padding-top: 4px;
+    padding-top: 10px;
     float: left;
     border: solid 1px #999999;
-    font-family: ArialRoundedMTPro;
+    font-family: Arial Rounded MT Pro;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;

@@ -39,12 +39,25 @@ $(function () {
 
 function click2019() {
     $('.news-third ').css("height", "1340");
+
+
+    $('.news-third-content-year-2019').css("background-color", "#3dcd58");
+    $('.news-third-content-year-2020').css("background-color", "#ffffff");
+    $('.news-third-content-year-2019>div').css("color", "#ffffff");
+    $('.news-third-content-year-2020>div').css("color", "#3dcd58");
+    $('.news-third-content-year-2020').css("border", "solid 1px #3dcd58");
+
     $('.news-third-content-monthly-2020').hide();
     $('.news-third-content-monthly-2019').show();
 }
 
 function click2020() {
     $('.news-third ').css("height", "640");
+    $('.news-third-content-year-2020').css("background-color", "#3dcd58");
+    $('.news-third-content-year-2019').css("background-color", "#ffffff");
+    $('.news-third-content-year-2019 div').css("color", "#3dcd58");
+    $('.news-third-content-year-2020 div').css("color", "#ffffff");
+    $('.news-third-content-year-2019').css("border", "solid 1px #3dcd58");
     $('.news-third-content-monthly-2019').hide();
     $('.news-third-content-monthly-2020').show();
 }
