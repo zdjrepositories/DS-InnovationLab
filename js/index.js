@@ -8,12 +8,12 @@ function indexfirst() {
 }
 
 $(function () {
-getUser('index');
+        getUser('index');
         demo_menu();
         indexfirst();
         getLike();
         getVisit();
-
+        loadimg();
         load();
 
 
@@ -69,7 +69,7 @@ function load() {
         $('.index-third-title').animate({opacity: 1}, 500);
     }
     eTop = $('.index-third-content-list').offset().top;
-    if (dTop + wTop - ($('.index-third-content-list').height() * 0.25)  > eTop) {
+    if (dTop + wTop - ($('.index-third-content-list').height() * 0.25) > eTop) {
         $('.index-third-content-list').animate({opacity: 1}, 500);
     }
     eTop = $('.index-fourth-title').offset().top;//容器距离整个页面顶部的距离

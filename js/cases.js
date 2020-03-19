@@ -10,7 +10,7 @@ $(function () {
     casesfirst();
     getVisit()
     load();
-
+    loadimg();
 
         window.addEventListener('scroll', function () {
             head(3);

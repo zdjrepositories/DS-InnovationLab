@@ -1,10 +1,12 @@
-$(function () { getUser('demo');
+$(function () {
+        getUser('demo');
         demo_menu();
         demofirst();
         load();
         demosidenav();
         getLike();
         getVisit();
+        loadimg();
 
         function load() {
             head(2);
@@ -13,7 +15,7 @@ $(function () { getUser('demo');
             var demo = $("#demo1").offset().top;//浏览器可视高度
             var eTop = $('.demo-content-banner-demo1').offset().top;//容器距离整个页面顶部的距离
             var t;
-            for (t = 1; t < (dTop +50) / 700 + 1; t++) {
+            for (t = 1; t < (dTop + 50) / 700 + 1; t++) {
                 demo_load(t);
             }
             nav_anchor(t - 1);
@@ -161,8 +163,8 @@ $(function () { getUser('demo');
 
                 $(".demo-content-text-demo" + demo + ">.demo-like").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
                 $(".demo-guide").delay(200).animate({opacity: 1}, 650, 'easeOutCirc');
-     }
-  }
+            }
+        }
 
         function demofirst() {
             $('.demo-first-title').delay(300).animate({opacity: 1}, 3000, 'easeOutCirc');

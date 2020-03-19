@@ -2,13 +2,14 @@ function index_like(id) {
    $(".index-fourth-content-like-img" + id).css("opacity", "0");
     $(".index-fourth-content-like-img-on" + id).css("opacity", "1");
    $(".demo-like-sum" + id).css("color", "#3dcd58");
-    var sum = parseInt($(".demo-like-sum"+ id).text());
-    $(".demo-like-sum" + id).text(sum + 1);
-    $(".index-fourth-content-like-img" + id).attr('onclick', '');
+    var sum = parseInt($(".demo-like-sum"+ id+":first").text());
     $(".index-fourth-content-like-img-on" + id+">img").css("transform","skew(0deg, 0deg)");
     $(".index-fourth-content-like-img-on" + id+">img").css("-ms-transform","skew(0deg, 0deg)");
-    $(".index-fourth-content-like-img-on" + id+">img").css("-moz-transform","skew(0deg, 0deg)")
-    $(".index-fourth-content-like-img-on" + id+">img").css("-o-transform","skew(0deg, 0deg)")
+    $(".index-fourth-content-like-img-on" + id+">img").css("-moz-transform","skew(0deg, 0deg");
+    $(".index-fourth-content-like-img-on" + id+">img").css("-o-transform","skew(0deg, 0deg)");
+    $(".demo-like-sum" + id).text(sum+1);
+    $(".index-fourth-content-like-img" + id).attr('onclick', '');
+
     giveLike(id);
 }
 
@@ -17,15 +18,26 @@ function like(id) {
     $(".demo-like-img" + id + "-on").css("opacity", "1");
     $(".demo-like-img" + id + "-on>img").css("transform","skew(0deg, 0deg)");
     $(".demo-like-img" + id + "-on>img").css("-ms-transform","skew(0deg, 0deg)");
-    $(".demo-like-img" + id + "-on>img").css("-moz-transform","skew(0deg, 0deg)")
-    $(".demo-like-img" + id + "-on>img").css("-o-transform","skew(0deg, 0deg)")
+    $(".demo-like-img" + id + "-on>img").css("-moz-transform","skew(0deg, 0deg)");
+    $(".demo-like-img" + id + "-on>img").css("-o-transform","skew(0deg, 0deg)");
     $(".demo-like-sum" + id).css("color", "#3dcd58");
-    var sum = parseInt($(".demo-like-sum" + id).text());
+    var sum = parseInt($(".demo-like-sum" + id+":first").text());
     $(".demo-like-sum" + id).text(sum + 1);
     $(".demo-like-img" + id).attr('onclick', '');
     giveLike(id)
 }
+function loadimg() {
+    $("img").lazyload({
+        effect:'fadeIn',
+        event:'sporty'
 
+    });
+}
+$(window).bind('load', function(){
+    var timeout = setTimeout(function(){
+        $('img').trigger('sporty')
+    }, 100);
+});
 function giveLike(id) {
     $.ajax({
         url: '/innovationlab/giveLike?id=' + id,
@@ -134,9 +146,9 @@ function getDemo(page,demo) {
 }
 function demo_menu() {//导航栏动画
     $(".head-nav-demo").hover(function () {
-        $(".head-nav-demo-list").slideDown(400);
+        $(".head-nav-demo-list").slideDown(300);
     }, function () {
-        $(".head-nav-demo-list").slideUp(400);
+        $(".head-nav-demo-list").slideUp(300);
     });
     $(".head-nav-demo-list li").hover(function () {
         $(".head-nav-demo-list>li:hover").css("background-color", "#f0fff0");

@@ -89,7 +89,7 @@ img {
 
 .head-logo-right {
     font-size: 20px;
-    font-family: Arial Rounded MT Pro;
+    font-family: Arial Rounded MT Pro Light;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -112,7 +112,7 @@ img {
 .head-nav > ul > li > a {
     height: 35px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -137,13 +137,15 @@ img {
     float: left;
     margin-right: 30px;
 }
-
+.head-nav-demo-list-back{
+    width: 174px;
+    height: 8px;
+}
 .head-nav-demo-list {
     display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8px;
     width: 174px;
-    height: 300px;
+    margin-bottom: 8px;
+    height: 316px;
     top: 70px;
     right: 443px;
     border-radius: 2px;

@@ -4,7 +4,7 @@ $(function () {
         demo_menu();
         getVisit();
         newfirst();
-
+        loadimg();
         function load() {
             head(4);
             var dTop = $(document).scrollTop();//可视区域到页面顶部的距离
