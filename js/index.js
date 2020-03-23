@@ -16,7 +16,13 @@ $(function () {
         loadimg();
         load();
 
-
+        $("#demo1_info").hover(function () {
+            $(".demo-guide").css("opacity","1");
+            $("#arrows_b").css("opacity","1");
+        }, function () {
+            $(".demo-guide").css("opacity","0");
+            $("#arrows_b").css("opacity","0");
+        })
         window.addEventListener('scroll', function () {
             head(1);
             if ($('.index-third-dome').css("opacity") != 1) {
@@ -43,7 +49,6 @@ function changebanner(id) {
     } else if (id == 3) {
         $('.index-fourth-banner-arrows-icon').animate({marginLeft: "689px"}, 250);
         $("#index-fourth-banner-ul").animate({marginLeft: "-2248px"}, {queue: false, duration: 500})
-
     }
 }
 

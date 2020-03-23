@@ -249,9 +249,8 @@
 }
 .about-third-title-top{
     padding-top: 80px;
-    height: 59px;
-    font-size: 42px;
-    font-weight: normal;
+    font-size: 32px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -261,16 +260,14 @@
 }
 .about-third-title-center{
     width: 47px;
-    height: 6px;
+    height: 4px;
     background-color: #3dcd58;
     margin:12px auto;
 }
 .about-third-title-bottom{
-    padding-top: 11px;
-    height: 32px;
-    font-family: Arial Rounded MT Pro;
-    font-size: 28px;
-    font-weight: normal;
+    font-family: Arial Rounded MT Pro Light;
+    font-size: 22px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -340,8 +337,8 @@
 }
 .about-fourth-title-top{
     padding-top: 70px;
-    font-size: 42px;
-    font-weight: normal;
+    font-size: 32px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -351,20 +348,19 @@
 }
 .about-fourth-title-center{
     width: 47px;
-    height: 6px;
+    height: 4px;
     background-color: #3dcd58;
     margin:12px auto;
 }
 .about-fourth-title-bottom{
     font-family: Arial Rounded MT Pro Light;
-    font-size: 28px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    margin: 11px auto;
     color: #333333;
     opacity: 0.8;
 }

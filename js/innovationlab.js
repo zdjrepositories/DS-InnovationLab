@@ -42,7 +42,7 @@ function giveLike(id) {
     $.ajax({
         url: '/innovationlab/giveLike?id=' + id,
         type: 'get',
-        async: false,
+        async: true,
         data: {},
         success: function () {
         }
@@ -53,7 +53,7 @@ function getLike() {
     $.ajax({
         url: '/innovationlab/showLike',
         type: 'get',
-        async: false,
+        async: true,
         data: {},
         success: function (data) {
             $(".demo-like-sum1").text(data.demo1);
@@ -74,7 +74,7 @@ function getVisit() {
         },
         url: '/innovationlab/giveVisit',
         type: 'get',
-        async: false,
+        async: true,
         success: function (data) {
             visit=data;
             $("#visit").text(data);
@@ -89,10 +89,12 @@ function head(page) {
         $(".head-nav>ul>li>a").css("border-color", "#fff");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#fff");
         $('.head').addClass("head-active");
+        $('.head-logo>a>img').attr("src", "images/logo_w@2x.png");
     } else if (head_hight < 30) {
         $(".head-nav>ul>li>a").css("border-color", "#3dcd58");
         $('.head-list>li:nth-child(' + page + ')>a').css("color", "#3dcd58");
         $('.head').removeClass("head-active");
+        $('.head-logo>a>img').attr("src", "images/logo_g@2x.png");
     }
 }
 
@@ -100,12 +102,12 @@ function getUser(page) {
     $.ajax({
         url: '/innovationlab/getUser',
         type: 'get',
-        async: true,
+        async: false,
         data: {},
         success: function (data) {
             var user=data;
             if(user!=""){
-               var text=" <a href='javascript:;'  onclick=exitUser('"+page+"')><div class='head-photo'><div class='head-photo-text'>" + user.substring(0, 1) + "</div> </div>退出登录</a>"
+               var text=" <a href='javascript:;'  onclick=exitUser('"+page+"')><img class='head-login' src='images/" + user.substring(0, 1) + ".png'> </img>退出登录</a>"
                 $(".head-login").html(text);
 
                 }

@@ -54,7 +54,7 @@ img {
 .head {
     min-width: 1024px;
     width: 100%;
-    height: 70px;
+    height: 56px;
     z-index: 999;
     position: fixed;
     color: white;
@@ -80,11 +80,14 @@ img {
     height: 43px;
     text-align: center;
     float: left;
-    margin: 20px 0 0 60px;
+    margin: 10px 0 0 60px;
 }
 
 .head-logo-left {
-
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
 }
 
 .head-logo-right {
@@ -96,13 +99,15 @@ img {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
+    position: relative;
+    top: -8px;
 }
 
 .head-nav {
     height: 30px;
     float: right;
     padding-right: 150px;
-    padding-top: 24px;
+    padding-top: 17px;
 }
 
 .head-nav > ul > li {
@@ -125,6 +130,7 @@ img {
 
 .head-nav > ul > li > a:hover {
     border-bottom-style: solid;
+    font-weight: 600;
 }
 
 .head-nav.list > li {
@@ -146,7 +152,7 @@ img {
     width: 174px;
     margin-bottom: 8px;
     height: 316px;
-    top: 70px;
+    top: 56px;
     right: 443px;
     border-radius: 2px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
@@ -189,7 +195,7 @@ img {
     display: inline-block;
     float: right;
     width: 100px;
-    top: 25px;
+    top: 18px;
     right: 55px;
     position: absolute;
 }
@@ -237,7 +243,7 @@ img {
     float: right;
     height: 35px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -250,14 +256,14 @@ img {
 
 .foot {
     width: 100%;
-    height: 132px;
+    height: 104px;
     position: absolute;
     background-color: #333333;
 }
 
 .foot-left-img {
     width: 432px;
-    height: 132px;
+    height: 104px;
     position: absolute;
     z-index: 5;
     float: left;
@@ -265,7 +271,7 @@ img {
 
 .foot-right-img {
     width: 116px;
-    height: 132px;
+    height: 104px;
     bottom: 0;
     right: 0;
     z-index: 5;
@@ -274,7 +280,7 @@ img {
 
 .foot-content {
     width: 1024px;
-    height: 132px;
+    height: 104px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -286,8 +292,7 @@ img {
 
 .foot-logo {
     height: 59px;
-    top: 50%;
-    transform: translateY(-50%); /* 元素往下位移自身高度50%的距离 */
+    top: 16px;
     float: left;
     font-size: 27px;
     text-align: center;
@@ -332,7 +337,7 @@ img {
     margin-top: 5px;
     width: 501px;
     height: 72px;
-    margin-top: 30px;
+    margin-top: 16px;
     opacity: 0.8;
     font-size: 14px;
     line-height: 1.71;

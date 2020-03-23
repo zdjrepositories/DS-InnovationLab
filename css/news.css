@@ -81,10 +81,9 @@
 }
 .news-second-title {
     padding-top: 50px;
-    height: 55px;
     margin: 0 auto;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -97,21 +96,19 @@
 }
 
 .news-second-title-top {
-    font-family: Arial Rounded MT Pro Light;
 }
 
 .news-second-title-center {
     width: 47px;
-    height: 6px;
-    margin: 16px auto;
+    height: 4px;
+    margin: 12px auto;
     background-color: #3dcd58;
 }
 
 .news-second-title-bottom {
-    height: 32px;
     margin: 11px auto;
     font-family: Arial Rounded MT Pro Light;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -224,10 +221,9 @@
 }
 .news-third-title {
     padding-top: 60px;
-    height: 55px;
     margin: 0 auto;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -240,22 +236,20 @@
 }
 
 .news-third-title-top {
-    font-family: Arial Rounded MT Pro Light;
 }
 
 .news-third-title-center {
     width: 47px;
-    height: 6px;
-    margin: 16px auto;
+    height: 4px;
+    margin: 12px auto;
     background-color: #3dcd58;
 }
 
 .news-third-title-bottom {
-    height: 32px;
-    margin: 11px auto;
+    height: 22px;
     font-family: Arial Rounded MT Pro Light;
-    font-size: 28px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -446,6 +440,8 @@
 }
 .news-third-content-monthly1>a:hover{
     color: #64d981;
+    border: solid 1px #64d981;
+
 }
 .news-third-content-monthly-2020{
     display: none;

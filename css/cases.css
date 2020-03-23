@@ -273,8 +273,8 @@
     height: 85px;
     margin:57px auto ;
     font-family: Arial Rounded MT Pro Light;
-    font-size: 36px;
-    font-weight: normal;
+    font-size: 32px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -286,21 +286,20 @@
     opacity: 0;
 }
 .cases-third-title-top{
-    font-family:  Arial Rounded MT Pro Light;
 }
 .cases-third-title-center{
     width: 47px;
-    height: 6px;
+    height: 4px;
     background-color: #3dcd58;
-    margin:14px auto;
+    margin:12px auto;
 }
 .cases-third-title-bottom{
     height: 27px;
-    margin: 15px auto;
+    margin: 12px auto;
     padding-bottom: 33px;
     font-family: Arial Rounded MT Pro Light;
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
